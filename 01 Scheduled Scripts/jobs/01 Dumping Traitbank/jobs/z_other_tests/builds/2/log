@@ -1,0 +1,151 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Dumping Traitbank/test
+[test] $ /bin/sh -xe /tmp/jenkins1548413349779599760.sh
++ source /root/.bash_profile
+++ '[' -f /root/.bashrc ']'
+++ . /root/.bashrc
++++ alias 'rm=rm -i'
++++ alias 'cp=cp -i'
++++ alias 'mv=mv -i'
++++ alias vi=vim
++++ alias dc=docker-compose
++++ alias 'harv=cd /u/apps/harvester/docker'
++++ alias 'dckr=docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it'
++++ alias 'dharv=dckr harv_app bash'
++++ alias 'harvc=curl localhost:3001'
++++ '[' -f /etc/bashrc ']'
++++ . /etc/bashrc
+++++ '[' '' ']'
+++++ shopt -q login_shell
+++++ umask 077
+++++ '[' 0 -gt 199 ']'
+++++ umask 077
+++++ SHELL=/bin/bash
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/256term.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/256term.sh
++++++ local256=
++++++ '[' -n '' ']'
++++++ '[' -n '' ']'
++++++ unset local256
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/colorgrep.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/colorgrep.sh
++++++ /usr/libexec/grepconf.sh -c
++++++ alias 'grep=grep --color=auto'
++++++ alias 'egrep=egrep --color=auto'
++++++ alias 'fgrep=fgrep --color=auto'
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/colorls.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/colorls.sh
++++++ '[' '!' -t 0 ']'
++++++ return
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/lang.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/lang.sh
++++++ sourced=0
++++++ '[' -n en_US.UTF-8 ']'
++++++ saved_lang=en_US.UTF-8
++++++ '[' -f /root/.i18n ']'
++++++ LANG=en_US.UTF-8
++++++ unset saved_lang
++++++ '[' 0 = 1 ']'
++++++ unset sourced
++++++ unset langfile
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/less.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/less.sh
++++++ '[' -x /usr/bin/lesspipe.sh ']'
++++++ export 'LESSOPEN=||/usr/bin/lesspipe.sh %s'
++++++ LESSOPEN='||/usr/bin/lesspipe.sh %s'
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/puppet-agent.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/puppet-agent.sh
++++++ echo /sbin:/usr/sbin:/bin:/usr/bin
++++++ grep --color=auto -q /opt/puppetlabs/bin
++++++ export PATH=/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin
++++++ PATH=/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin
++++++ echo
++++++ grep --color=auto -q /opt/puppetlabs/puppet/share/man
++++++ export MANPATH=:/opt/puppetlabs/puppet/share/man
++++++ MANPATH=:/opt/puppetlabs/puppet/share/man
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/srvadmin-path.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/srvadmin-path.sh
++++++ echo /sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin
++++++ /bin/grep -q /opt/dell/srvadmin/bin
++++++ PATH=/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin
++++++ echo /sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin
++++++ /bin/grep -q /opt/dell/srvadmin/sbin
+++++++ /usr/bin/id -u
++++++ '[' 0 = 0 ']'
++++++ PATH=/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/sysadmin_profile.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/sysadmin_profile.sh
++++++ echo /sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin
++++++ /bin/grep -q /usr/local/bin
++++++ PATH=/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin:/usr/local/bin
++++++ alias 'll=ls -lah'
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/vim.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/vim.sh
++++++ '[' -n '4.2.46(2)-release' -o -n '' -o -n '' ']'
++++++ '[' -x /usr/bin/id ']'
+++++++ /usr/bin/id -u
++++++ ID=0
++++++ '[' -n 0 -a 0 -le 200 ']'
++++++ return
+++++ for i in '/etc/profile.d/*.sh'
+++++ '[' -r /etc/profile.d/which2.sh ']'
+++++ '[' '' ']'
+++++ . /etc/profile.d/which2.sh
++++++ alias 'which=alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+++++ unset i
+++++ unset -f pathmunge
++++ export VISUAL=vim
++++ VISUAL=vim
+++ PATH=/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin:/usr/local/bin:/root/bin
+++ export PATH
+++ export PATH=/root/.rbenv/bin:/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin:/usr/local/bin:/root/bin
+++ PATH=/root/.rbenv/bin:/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin:/usr/local/bin:/root/bin
++++ rbenv init -
+++ eval 'export PATH="/root/.rbenv/shims:${PATH}"
+export RBENV_SHELL=sh
+command rbenv rehash 2>/dev/null
+rbenv() {
+  local command
+  command="${1:-}"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  rehash|shell)
+    eval "$(rbenv "sh-$command" "$@")";;
+  *)
+    command rbenv "$command" "$@";;
+  esac
+}'
++++ export PATH=/root/.rbenv/shims:/root/.rbenv/bin:/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin:/usr/local/bin:/root/bin
++++ PATH=/root/.rbenv/shims:/root/.rbenv/bin:/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin:/usr/local/bin:/root/bin
++++ export RBENV_SHELL=sh
++++ RBENV_SHELL=sh
++++ command rbenv rehash
+++ export PATH=/root/.rbenv/plugins/ruby-build/bin:/root/.rbenv/shims:/root/.rbenv/bin:/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin:/usr/local/bin:/root/bin
+++ PATH=/root/.rbenv/plugins/ruby-build/bin:/root/.rbenv/shims:/root/.rbenv/bin:/sbin:/usr/sbin:/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/opt/dell/srvadmin/sbin:/usr/local/bin:/root/bin
+[test] $ /bin/sh -xe /tmp/jenkins7820615483500513820.sh
++ rbenv global 2.6.4
+/tmp/jenkins7820615483500513820.sh: line 2: rbenv: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

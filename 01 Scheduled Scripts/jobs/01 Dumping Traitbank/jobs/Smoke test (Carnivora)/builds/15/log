@@ -1,0 +1,963 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Dumping Traitbank/Smoke test (Carnivora)
+[Smoke test (Carnivora)] $ /bin/sh -xe /tmp/jenkins8199525776883165536.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod ID=7662
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-7662/inferred.csv.parts/0_10000.csv.new
+writing 3716 csv records to /u/scripts/.plotter_workspace/dump-7662/inferred.csv.parts/10000_10000.csv.new
+# Graphdb proxy URL is https://eol.org/
+tail: cannot open ‘+2’ for reading: No such file or directory
+inferred.csv: 2 parts, 13716 records
+writing 9219 csv records to /u/scripts/.plotter_workspace/dump-7662/terms.csv.parts/0_10000.csv.new
+terms.csv: 1 parts, 9219 records
+writing 3788 csv records to /u/scripts/.plotter_workspace/dump-7662/pages.csv.parts/0_10000.csv.new
+pages.csv: 1 parts, 3788 records
+501 trait predicate URIs
+Predicate 0 = http://eol.org/schema/terms/ExtinctionStatus
+writing 1283 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/0.csv.parts/0_10000.csv.new
+0.csv: 1 parts, 1283 records
+writing 12 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/1.csv.parts/0_10000.csv.new
+1.csv: 1 parts, 12 records
+writing 264 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/3.csv.parts/0_10000.csv.new
+3.csv: 1 parts, 264 records
+writing 1831 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/4.csv.parts/0_10000.csv.new
+4.csv: 1 parts, 1831 records
+writing 36 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/5.csv.parts/0_10000.csv.new
+5.csv: 1 parts, 36 records
+writing 365 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/6.csv.parts/0_10000.csv.new
+6.csv: 1 parts, 365 records
+writing 232 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/7.csv.parts/0_10000.csv.new
+7.csv: 1 parts, 232 records
+writing 135 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/8.csv.parts/0_10000.csv.new
+8.csv: 1 parts, 135 records
+writing 230 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/9.csv.parts/0_10000.csv.new
+9.csv: 1 parts, 230 records
+writing 90 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/10.csv.parts/0_10000.csv.new
+10.csv: 1 parts, 90 records
+writing 236 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/11.csv.parts/0_10000.csv.new
+11.csv: 1 parts, 236 records
+writing 251 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/12.csv.parts/0_10000.csv.new
+12.csv: 1 parts, 251 records
+writing 708 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/13.csv.parts/0_10000.csv.new
+13.csv: 1 parts, 708 records
+writing 236 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/14.csv.parts/0_10000.csv.new
+14.csv: 1 parts, 236 records
+writing 292 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/15.csv.parts/0_10000.csv.new
+15.csv: 1 parts, 292 records
+writing 365 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/16.csv.parts/0_10000.csv.new
+16.csv: 1 parts, 365 records
+writing 189 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/17.csv.parts/0_10000.csv.new
+17.csv: 1 parts, 189 records
+writing 232 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/18.csv.parts/0_10000.csv.new
+18.csv: 1 parts, 232 records
+writing 234 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/19.csv.parts/0_10000.csv.new
+19.csv: 1 parts, 234 records
+writing 173 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/20.csv.parts/0_10000.csv.new
+20.csv: 1 parts, 173 records
+writing 6760 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/21.csv.parts/0_10000.csv.new
+21.csv: 1 parts, 6760 records
+writing 166 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/22.csv.parts/0_10000.csv.new
+22.csv: 1 parts, 166 records
+writing 234 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/23.csv.parts/0_10000.csv.new
+23.csv: 1 parts, 234 records
+writing 428 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/24.csv.parts/0_10000.csv.new
+24.csv: 1 parts, 428 records
+Predicate 25 = http://polytraits.lifewatchgreece.eu/terms/MAT
+writing 120 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/25.csv.parts/0_10000.csv.new
+25.csv: 1 parts, 120 records
+writing 100 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/26.csv.parts/0_10000.csv.new
+26.csv: 1 parts, 100 records
+writing 114 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/27.csv.parts/0_10000.csv.new
+27.csv: 1 parts, 114 records
+writing 130 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/28.csv.parts/0_10000.csv.new
+28.csv: 1 parts, 130 records
+writing 431 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/29.csv.parts/0_10000.csv.new
+29.csv: 1 parts, 431 records
+writing 255 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/30.csv.parts/0_10000.csv.new
+30.csv: 1 parts, 255 records
+writing 212 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/31.csv.parts/0_10000.csv.new
+31.csv: 1 parts, 212 records
+writing 326 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/32.csv.parts/0_10000.csv.new
+32.csv: 1 parts, 326 records
+writing 572 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/33.csv.parts/0_10000.csv.new
+33.csv: 1 parts, 572 records
+writing 317 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/34.csv.parts/0_10000.csv.new
+34.csv: 1 parts, 317 records
+writing 401 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/35.csv.parts/0_10000.csv.new
+35.csv: 1 parts, 401 records
+writing 36 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/36.csv.parts/0_10000.csv.new
+36.csv: 1 parts, 36 records
+writing 502 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/37.csv.parts/0_10000.csv.new
+37.csv: 1 parts, 502 records
+writing 1621 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/38.csv.parts/0_10000.csv.new
+38.csv: 1 parts, 1621 records
+writing 47 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/40.csv.parts/0_10000.csv.new
+40.csv: 1 parts, 47 records
+writing 85 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/41.csv.parts/0_10000.csv.new
+41.csv: 1 parts, 85 records
+writing 7 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/43.csv.parts/0_10000.csv.new
+43.csv: 1 parts, 7 records
+writing 109 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/44.csv.parts/0_10000.csv.new
+44.csv: 1 parts, 109 records
+writing 152 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/45.csv.parts/0_10000.csv.new
+45.csv: 1 parts, 152 records
+writing 211 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/46.csv.parts/0_10000.csv.new
+46.csv: 1 parts, 211 records
+writing 206 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/47.csv.parts/0_10000.csv.new
+47.csv: 1 parts, 206 records
+writing 18 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/48.csv.parts/0_10000.csv.new
+48.csv: 1 parts, 18 records
+writing 247 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/49.csv.parts/0_10000.csv.new
+49.csv: 1 parts, 247 records
+Predicate 50 = http://purl.obolibrary.org/obo/CMO_0000790
+writing 149 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/50.csv.parts/0_10000.csv.new
+50.csv: 1 parts, 149 records
+writing 194 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/51.csv.parts/0_10000.csv.new
+51.csv: 1 parts, 194 records
+writing 10 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/52.csv.parts/0_10000.csv.new
+52.csv: 1 parts, 10 records
+writing 828 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/53.csv.parts/0_10000.csv.new
+53.csv: 1 parts, 828 records
+writing 828 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/54.csv.parts/0_10000.csv.new
+54.csv: 1 parts, 828 records
+writing 138 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/55.csv.parts/0_10000.csv.new
+55.csv: 1 parts, 138 records
+writing 6 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/60.csv.parts/0_10000.csv.new
+60.csv: 1 parts, 6 records
+writing 52 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/62.csv.parts/0_10000.csv.new
+62.csv: 1 parts, 52 records
+writing 287 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/64.csv.parts/0_10000.csv.new
+64.csv: 1 parts, 287 records
+Predicate 75 = http://eol.org/schema/terms/BillLength
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/77.csv.parts/0_10000.csv.new
+77.csv: 1 parts, 1 records
+Predicate 100 = http://eol.org/schema/terms/CellShapeTransverse
+Predicate 125 = http://eol.org/schema/terms/DescribedAcceptedSpecies
+Predicate 150 = http://purl.obolibrary.org/obo/OBA_1000128
+writing 8 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/155.csv.parts/0_10000.csv.new
+155.csv: 1 parts, 8 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/167.csv.parts/0_10000.csv.new
+167.csv: 1 parts, 1 records
+Predicate 175 = http://eol.org/schema/terms/GenerationTime
+writing 2 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/191.csv.parts/0_10000.csv.new
+191.csv: 1 parts, 2 records
+writing 625 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/192.csv.parts/0_10000.csv.new
+192.csv: 1 parts, 625 records
+Predicate 200 = http://eol.org/schema/terms/HomeRange
+writing 205 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/200.csv.parts/0_10000.csv.new
+200.csv: 1 parts, 205 records
+writing 383 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/207.csv.parts/0_10000.csv.new
+207.csv: 1 parts, 383 records
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/208.csv.parts/0_10000.csv.new
+208.csv: 1 parts, 9 records
+writing 39 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/211.csv.parts/0_10000.csv.new
+211.csv: 1 parts, 39 records
+writing 7 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/223.csv.parts/0_10000.csv.new
+223.csv: 1 parts, 7 records
+writing 8 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/224.csv.parts/0_10000.csv.new
+224.csv: 1 parts, 8 records
+Predicate 225 = http://eol.org/schema/terms/MalesPerGroup
+writing 8 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/225.csv.parts/0_10000.csv.new
+225.csv: 1 parts, 8 records
+writing 164 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/247.csv.parts/0_10000.csv.new
+247.csv: 1 parts, 164 records
+Predicate 250 = http://purl.obolibrary.org/obo/RO_0002442
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/258.csv.parts/0_10000.csv.new
+258.csv: 1 parts, 16 records
+writing 128 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/260.csv.parts/0_10000.csv.new
+260.csv: 1 parts, 128 records
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/261.csv.parts/0_10000.csv.new
+261.csv: 1 parts, 16 records
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/262.csv.parts/0_10000.csv.new
+262.csv: 1 parts, 16 records
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/263.csv.parts/0_10000.csv.new
+263.csv: 1 parts, 16 records
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/264.csv.parts/0_10000.csv.new
+264.csv: 1 parts, 16 records
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/265.csv.parts/0_10000.csv.new
+265.csv: 1 parts, 16 records
+writing 3 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/266.csv.parts/0_10000.csv.new
+266.csv: 1 parts, 3 records
+writing 181 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/269.csv.parts/0_10000.csv.new
+269.csv: 1 parts, 181 records
+Predicate 275 = http://eol.org/schema/terms/PercentSynonyms
+writing 17 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/281.csv.parts/0_10000.csv.new
+281.csv: 1 parts, 17 records
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/294.csv.parts/0_10000.csv.new
+294.csv: 1 parts, 16 records
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/295.csv.parts/0_10000.csv.new
+295.csv: 1 parts, 16 records
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/296.csv.parts/0_10000.csv.new
+296.csv: 1 parts, 16 records
+writing 131 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/297.csv.parts/0_10000.csv.new
+297.csv: 1 parts, 131 records
+writing 8 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/299.csv.parts/0_10000.csv.new
+299.csv: 1 parts, 8 records
+Predicate 300 = http://polytraits.lifewatchgreece.eu/terms/STRAT
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/315.csv.parts/0_10000.csv.new
+315.csv: 1 parts, 16 records
+writing 7 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/316.csv.parts/0_10000.csv.new
+316.csv: 1 parts, 7 records
+Predicate 325 = http://eol.org/schema/terms/SkeletalDensity
+writing 16 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/330.csv.parts/0_10000.csv.new
+330.csv: 1 parts, 16 records
+writing 23 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/343.csv.parts/0_10000.csv.new
+343.csv: 1 parts, 23 records
+writing 6 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/349.csv.parts/0_10000.csv.new
+349.csv: 1 parts, 6 records
+Predicate 350 = http://eol.org/schema/terms/ThreatenedEndangeredStatus
+writing 366 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/356.csv.parts/0_10000.csv.new
+356.csv: 1 parts, 366 records
+writing 70 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/365.csv.parts/0_10000.csv.new
+365.csv: 1 parts, 70 records
+writing 58 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/366.csv.parts/0_10000.csv.new
+366.csv: 1 parts, 58 records
+writing 58 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/367.csv.parts/0_10000.csv.new
+367.csv: 1 parts, 58 records
+writing 58 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/368.csv.parts/0_10000.csv.new
+368.csv: 1 parts, 58 records
+writing 58 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/369.csv.parts/0_10000.csv.new
+369.csv: 1 parts, 58 records
+writing 58 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/370.csv.parts/0_10000.csv.new
+370.csv: 1 parts, 58 records
+writing 58 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/371.csv.parts/0_10000.csv.new
+371.csv: 1 parts, 58 records
+writing 58 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/372.csv.parts/0_10000.csv.new
+372.csv: 1 parts, 58 records
+Predicate 375 = http://eol.org/schema/terms/ZooplanktonFeedingMode
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/376.csv.parts/0_10000.csv.new
+376.csv: 1 parts, 1 records
+writing 5737 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/377.csv.parts/0_10000.csv.new
+377.csv: 1 parts, 5737 records
+writing 1280 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/378.csv.parts/0_10000.csv.new
+378.csv: 1 parts, 1280 records
+writing 61 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/399.csv.parts/0_10000.csv.new
+399.csv: 1 parts, 61 records
+Predicate 400 = http://purl.obolibrary.org/obo/RO_0008505
+writing 923 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/412.csv.parts/0_10000.csv.new
+412.csv: 1 parts, 923 records
+writing 443 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/413.csv.parts/0_10000.csv.new
+413.csv: 1 parts, 443 records
+writing 282 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/419.csv.parts/0_10000.csv.new
+419.csv: 1 parts, 282 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/420.csv.parts/0_10000.csv.new
+420.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/422.csv.parts/0_10000.csv.new
+422.csv: 1 parts, 1 records
+writing 93 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/423.csv.parts/0_10000.csv.new
+423.csv: 1 parts, 93 records
+writing 4 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/424.csv.parts/0_10000.csv.new
+424.csv: 1 parts, 4 records
+Predicate 425 = http://purl.obolibrary.org/obo/RO_0002445
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/425.csv.parts/0_10000.csv.new
+writing 5578 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/425.csv.parts/10000_10000.csv.new
+tail: cannot open ‘+2’ for reading: No such file or directory
+425.csv: 2 parts, 15578 records
+writing 43 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/426.csv.parts/0_10000.csv.new
+426.csv: 1 parts, 43 records
+writing 1337 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/427.csv.parts/0_10000.csv.new
+427.csv: 1 parts, 1337 records
+writing 656 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/434.csv.parts/0_10000.csv.new
+434.csv: 1 parts, 656 records
+writing 1270 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/435.csv.parts/0_10000.csv.new
+435.csv: 1 parts, 1270 records
+writing 875 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/436.csv.parts/0_10000.csv.new
+436.csv: 1 parts, 875 records
+writing 920 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/437.csv.parts/0_10000.csv.new
+437.csv: 1 parts, 920 records
+writing 635 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/438.csv.parts/0_10000.csv.new
+438.csv: 1 parts, 635 records
+writing 336 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/445.csv.parts/0_10000.csv.new
+445.csv: 1 parts, 336 records
+Predicate 450 = http://top-thesaurus.org/annotationInfo?viz=1&&trait=Leaf_mass_per_area 
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/460.csv.parts/0_10000.csv.new
+writing 595 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/460.csv.parts/10000_10000.csv.new
+tail: cannot open ‘+2’ for reading: No such file or directory
+460.csv: 2 parts, 10595 records
+writing 8725 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/465.csv.parts/0_10000.csv.new
+465.csv: 1 parts, 8725 records
+Predicate 475 = http://eol.org/schema/terms/waveExposure
+writing 32 csv records to /u/scripts/.plotter_workspace/dump-7662/traits.csv.predicates/492.csv.parts/0_10000.csv.new
+492.csv: 1 parts, 32 records
+Predicate 500 = http://purl.allotrope.org/ontologies/property#AFX_0000939
+** scary URI: ''
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+127 metadata predicate URIs
+0 http://eol.org/schema/terms/SampleSize
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/1.csv.parts/0_10000.csv.new
+writing 2100 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/1.csv.parts/10000_10000.csv.new
+tail: cannot open ‘+2’ for reading: No such file or directory
+1.csv: 2 parts, 12100 records
+writing 365 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/8.csv.parts/0_10000.csv.new
+8.csv: 1 parts, 365 records
+writing 1530 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/16.csv.parts/0_10000.csv.new
+16.csv: 1 parts, 1530 records
+25 http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Sample_Size
+writing 4016 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/34.csv.parts/0_10000.csv.new
+34.csv: 1 parts, 4016 records
+writing 4016 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/35.csv.parts/0_10000.csv.new
+35.csv: 1 parts, 4016 records
+50 http://eol.org/schema/terms/DurationOfIllness
+75 http://purl.obolibrary.org/obo/PATO_0000146
+writing 294 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/86.csv.parts/0_10000.csv.new
+86.csv: 1 parts, 294 records
+writing 248 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/87.csv.parts/0_10000.csv.new
+87.csv: 1 parts, 248 records
+writing 248 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/88.csv.parts/0_10000.csv.new
+88.csv: 1 parts, 248 records
+writing 248 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/89.csv.parts/0_10000.csv.new
+89.csv: 1 parts, 248 records
+writing 248 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/90.csv.parts/0_10000.csv.new
+90.csv: 1 parts, 248 records
+writing 248 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/92.csv.parts/0_10000.csv.new
+92.csv: 1 parts, 248 records
+writing 61 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/95.csv.parts/0_10000.csv.new
+95.csv: 1 parts, 61 records
+100 http://purl.obolibrary.org/obo/zeco.owl/ZECO_0000151
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/102.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/102.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/102.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/102.csv.parts/30000_10000.csv.new
+writing 1739 csv records to /u/scripts/.plotter_workspace/dump-7662/metadata.csv.predicates/102.csv.parts/40000_10000.csv.new
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+102.csv: 5 parts, 41739 records
+125 https://eol.org/schema/terms/2016_quantity
+** scary URI: ''
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+tail: cannot open ‘+2’ for reading: No such file or directory
+storing inferred.csv into zip file
+storing terms.csv into zip file
+storing pages.csv into zip file
+storing traits.csv into zip file
+storing metadata.csv into zip file
+/u/scripts/.plotter_workspace/traits_7662_202006.zip
+Finished: SUCCESS

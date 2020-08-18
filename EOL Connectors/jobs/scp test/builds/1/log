@@ -1,0 +1,28 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/EOL Connectors/scp test
+[scp test] $ /bin/sh -xe /tmp/jenkins7082709836626350665.sh
++ cd /home/eagbayani/
++ sshpass -f .pwd_file scp eli.txt eagbayani@eol-archive:/extra/other_files/SDR/eli.txt
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
+Finished: SUCCESS

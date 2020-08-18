@@ -1,0 +1,14 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Dumping Traitbank/z_git_fetch
+[z_git_fetch] $ /bin/sh -xe /tmp/jenkins2353187079902009961.sh
++ cd /u/scripts/plotter/
++ git remote -v
+origin	https://github.com/eliagbayani/plotter.git (fetch)
+origin	https://github.com/eliagbayani/plotter.git (push)
+upstream	https://github.com/jar398/plotter.git (fetch)
+upstream	https://github.com/jar398/plotter.git (push)
++ git fetch upstream
++ git merge upstream/master
+Already up-to-date.
+Finished: SUCCESS

@@ -1,0 +1,19 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Dumping Traitbank/Smoke test (Carnivora)
+[Smoke test (Carnivora)] $ /bin/sh -xe /tmp/jenkins7537545421893782704.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod ID=7662
+reusing previously created /u/scripts/.plotter_workspace/dump-7662/inferred.csv
+reusing previously created /u/scripts/.plotter_workspace/dump-7662/traits.csv
+reusing previously created /u/scripts/.plotter_workspace/dump-7662/metadata.csv
+storing inferred.csv into zip file
+storing terms.csv into zip file
+storing pages.csv into zip file
+storing traits.csv into zip file
+storing metadata.csv into zip file
+/u/scripts/.plotter_workspace/traits_7662_202007.zip
+# Graphdb proxy URL is https://eol.org/
+Finished: SUCCESS

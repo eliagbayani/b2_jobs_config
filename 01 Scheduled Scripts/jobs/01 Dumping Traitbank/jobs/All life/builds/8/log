@@ -1,0 +1,79 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Dumping Traitbank/All life
+[All life] $ /bin/sh -xe /tmp/jenkins3236247375870124434.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ local command
++ command=global
++ '[' 2 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv global 2.6.4
++ rbenv global 2.6.4
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod
+reusing previously created /u/scripts/.plotter_workspace/dump-all/inferred.csv
+500 trait predicate URIs
+Predicate 0 = http://eol.org/schema/terms/ExtinctionStatus
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3680000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3690000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3700000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3710000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3720000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3730000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3740000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3750000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3760000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3770000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3780000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3790000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3800000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3810000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3820000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3830000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3840000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3850000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3860000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3870000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3880000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3890000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3900000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3910000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3920000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3930000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3940000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3950000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3960000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv.parts/3970000_10000.csv.new
+** Failed to generate /u/scripts/.plotter_workspace/dump-all/traits.csv.predicates/20.csv
+** Exception: Net::ReadTimeout
+Predicate 25 = http://purl.bioontology.org/ontology/CSP/2383-1863
+Predicate 50 = http://eol.org/schema/terms/TypeSpecimenRepository
+Predicate 75 = http://purl.bioontology.org/ontology/SNOMEDCT/75367002
+Predicate 100 = http://purl.obolibrary.org/obo/OBA_1000084
+Predicate 125 = http://eol.org/schema/terms/DevelopmentalMode
+Predicate 150 = http://polytraits.lifewatchgreece.eu/terms/FAC
+Predicate 175 = http://rs.tdwg.org/ontology/voc/SPMInfoItems#Distribution
+Predicate 200 = http://sweet.jpl.nasa.gov/2.3/humanAgriculture.owl#Horticulture
+Predicate 225 = http://eol.org/schema/terms/max_cell_storage_ammonium
+Predicate 250 = http://purl.obolibrary.org/obo/GO_0009399
+Predicate 275 = http://polytraits.lifewatchgreece.eu/terms/PHF
+Predicate 300 = http://eol.org/schema/terms/RespClip
+Predicate 325 = http://eol.org/schema/terms/SoilPH
+Predicate 350 = http://eol.org/schema/terms/TotalSpecies
+Predicate 375 = http://purl.obolibrary.org/obo/RO_0002470
+Predicate 400 = http://purl.obolibrary.org/obo/RO_0002623
+Predicate 425 = http://purl.obolibrary.org/obo/RO_0002471
+Predicate 450 = http://top-thesaurus.org/annotationInfo?viz=1&&trait=Leaf_nitrogen_content_per_leaf_dry_mass
+Predicate 475 = http://purl.obolibrary.org/obo/TO_0000602
+Predicate 500 = 
+** scary URI: ''
+** Deferred due to exception(s): traits.csv
+reusing previously created /u/scripts/.plotter_workspace/dump-all/metadata.csv
+# Graphdb proxy URL is https://eol.org/
+
+real	25m29.815s
+user	0m4.893s
+sys	0m0.559s
+Finished: SUCCESS

@@ -1,0 +1,402 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Generate PRM and REP records/Step 1 - Generate data files
+[Step 1 - Generate data files] $ /bin/sh -xe /tmp/jenkins924688823609617882.sh
++ cd /u/scripts/eol_php_code/update_resources/connectors/
++ php SDR_all.php _ '{"task":"build_MySQL_table_from_text"}'
+
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_07892/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_07892/
+    [tables] => Array
+        (
+            [taxa] => taxon.tab
+        )
+
+)
+
+
+
+Table truncated [DH_lookup] OK.
+
+200,000
+400,000
+600,000
+Saving...500,000
+Saving [DH_lookup] records to MySQL...
+
+Saved table [DH_lookup] to MySQL
+
+800,000
+1,000,000
+1,200,000
+Saving...1,000,000
+Saving [DH_lookup] records to MySQL...
+
+Saved table [DH_lookup] to MySQL
+
+1,400,000
+1,600,000
+1,800,000
+Saving...1,500,000
+Saving [DH_lookup] records to MySQL...
+
+Saved table [DH_lookup] to MySQL
+
+2,000,000
+2,200,000
+2,400,000
+2,600,000
+2,800,000
+3,000,000
+3,200,000
+3,400,000
+3,600,000
+3,800,000
+4,000,000
+Saving [DH_lookup] records to MySQL...
+
+Saved table [DH_lookup] to MySQL
+
+Total rows [DH_lookup]: 1847511
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_07892/
+
+
+ elapsed time = 59.06878 seconds
+ elapsed time = 0.98447966666667 minutes
+ elapsed time = 0.016407994444444 hours
+ Done processing.
+
+--[build_MySQL_table_from_text] end--
++ php SDR_all.php _ '{"task":"update_inferred_file"}'
+
+
+
+
+Table truncated [traits_inferred] OK.
+
+Saving [traits_inferred] records to MySQL...
+
+Saved table [traits_inferred] to MySQL
+
+Total rows [traits_inferred]: 3963652
+
+
+
+ elapsed time = 33.637526 seconds
+ elapsed time = 0.56062543333333 minutes
+ elapsed time = 0.0093437572222222 hours
+ Done processing.
+
+--[update_inferred_file] end--
++ php SDR_all.php _ '{"task":"generate_refs_per_eol_pk_MySQL"}'
+
+
+
+
+Table truncated [metadata_refs] OK.
+
+1,000,000
+2,000,000
+3,000,000
+4,000,000
+5,000,000
+6,000,000
+7,000,000
+8,000,000
+9,000,000
+Saving...500,000
+Saving [metadata_refs] records to MySQL...
+
+Saved table [metadata_refs] to MySQL
+
+10,000,000
+11,000,000
+12,000,000
+Saving...1,000,000
+Saving [metadata_refs] records to MySQL...
+
+Saved table [metadata_refs] to MySQL
+
+13,000,000
+Saving [metadata_refs] records to MySQL...
+
+Saved table [metadata_refs] to MySQL
+
+
+Metadata_refs to MySQL DONE.
+
+
+Total rows [metadata_refs]: 1207039
+
+
+
+ elapsed time = 158.801963 seconds
+ elapsed time = 2.6466993833333 minutes
+ elapsed time = 0.044111656388889 hours
+ Done processing.
+
+--[generate_refs_per_eol_pk_MySQL] end--
++ php SDR_all.php _ '{"task":"build_MySQL_table_from_csv"}'
+
+
+
+
+Table truncated [metadata_LSM] OK.
+
+1,000,000
+2,000,000
+Saving...500,000
+Saving [metadata_LSM] records to MySQL...
+
+Saved table [metadata_LSM] to MySQL
+
+3,000,000
+4,000,000
+Saving...1,000,000
+Saving [metadata_LSM] records to MySQL...
+
+Saved table [metadata_LSM] to MySQL
+
+5,000,000
+6,000,000
+Saving...1,500,000
+Saving [metadata_LSM] records to MySQL...
+
+Saved table [metadata_LSM] to MySQL
+
+7,000,000
+8,000,000
+Saving...2,000,000
+Saving [metadata_LSM] records to MySQL...
+
+Saved table [metadata_LSM] to MySQL
+
+9,000,000
+10,000,000
+11,000,000
+12,000,000
+13,000,000
+Saving [metadata_LSM] records to MySQL...
+
+Saved table [metadata_LSM] to MySQL
+
+
+metadata_LSM to MySQL DONE.
+
+
+Total rows [metadata_LSM]: 2164194
+
+
+
+ elapsed time = 175.666584 seconds
+ elapsed time = 2.9277764 minutes
+ elapsed time = 0.048796273333333 hours
+ Done processing.
+
+--[build_MySQL_table_from_csv] end--
++ php SDR_all.php _ '{"task":"generate_page_id_txt_files_MySQL"}'
+
+
+
+
+Table truncated [traits_BV] OK.
+
+Predicates [BV]: 3
+
+1,000,000
+Saving...1,000,000
+Saving [traits_BV] records to MySQL...
+
+Saved table [traits_BV] to MySQL
+
+2,000,000
+Saving...2,000,000
+Saving [traits_BV] records to MySQL...
+
+Saved table [traits_BV] to MySQL
+
+3,000,000
+Saving...3,000,000
+Saving [traits_BV] records to MySQL...
+
+Saved table [traits_BV] to MySQL
+
+4,000,000
+Saving...4,000,000
+Saving [traits_BV] records to MySQL...
+
+Saved table [traits_BV] to MySQL
+
+5,000,000
+6,000,000
+7,000,000
+8,000,000
+9,000,000
+10,000,000
+11,000,000
+12,000,000
+13,000,000
+14,000,000
+15,000,000
+Saving [traits_BV] records to MySQL...
+
+Saved table [traits_BV] to MySQL
+
+
+Traits to MySQL DONE [traits_BV]
+Total rows [traits_BV]: 4458375
+--------------------
+
+Table truncated [traits_TS] OK.
+
+Predicates [TS]: 48
+
+1,000,000
+2,000,000
+3,000,000
+4,000,000
+5,000,000
+6,000,000
+7,000,000
+8,000,000
+9,000,000
+Saving...1,000,000
+Saving [traits_TS] records to MySQL...
+
+Saved table [traits_TS] to MySQL
+
+10,000,000
+11,000,000
+Saving...2,000,000
+Saving [traits_TS] records to MySQL...
+
+Saved table [traits_TS] to MySQL
+
+12,000,000
+13,000,000
+14,000,000
+15,000,000
+Saving [traits_TS] records to MySQL...
+
+Saved table [traits_TS] to MySQL
+
+
+Traits to MySQL DONE [traits_TS]
+Total rows [traits_TS]: 2638694
+--------------------
+
+Table truncated [traits_TSp] OK.
+
+Predicates [TSp]: 12
+
+1,000,000
+2,000,000
+3,000,000
+4,000,000
+5,000,000
+6,000,000
+7,000,000
+8,000,000
+9,000,000
+Saving...1,000,000
+Saving [traits_TSp] records to MySQL...
+
+Saved table [traits_TSp] to MySQL
+
+10,000,000
+11,000,000
+Saving...2,000,000
+Saving [traits_TSp] records to MySQL...
+
+Saved table [traits_TSp] to MySQL
+
+12,000,000
+13,000,000
+14,000,000
+15,000,000
+Saving [traits_TSp] records to MySQL...
+
+Saved table [traits_TSp] to MySQL
+
+
+Traits to MySQL DONE [traits_TSp]
+Total rows [traits_TSp]: 2553898
+--------------------
+
+Table truncated [traits_LSM] OK.
+
+Predicates [LSM]: 90
+
+1,000,000
+2,000,000
+3,000,000
+4,000,000
+5,000,000
+6,000,000
+7,000,000
+8,000,000
+9,000,000
+10,000,000
+11,000,000
+12,000,000
+13,000,000
+14,000,000
+15,000,000
+Saving [traits_LSM] records to MySQL...
+
+Saved table [traits_LSM] to MySQL
+
+
+Traits to MySQL DONE [traits_LSM]
+Total rows [traits_LSM]: 341280
+--------------------
+
+
+
+ elapsed time = 2089.374553 seconds
+ elapsed time = 34.822909216667 minutes
+ elapsed time = 0.58038182027778 hours
+ Done processing.
+
+--[generate_page_id_txt_files_MySQL] end--
++ php SDR_all.php _ '{"task":"pre_parent_basal_values"}'
+
+
+
+
+Table truncated [page_ids_Present] OK.
+
+Saving [page_ids_Present] records to MySQL...
+
+Saved table [page_ids_Present] to MySQL
+
+Total rows [page_ids_Present]: 1164068
+
+Table truncated [page_ids_Habitat] OK.
+
+Saving [page_ids_Habitat] records to MySQL...
+
+Saved table [page_ids_Habitat] to MySQL
+
+Total rows [page_ids_Habitat]: 1
+
+Table truncated [page_ids_FLOPO_0900032] OK.
+
+Saving [page_ids_FLOPO_0900032] records to MySQL...
+
+Saved table [page_ids_FLOPO_0900032] to MySQL
+
+Total rows [page_ids_FLOPO_0900032]: 171178
+
+
+
+ elapsed time = 23.445 seconds
+ elapsed time = 0.39075 minutes
+ elapsed time = 0.0065125 hours
+ Done processing.
+
+--[pre_parent_basal_values] end--
+Finished: SUCCESS

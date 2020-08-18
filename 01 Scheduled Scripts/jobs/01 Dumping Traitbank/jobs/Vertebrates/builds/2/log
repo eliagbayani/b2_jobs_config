@@ -1,0 +1,1183 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Dumping Traitbank/Vertebrates
+[Vertebrates] $ /bin/sh -xe /tmp/jenkins636457837449969297.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ local command
++ command=global
++ '[' 2 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv global 2.6.4
++ rbenv global 2.6.4
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod ID=2774383
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/170000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/180000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/190000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/200000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/210000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/220000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/230000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/240000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/250000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/260000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/270000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/280000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/290000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/300000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/310000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/320000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/330000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/340000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/350000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/360000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/370000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/380000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/390000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/400000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/410000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/420000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/430000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/440000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/450000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/460000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/470000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/480000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/490000_10000.csv.new
+writing 9521 csv records to /u/scripts/.plotter_workspace/dump-2774383/inferred.csv.parts/500000_10000.csv.new
+# Graphdb proxy URL is https://eol.org/
+inferred.csv: 51 parts, 509521 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/terms.csv.parts/0_10000.csv.new
+writing 3735 csv records to /u/scripts/.plotter_workspace/dump-2774383/terms.csv.parts/10000_10000.csv.new
+terms.csv: 2 parts, 13735 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/150000_10000.csv.new
+writing 4845 csv records to /u/scripts/.plotter_workspace/dump-2774383/pages.csv.parts/160000_10000.csv.new
+pages.csv: 17 parts, 164845 records
+500 trait predicate URIs
+Predicate 0 = http://eol.org/schema/terms/ExtinctionStatus
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/0.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/0.csv.parts/10000_10000.csv.new
+writing 7601 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/0.csv.parts/20000_10000.csv.new
+0.csv: 3 parts, 27601 records
+writing 81 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/1.csv.parts/0_10000.csv.new
+1.csv: 1 parts, 81 records
+writing 106 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/2.csv.parts/0_10000.csv.new
+2.csv: 1 parts, 106 records
+writing 1782 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/3.csv.parts/0_10000.csv.new
+3.csv: 1 parts, 1782 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/4.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/4.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/4.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/4.csv.parts/30000_10000.csv.new
+writing 2493 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/4.csv.parts/40000_10000.csv.new
+4.csv: 5 parts, 42493 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/5.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/5.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/5.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/5.csv.parts/30000_10000.csv.new
+writing 9076 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/5.csv.parts/40000_10000.csv.new
+5.csv: 5 parts, 49076 records
+writing 4302 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/6.csv.parts/0_10000.csv.new
+6.csv: 1 parts, 4302 records
+writing 475 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/7.csv.parts/0_10000.csv.new
+7.csv: 1 parts, 475 records
+writing 2158 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/8.csv.parts/0_10000.csv.new
+8.csv: 1 parts, 2158 records
+writing 144 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/9.csv.parts/0_10000.csv.new
+9.csv: 1 parts, 144 records
+writing 4665 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/10.csv.parts/0_10000.csv.new
+10.csv: 1 parts, 4665 records
+writing 2722 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/11.csv.parts/0_10000.csv.new
+11.csv: 1 parts, 2722 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/12.csv.parts/0_10000.csv.new
+writing 3995 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/12.csv.parts/10000_10000.csv.new
+12.csv: 2 parts, 13995 records
+writing 4622 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/13.csv.parts/0_10000.csv.new
+13.csv: 1 parts, 4622 records
+writing 1511 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/14.csv.parts/0_10000.csv.new
+14.csv: 1 parts, 1511 records
+writing 3641 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/15.csv.parts/0_10000.csv.new
+15.csv: 1 parts, 3641 records
+writing 2372 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/16.csv.parts/0_10000.csv.new
+16.csv: 1 parts, 2372 records
+writing 4302 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/17.csv.parts/0_10000.csv.new
+17.csv: 1 parts, 4302 records
+writing 4530 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/18.csv.parts/0_10000.csv.new
+18.csv: 1 parts, 4530 records
+writing 2142 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/19.csv.parts/0_10000.csv.new
+19.csv: 1 parts, 2142 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/170000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/180000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/190000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/200000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/210000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/220000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/230000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/240000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/250000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/260000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/270000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/280000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/290000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/300000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/310000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/320000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/330000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/340000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/350000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/360000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/370000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/380000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/390000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/400000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/410000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/420000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/430000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/440000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/450000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/460000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/470000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/480000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/490000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/500000_10000.csv.new
+writing 939 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/20.csv.parts/510000_10000.csv.new
+20.csv: 52 parts, 510939 records
+writing 2689 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/21.csv.parts/0_10000.csv.new
+21.csv: 1 parts, 2689 records
+writing 4530 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/22.csv.parts/0_10000.csv.new
+22.csv: 1 parts, 4530 records
+writing 2715 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/23.csv.parts/0_10000.csv.new
+23.csv: 1 parts, 2715 records
+writing 734 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/24.csv.parts/0_10000.csv.new
+24.csv: 1 parts, 734 records
+Predicate 25 = http://purl.bioontology.org/ontology/CSP/2383-1863
+writing 955 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/25.csv.parts/0_10000.csv.new
+25.csv: 1 parts, 955 records
+writing 1174 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/26.csv.parts/0_10000.csv.new
+26.csv: 1 parts, 1174 records
+writing 1923 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/27.csv.parts/0_10000.csv.new
+27.csv: 1 parts, 1923 records
+writing 4400 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/28.csv.parts/0_10000.csv.new
+28.csv: 1 parts, 4400 records
+writing 3877 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/29.csv.parts/0_10000.csv.new
+29.csv: 1 parts, 3877 records
+writing 1657 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/30.csv.parts/0_10000.csv.new
+30.csv: 1 parts, 1657 records
+writing 4619 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/31.csv.parts/0_10000.csv.new
+31.csv: 1 parts, 4619 records
+writing 6896 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/32.csv.parts/0_10000.csv.new
+32.csv: 1 parts, 6896 records
+writing 2270 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/33.csv.parts/0_10000.csv.new
+33.csv: 1 parts, 2270 records
+writing 4674 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/34.csv.parts/0_10000.csv.new
+34.csv: 1 parts, 4674 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/35.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/35.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/35.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/35.csv.parts/30000_10000.csv.new
+writing 5452 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/35.csv.parts/40000_10000.csv.new
+35.csv: 5 parts, 45452 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/36.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/36.csv.parts/10000_10000.csv.new
+writing 1879 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/36.csv.parts/20000_10000.csv.new
+36.csv: 3 parts, 21879 records
+writing 543 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/38.csv.parts/0_10000.csv.new
+38.csv: 1 parts, 543 records
+writing 641 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/39.csv.parts/0_10000.csv.new
+39.csv: 1 parts, 641 records
+writing 705 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/41.csv.parts/0_10000.csv.new
+41.csv: 1 parts, 705 records
+writing 669 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/42.csv.parts/0_10000.csv.new
+42.csv: 1 parts, 669 records
+writing 1306 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/43.csv.parts/0_10000.csv.new
+43.csv: 1 parts, 1306 records
+writing 2178 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/44.csv.parts/0_10000.csv.new
+44.csv: 1 parts, 2178 records
+writing 2428 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/45.csv.parts/0_10000.csv.new
+45.csv: 1 parts, 2428 records
+writing 119 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/46.csv.parts/0_10000.csv.new
+46.csv: 1 parts, 119 records
+writing 2183 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/47.csv.parts/0_10000.csv.new
+47.csv: 1 parts, 2183 records
+writing 939 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/48.csv.parts/0_10000.csv.new
+48.csv: 1 parts, 939 records
+writing 1283 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/49.csv.parts/0_10000.csv.new
+49.csv: 1 parts, 1283 records
+Predicate 50 = http://eol.org/schema/terms/TypeSpecimenRepository
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/50.csv.parts/0_10000.csv.new
+writing 2947 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/50.csv.parts/10000_10000.csv.new
+50.csv: 2 parts, 12947 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/51.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/51.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/51.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/51.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/51.csv.parts/40000_10000.csv.new
+writing 4031 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/51.csv.parts/50000_10000.csv.new
+51.csv: 6 parts, 54031 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/52.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/52.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/52.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/52.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/52.csv.parts/40000_10000.csv.new
+writing 4031 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/52.csv.parts/50000_10000.csv.new
+52.csv: 6 parts, 54031 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/53.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/53.csv.parts/10000_10000.csv.new
+writing 5201 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/53.csv.parts/20000_10000.csv.new
+53.csv: 3 parts, 25201 records
+writing 149 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/55.csv.parts/0_10000.csv.new
+55.csv: 1 parts, 149 records
+writing 4 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/56.csv.parts/0_10000.csv.new
+56.csv: 1 parts, 4 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/57.csv.parts/0_10000.csv.new
+57.csv: 1 parts, 1 records
+writing 22 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/58.csv.parts/0_10000.csv.new
+58.csv: 1 parts, 22 records
+writing 493 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/60.csv.parts/0_10000.csv.new
+60.csv: 1 parts, 493 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/61.csv.parts/0_10000.csv.new
+61.csv: 1 parts, 1 records
+writing 2375 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/62.csv.parts/0_10000.csv.new
+62.csv: 1 parts, 2375 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/63.csv.parts/0_10000.csv.new
+63.csv: 1 parts, 1 records
+writing 176 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/73.csv.parts/0_10000.csv.new
+73.csv: 1 parts, 176 records
+writing 175 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/74.csv.parts/0_10000.csv.new
+74.csv: 1 parts, 175 records
+Predicate 75 = http://purl.bioontology.org/ontology/SNOMEDCT/75367002
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/75.csv.parts/0_10000.csv.new
+75.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/77.csv.parts/0_10000.csv.new
+77.csv: 1 parts, 1 records
+writing 3809 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/78.csv.parts/0_10000.csv.new
+78.csv: 1 parts, 3809 records
+writing 200 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/79.csv.parts/0_10000.csv.new
+79.csv: 1 parts, 200 records
+writing 287 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/80.csv.parts/0_10000.csv.new
+80.csv: 1 parts, 287 records
+writing 15 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/81.csv.parts/0_10000.csv.new
+81.csv: 1 parts, 15 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/82.csv.parts/0_10000.csv.new
+82.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/84.csv.parts/0_10000.csv.new
+84.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/86.csv.parts/0_10000.csv.new
+86.csv: 1 parts, 1 records
+writing 572 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/87.csv.parts/0_10000.csv.new
+87.csv: 1 parts, 572 records
+Predicate 100 = http://purl.obolibrary.org/obo/OBA_1000084
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/115.csv.parts/0_10000.csv.new
+115.csv: 1 parts, 9 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/117.csv.parts/0_10000.csv.new
+117.csv: 1 parts, 1 records
+writing 57 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/118.csv.parts/0_10000.csv.new
+118.csv: 1 parts, 57 records
+writing 6 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/123.csv.parts/0_10000.csv.new
+123.csv: 1 parts, 6 records
+Predicate 125 = http://eol.org/schema/terms/DevelopmentalMode
+writing 1071 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/125.csv.parts/0_10000.csv.new
+125.csv: 1 parts, 1071 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/131.csv.parts/0_10000.csv.new
+131.csv: 1 parts, 1 records
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/133.csv.parts/0_10000.csv.new
+133.csv: 1 parts, 9 records
+writing 13 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/134.csv.parts/0_10000.csv.new
+134.csv: 1 parts, 13 records
+writing 173 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/136.csv.parts/0_10000.csv.new
+136.csv: 1 parts, 173 records
+writing 11 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/137.csv.parts/0_10000.csv.new
+137.csv: 1 parts, 11 records
+writing 240 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/138.csv.parts/0_10000.csv.new
+138.csv: 1 parts, 240 records
+writing 35 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/139.csv.parts/0_10000.csv.new
+139.csv: 1 parts, 35 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/140.csv.parts/0_10000.csv.new
+140.csv: 1 parts, 1 records
+writing 5241 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/142.csv.parts/0_10000.csv.new
+142.csv: 1 parts, 5241 records
+Predicate 150 = http://polytraits.lifewatchgreece.eu/terms/FAC
+writing 60 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/153.csv.parts/0_10000.csv.new
+153.csv: 1 parts, 60 records
+writing 416 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/154.csv.parts/0_10000.csv.new
+154.csv: 1 parts, 416 records
+writing 185 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/155.csv.parts/0_10000.csv.new
+155.csv: 1 parts, 185 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/157.csv.parts/0_10000.csv.new
+157.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/158.csv.parts/0_10000.csv.new
+158.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/159.csv.parts/0_10000.csv.new
+159.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/160.csv.parts/0_10000.csv.new
+160.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/161.csv.parts/0_10000.csv.new
+161.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/162.csv.parts/0_10000.csv.new
+162.csv: 1 parts, 1 records
+writing 835 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/163.csv.parts/0_10000.csv.new
+163.csv: 1 parts, 835 records
+writing 835 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/164.csv.parts/0_10000.csv.new
+164.csv: 1 parts, 835 records
+writing 902 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/165.csv.parts/0_10000.csv.new
+165.csv: 1 parts, 902 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/166.csv.parts/0_10000.csv.new
+166.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/167.csv.parts/0_10000.csv.new
+167.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/169.csv.parts/0_10000.csv.new
+169.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/170.csv.parts/0_10000.csv.new
+170.csv: 1 parts, 1 records
+writing 707 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/174.csv.parts/0_10000.csv.new
+174.csv: 1 parts, 707 records
+Predicate 175 = http://rs.tdwg.org/ontology/voc/SPMInfoItems#Distribution
+writing 47 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/175.csv.parts/0_10000.csv.new
+175.csv: 1 parts, 47 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/176.csv.parts/0_10000.csv.new
+176.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/177.csv.parts/0_10000.csv.new
+177.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/178.csv.parts/0_10000.csv.new
+178.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/179.csv.parts/0_10000.csv.new
+179.csv: 1 parts, 1 records
+writing 2 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/180.csv.parts/0_10000.csv.new
+180.csv: 1 parts, 2 records
+writing 328 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/189.csv.parts/0_10000.csv.new
+189.csv: 1 parts, 328 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/190.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/190.csv.parts/10000_10000.csv.new
+writing 1825 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/190.csv.parts/20000_10000.csv.new
+190.csv: 3 parts, 21825 records
+writing 6 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/191.csv.parts/0_10000.csv.new
+191.csv: 1 parts, 6 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/192.csv.parts/0_10000.csv.new
+192.csv: 1 parts, 1 records
+writing 107 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/193.csv.parts/0_10000.csv.new
+193.csv: 1 parts, 107 records
+writing 1400 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/194.csv.parts/0_10000.csv.new
+194.csv: 1 parts, 1400 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/195.csv.parts/0_10000.csv.new
+195.csv: 1 parts, 1 records
+writing 7 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/196.csv.parts/0_10000.csv.new
+196.csv: 1 parts, 7 records
+writing 3613 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/197.csv.parts/0_10000.csv.new
+197.csv: 1 parts, 3613 records
+writing 1331 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/198.csv.parts/0_10000.csv.new
+198.csv: 1 parts, 1331 records
+Predicate 200 = http://sweet.jpl.nasa.gov/2.3/humanAgriculture.owl#Horticulture
+writing 4 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/200.csv.parts/0_10000.csv.new
+200.csv: 1 parts, 4 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/201.csv.parts/0_10000.csv.new
+201.csv: 1 parts, 1 records
+writing 41 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/204.csv.parts/0_10000.csv.new
+204.csv: 1 parts, 41 records
+writing 8566 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/205.csv.parts/0_10000.csv.new
+205.csv: 1 parts, 8566 records
+writing 229 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/206.csv.parts/0_10000.csv.new
+206.csv: 1 parts, 229 records
+writing 118 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/207.csv.parts/0_10000.csv.new
+207.csv: 1 parts, 118 records
+writing 95 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/209.csv.parts/0_10000.csv.new
+209.csv: 1 parts, 95 records
+writing 4 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/210.csv.parts/0_10000.csv.new
+210.csv: 1 parts, 4 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/214.csv.parts/0_10000.csv.new
+214.csv: 1 parts, 1 records
+writing 20 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/216.csv.parts/0_10000.csv.new
+216.csv: 1 parts, 20 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/217.csv.parts/0_10000.csv.new
+217.csv: 1 parts, 1 records
+writing 828 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/219.csv.parts/0_10000.csv.new
+219.csv: 1 parts, 828 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/220.csv.parts/0_10000.csv.new
+220.csv: 1 parts, 1 records
+writing 43 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/221.csv.parts/0_10000.csv.new
+221.csv: 1 parts, 43 records
+writing 60 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/222.csv.parts/0_10000.csv.new
+222.csv: 1 parts, 60 records
+writing 60 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/223.csv.parts/0_10000.csv.new
+223.csv: 1 parts, 60 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/224.csv.parts/0_10000.csv.new
+224.csv: 1 parts, 1 records
+Predicate 225 = http://eol.org/schema/terms/max_cell_storage_ammonium
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/237.csv.parts/0_10000.csv.new
+237.csv: 1 parts, 1 records
+writing 10 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/238.csv.parts/0_10000.csv.new
+238.csv: 1 parts, 10 records
+writing 68 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/239.csv.parts/0_10000.csv.new
+239.csv: 1 parts, 68 records
+writing 3491 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/240.csv.parts/0_10000.csv.new
+240.csv: 1 parts, 3491 records
+writing 8 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/241.csv.parts/0_10000.csv.new
+241.csv: 1 parts, 8 records
+writing 2127 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/245.csv.parts/0_10000.csv.new
+245.csv: 1 parts, 2127 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/246.csv.parts/0_10000.csv.new
+246.csv: 1 parts, 1 records
+writing 31 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/247.csv.parts/0_10000.csv.new
+247.csv: 1 parts, 31 records
+writing 1309 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/248.csv.parts/0_10000.csv.new
+248.csv: 1 parts, 1309 records
+writing 898 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/249.csv.parts/0_10000.csv.new
+249.csv: 1 parts, 898 records
+Predicate 250 = http://purl.obolibrary.org/obo/GO_0009399
+writing 45 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/251.csv.parts/0_10000.csv.new
+251.csv: 1 parts, 45 records
+writing 1087 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/256.csv.parts/0_10000.csv.new
+256.csv: 1 parts, 1087 records
+writing 4 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/257.csv.parts/0_10000.csv.new
+257.csv: 1 parts, 4 records
+writing 8190 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/258.csv.parts/0_10000.csv.new
+258.csv: 1 parts, 8190 records
+writing 1102 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/259.csv.parts/0_10000.csv.new
+259.csv: 1 parts, 1102 records
+writing 1087 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/260.csv.parts/0_10000.csv.new
+260.csv: 1 parts, 1087 records
+writing 1091 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/261.csv.parts/0_10000.csv.new
+261.csv: 1 parts, 1091 records
+writing 1087 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/262.csv.parts/0_10000.csv.new
+262.csv: 1 parts, 1087 records
+writing 1087 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/263.csv.parts/0_10000.csv.new
+263.csv: 1 parts, 1087 records
+writing 42 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/264.csv.parts/0_10000.csv.new
+264.csv: 1 parts, 42 records
+writing 3176 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/266.csv.parts/0_10000.csv.new
+266.csv: 1 parts, 3176 records
+writing 3744 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/267.csv.parts/0_10000.csv.new
+267.csv: 1 parts, 3744 records
+writing 2 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/268.csv.parts/0_10000.csv.new
+268.csv: 1 parts, 2 records
+writing 35 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/269.csv.parts/0_10000.csv.new
+269.csv: 1 parts, 35 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/270.csv.parts/0_10000.csv.new
+270.csv: 1 parts, 1 records
+writing 11 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/271.csv.parts/0_10000.csv.new
+271.csv: 1 parts, 11 records
+writing 5 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/273.csv.parts/0_10000.csv.new
+273.csv: 1 parts, 5 records
+writing 4059 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/274.csv.parts/0_10000.csv.new
+274.csv: 1 parts, 4059 records
+Predicate 275 = http://polytraits.lifewatchgreece.eu/terms/PHF
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/276.csv.parts/0_10000.csv.new
+276.csv: 1 parts, 1 records
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/277.csv.parts/0_10000.csv.new
+277.csv: 1 parts, 9 records
+writing 388 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/279.csv.parts/0_10000.csv.new
+279.csv: 1 parts, 388 records
+writing 2 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/283.csv.parts/0_10000.csv.new
+283.csv: 1 parts, 2 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/284.csv.parts/0_10000.csv.new
+284.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/285.csv.parts/0_10000.csv.new
+285.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/289.csv.parts/0_10000.csv.new
+289.csv: 1 parts, 1 records
+writing 176 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/290.csv.parts/0_10000.csv.new
+290.csv: 1 parts, 176 records
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/291.csv.parts/0_10000.csv.new
+291.csv: 1 parts, 9 records
+writing 1102 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/292.csv.parts/0_10000.csv.new
+292.csv: 1 parts, 1102 records
+writing 1087 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/293.csv.parts/0_10000.csv.new
+293.csv: 1 parts, 1087 records
+writing 1091 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/294.csv.parts/0_10000.csv.new
+294.csv: 1 parts, 1091 records
+writing 7144 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/295.csv.parts/0_10000.csv.new
+295.csv: 1 parts, 7144 records
+writing 34 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/297.csv.parts/0_10000.csv.new
+297.csv: 1 parts, 34 records
+Predicate 300 = http://eol.org/schema/terms/RespClip
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/301.csv.parts/0_10000.csv.new
+301.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/305.csv.parts/0_10000.csv.new
+305.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/308.csv.parts/0_10000.csv.new
+308.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/309.csv.parts/0_10000.csv.new
+309.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/310.csv.parts/0_10000.csv.new
+310.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/311.csv.parts/0_10000.csv.new
+311.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/312.csv.parts/0_10000.csv.new
+312.csv: 1 parts, 1 records
+writing 1087 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/313.csv.parts/0_10000.csv.new
+313.csv: 1 parts, 1087 records
+writing 42 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/314.csv.parts/0_10000.csv.new
+314.csv: 1 parts, 42 records
+writing 658 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/316.csv.parts/0_10000.csv.new
+316.csv: 1 parts, 658 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/317.csv.parts/0_10000.csv.new
+317.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/318.csv.parts/0_10000.csv.new
+318.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/319.csv.parts/0_10000.csv.new
+319.csv: 1 parts, 1 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/324.csv.parts/0_10000.csv.new
+324.csv: 1 parts, 1 records
+Predicate 325 = http://eol.org/schema/terms/SoilPH
+writing 2 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/325.csv.parts/0_10000.csv.new
+325.csv: 1 parts, 2 records
+writing 3 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/326.csv.parts/0_10000.csv.new
+326.csv: 1 parts, 3 records
+writing 1087 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/328.csv.parts/0_10000.csv.new
+328.csv: 1 parts, 1087 records
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/330.csv.parts/0_10000.csv.new
+330.csv: 1 parts, 9 records
+writing 143 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/331.csv.parts/0_10000.csv.new
+331.csv: 1 parts, 143 records
+writing 110 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/341.csv.parts/0_10000.csv.new
+341.csv: 1 parts, 110 records
+writing 3792 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/342.csv.parts/0_10000.csv.new
+342.csv: 1 parts, 3792 records
+writing 22 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/343.csv.parts/0_10000.csv.new
+343.csv: 1 parts, 22 records
+writing 138 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/344.csv.parts/0_10000.csv.new
+344.csv: 1 parts, 138 records
+writing 176 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/345.csv.parts/0_10000.csv.new
+345.csv: 1 parts, 176 records
+writing 10 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/346.csv.parts/0_10000.csv.new
+346.csv: 1 parts, 10 records
+writing 34 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/347.csv.parts/0_10000.csv.new
+347.csv: 1 parts, 34 records
+Predicate 350 = http://eol.org/schema/terms/TotalSpecies
+writing 8 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/350.csv.parts/0_10000.csv.new
+350.csv: 1 parts, 8 records
+writing 10 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/351.csv.parts/0_10000.csv.new
+351.csv: 1 parts, 10 records
+writing 6 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/352.csv.parts/0_10000.csv.new
+352.csv: 1 parts, 6 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/354.csv.parts/0_10000.csv.new
+writing 3359 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/354.csv.parts/10000_10000.csv.new
+354.csv: 2 parts, 13359 records
+writing 6 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/356.csv.parts/0_10000.csv.new
+356.csv: 1 parts, 6 records
+writing 10 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/357.csv.parts/0_10000.csv.new
+357.csv: 1 parts, 10 records
+writing 6 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/358.csv.parts/0_10000.csv.new
+358.csv: 1 parts, 6 records
+writing 1743 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/359.csv.parts/0_10000.csv.new
+359.csv: 1 parts, 1743 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/360.csv.parts/0_10000.csv.new
+360.csv: 1 parts, 1 records
+writing 423 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/361.csv.parts/0_10000.csv.new
+361.csv: 1 parts, 423 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/363.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/363.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/363.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/363.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/363.csv.parts/40000_10000.csv.new
+writing 9836 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/363.csv.parts/50000_10000.csv.new
+363.csv: 6 parts, 59836 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/364.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/364.csv.parts/10000_10000.csv.new
+writing 2628 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/364.csv.parts/20000_10000.csv.new
+364.csv: 3 parts, 22628 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/365.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/365.csv.parts/10000_10000.csv.new
+writing 2628 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/365.csv.parts/20000_10000.csv.new
+365.csv: 3 parts, 22628 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/366.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/366.csv.parts/10000_10000.csv.new
+writing 2628 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/366.csv.parts/20000_10000.csv.new
+366.csv: 3 parts, 22628 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/367.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/367.csv.parts/10000_10000.csv.new
+writing 2628 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/367.csv.parts/20000_10000.csv.new
+367.csv: 3 parts, 22628 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/368.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/368.csv.parts/10000_10000.csv.new
+writing 2628 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/368.csv.parts/20000_10000.csv.new
+368.csv: 3 parts, 22628 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/369.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/369.csv.parts/10000_10000.csv.new
+writing 2628 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/369.csv.parts/20000_10000.csv.new
+369.csv: 3 parts, 22628 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/370.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/370.csv.parts/10000_10000.csv.new
+writing 2628 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/370.csv.parts/20000_10000.csv.new
+370.csv: 3 parts, 22628 records
+writing 693 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/371.csv.parts/0_10000.csv.new
+371.csv: 1 parts, 693 records
+writing 204 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/374.csv.parts/0_10000.csv.new
+374.csv: 1 parts, 204 records
+Predicate 375 = http://purl.obolibrary.org/obo/RO_0002470
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/170000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/180000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/190000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/200000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/210000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/220000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/230000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/240000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/250000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/260000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/270000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/280000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/290000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/300000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/310000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/320000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/330000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/340000_10000.csv.new
+writing 8717 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/375.csv.parts/350000_10000.csv.new
+375.csv: 36 parts, 358717 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/376.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/376.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/376.csv.parts/20000_10000.csv.new
+writing 4671 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/376.csv.parts/30000_10000.csv.new
+376.csv: 4 parts, 34671 records
+writing 379 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/384.csv.parts/0_10000.csv.new
+384.csv: 1 parts, 379 records
+writing 232 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/388.csv.parts/0_10000.csv.new
+388.csv: 1 parts, 232 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/392.csv.parts/0_10000.csv.new
+writing 7024 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/392.csv.parts/10000_10000.csv.new
+392.csv: 2 parts, 17024 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/393.csv.parts/0_10000.csv.new
+writing 4227 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/393.csv.parts/10000_10000.csv.new
+393.csv: 2 parts, 14227 records
+writing 686 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/395.csv.parts/0_10000.csv.new
+395.csv: 1 parts, 686 records
+writing 492 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/397.csv.parts/0_10000.csv.new
+397.csv: 1 parts, 492 records
+writing 2 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/398.csv.parts/0_10000.csv.new
+398.csv: 1 parts, 2 records
+Predicate 400 = http://purl.obolibrary.org/obo/RO_0002623
+writing 72 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/400.csv.parts/0_10000.csv.new
+400.csv: 1 parts, 72 records
+writing 32 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/404.csv.parts/0_10000.csv.new
+404.csv: 1 parts, 32 records
+writing 125 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/406.csv.parts/0_10000.csv.new
+406.csv: 1 parts, 125 records
+writing 2160 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/409.csv.parts/0_10000.csv.new
+409.csv: 1 parts, 2160 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/410.csv.parts/0_10000.csv.new
+writing 4464 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/410.csv.parts/10000_10000.csv.new
+410.csv: 2 parts, 14464 records
+writing 5567 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/411.csv.parts/0_10000.csv.new
+411.csv: 1 parts, 5567 records
+writing 60 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/414.csv.parts/0_10000.csv.new
+414.csv: 1 parts, 60 records
+writing 11 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/415.csv.parts/0_10000.csv.new
+415.csv: 1 parts, 11 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/417.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/417.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/417.csv.parts/20000_10000.csv.new
+writing 8466 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/417.csv.parts/30000_10000.csv.new
+417.csv: 4 parts, 38466 records
+writing 2594 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/418.csv.parts/0_10000.csv.new
+418.csv: 1 parts, 2594 records
+writing 21 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/419.csv.parts/0_10000.csv.new
+419.csv: 1 parts, 21 records
+writing 154 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/420.csv.parts/0_10000.csv.new
+420.csv: 1 parts, 154 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/421.csv.parts/0_10000.csv.new
+writing 9382 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/421.csv.parts/10000_10000.csv.new
+421.csv: 2 parts, 19382 records
+writing 906 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/422.csv.parts/0_10000.csv.new
+422.csv: 1 parts, 906 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/120000_10000.csv.new
+writing 4429 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/423.csv.parts/130000_10000.csv.new
+423.csv: 14 parts, 134429 records
+writing 6071 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/424.csv.parts/0_10000.csv.new
+424.csv: 1 parts, 6071 records
+Predicate 425 = http://purl.obolibrary.org/obo/RO_0002471
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/80000_10000.csv.new
+writing 4920 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/425.csv.parts/90000_10000.csv.new
+425.csv: 10 parts, 94920 records
+writing 1239 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/426.csv.parts/0_10000.csv.new
+426.csv: 1 parts, 1239 records
+writing 10 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/427.csv.parts/0_10000.csv.new
+427.csv: 1 parts, 10 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/432.csv.parts/0_10000.csv.new
+writing 4539 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/432.csv.parts/10000_10000.csv.new
+432.csv: 2 parts, 14539 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/433.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/433.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/433.csv.parts/20000_10000.csv.new
+writing 3369 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/433.csv.parts/30000_10000.csv.new
+433.csv: 4 parts, 33369 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/434.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/434.csv.parts/10000_10000.csv.new
+writing 5570 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/434.csv.parts/20000_10000.csv.new
+434.csv: 3 parts, 25570 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/435.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/435.csv.parts/10000_10000.csv.new
+writing 3144 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/435.csv.parts/20000_10000.csv.new
+435.csv: 3 parts, 23144 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/436.csv.parts/0_10000.csv.new
+writing 6685 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/436.csv.parts/10000_10000.csv.new
+436.csv: 2 parts, 16685 records
+writing 91 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/437.csv.parts/0_10000.csv.new
+437.csv: 1 parts, 91 records
+writing 1982 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/438.csv.parts/0_10000.csv.new
+438.csv: 1 parts, 1982 records
+writing 260 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/439.csv.parts/0_10000.csv.new
+439.csv: 1 parts, 260 records
+writing 14 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/440.csv.parts/0_10000.csv.new
+440.csv: 1 parts, 14 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/443.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/443.csv.parts/10000_10000.csv.new
+writing 8455 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/443.csv.parts/20000_10000.csv.new
+443.csv: 3 parts, 28455 records
+writing 11 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/446.csv.parts/0_10000.csv.new
+446.csv: 1 parts, 11 records
+writing 4 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/447.csv.parts/0_10000.csv.new
+447.csv: 1 parts, 4 records
+writing 7 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/448.csv.parts/0_10000.csv.new
+448.csv: 1 parts, 7 records
+writing 13 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/449.csv.parts/0_10000.csv.new
+449.csv: 1 parts, 13 records
+Predicate 450 = http://top-thesaurus.org/annotationInfo?viz=1&&trait=Leaf_nitrogen_content_per_leaf_dry_mass
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/450.csv.parts/0_10000.csv.new
+450.csv: 1 parts, 9 records
+writing 3 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/451.csv.parts/0_10000.csv.new
+451.csv: 1 parts, 3 records
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/452.csv.parts/0_10000.csv.new
+452.csv: 1 parts, 9 records
+writing 10 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/453.csv.parts/0_10000.csv.new
+453.csv: 1 parts, 10 records
+writing 1 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/455.csv.parts/0_10000.csv.new
+455.csv: 1 parts, 1 records
+writing 7 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/456.csv.parts/0_10000.csv.new
+456.csv: 1 parts, 7 records
+writing 12 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/457.csv.parts/0_10000.csv.new
+457.csv: 1 parts, 12 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/170000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/180000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/190000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/200000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/210000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/220000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/230000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/240000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/250000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/260000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/270000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/280000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/290000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/300000_10000.csv.new
+writing 916 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/458.csv.parts/310000_10000.csv.new
+458.csv: 32 parts, 310916 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/170000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/180000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/190000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/200000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/210000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/220000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/230000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/240000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/250000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/260000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/270000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/280000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/290000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/300000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/310000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/320000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/330000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/340000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/350000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/360000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/370000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/380000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/390000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/400000_10000.csv.new
+writing 1439 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/463.csv.parts/410000_10000.csv.new
+463.csv: 42 parts, 411439 records
+Predicate 475 = http://purl.obolibrary.org/obo/TO_0000602
+writing 25 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/480.csv.parts/0_10000.csv.new
+480.csv: 1 parts, 25 records
+writing 3 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/481.csv.parts/0_10000.csv.new
+481.csv: 1 parts, 3 records
+writing 14 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/483.csv.parts/0_10000.csv.new
+483.csv: 1 parts, 14 records
+writing 59 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/490.csv.parts/0_10000.csv.new
+490.csv: 1 parts, 59 records
+writing 12 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/491.csv.parts/0_10000.csv.new
+491.csv: 1 parts, 12 records
+writing 2015 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/492.csv.parts/0_10000.csv.new
+492.csv: 1 parts, 2015 records
+writing 9 csv records to /u/scripts/.plotter_workspace/dump-2774383/traits.csv.predicates/499.csv.parts/0_10000.csv.new
+499.csv: 1 parts, 9 records
+Predicate 500 = 
+** scary URI: ''
+113 metadata predicate URIs
+0 http://purl.obolibrary.org/obo/VT_0001259
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/170000_10000.csv.new
+writing 8448 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/0.csv.parts/180000_10000.csv.new
+0.csv: 19 parts, 188448 records
+writing 6936 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/6.csv.parts/0_10000.csv.new
+6.csv: 1 parts, 6936 records
+** HTTP response: 502 Bad Gateway
+MATCH (m:MetaData)<-[:metadata]-(t:Trait),
+              (t)<-[:trait]-(page:Page)
+              , (page)-[:parent*]->(clade:Page {page_id: 2774383})
+        WHERE page.canonical IS NOT NULL
+        MATCH (m)-[:predicate]->(predicate:Term),
+              (t)-[:predicate]->(metadata_predicate:Term {uri: 'http://eol.org/schema/terms/Assessor'})
+        OPTIONAL MATCH (m)-[:object_term]->(obj:Term)
+        OPTIONAL MATCH (m)-[:units_term]->(units:Term)
+        RETURN m.eol_pk, t.eol_pk, predicate.uri, obj.uri, m.measurement, units.uri, m.literal SKIP 0 LIMIT 10000
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.14.2</center>
+</body>
+</html>
+** Failed to generate /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/7.csv
+** Exception: undefined method `[]' for nil:NilClass
+25 http://rs.tdwg.org/dwc/terms/recordedBy
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/170000_10000.csv.new
+writing 7488 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/29.csv.parts/180000_10000.csv.new
+29.csv: 19 parts, 187488 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/170000_10000.csv.new
+writing 7488 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/30.csv.parts/180000_10000.csv.new
+30.csv: 19 parts, 187488 records
+50 http://eol.org/schema/terms/HasToxin
+writing 15 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/50.csv.parts/0_10000.csv.new
+50.csv: 1 parts, 15 records
+writing 7747 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/60.csv.parts/0_10000.csv.new
+60.csv: 1 parts, 7747 records
+writing 3 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/61.csv.parts/0_10000.csv.new
+61.csv: 1 parts, 3 records
+75 http://eol.org/schema/terms/Uses
+writing 8 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/75.csv.parts/0_10000.csv.new
+75.csv: 1 parts, 8 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/170000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/180000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/190000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/200000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/210000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/220000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/230000_10000.csv.new
+writing 2503 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/81.csv.parts/240000_10000.csv.new
+81.csv: 25 parts, 242503 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/80000_10000.csv.new
+writing 2758 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/82.csv.parts/90000_10000.csv.new
+82.csv: 10 parts, 92758 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/80000_10000.csv.new
+writing 2758 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/83.csv.parts/90000_10000.csv.new
+83.csv: 10 parts, 92758 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/80000_10000.csv.new
+writing 2758 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/84.csv.parts/90000_10000.csv.new
+84.csv: 10 parts, 92758 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/80000_10000.csv.new
+writing 2758 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/85.csv.parts/90000_10000.csv.new
+85.csv: 10 parts, 92758 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/80000_10000.csv.new
+writing 2758 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/87.csv.parts/90000_10000.csv.new
+87.csv: 10 parts, 92758 records
+writing 492 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/90.csv.parts/0_10000.csv.new
+90.csv: 1 parts, 492 records
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/0_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/10000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/20000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/30000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/40000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/50000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/60000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/70000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/80000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/90000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/100000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/110000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/120000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/130000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/140000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/150000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/160000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/170000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/180000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/190000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/200000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/210000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/220000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/230000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/240000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/250000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/260000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/270000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/280000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/290000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/300000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/310000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/320000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/330000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/340000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/350000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/360000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/370000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/380000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/390000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/400000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/410000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/420000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/430000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/440000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/450000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/460000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/470000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/480000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/490000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/500000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/510000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/520000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/530000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/540000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/550000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/560000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/570000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/580000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/590000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/600000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/610000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/620000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/630000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/640000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/650000_10000.csv.new
+writing 10000 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/660000_10000.csv.new
+writing 6259 csv records to /u/scripts/.plotter_workspace/dump-2774383/metadata.csv.predicates/97.csv.parts/670000_10000.csv.new
+97.csv: 68 parts, 676259 records
+100 http://eol.org/schema/terms/dayLength
+** scary URI: ''
+** Deferred due to exception(s): metadata.csv
+
+real	268m49.447s
+user	0m53.160s
+sys	0m5.928s
+Finished: SUCCESS

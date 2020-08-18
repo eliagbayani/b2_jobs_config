@@ -1,0 +1,225 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Generate PRM and REP records/Step 4 - Zip reports
+[Step 4 - Zip reports] $ /bin/sh -xe /tmp/jenkins5621625809124270236.sh
++ cd /u/scripts/eol_php_code/applications/content_server/resources/
+++ date +%Y-%m-%d
++ zip PRM_REP_reports_2020-08-05.zip taxon_summary_resource.txt parent_taxon_summary_resource.txt parent_basal_values_resource.txt lifeStage_statMeth_resource.txt basal_values_resource.txt taxon_summary.tar.gz parent_taxon_summary.tar.gz parent_basal_values.tar.gz basal_values.tar.gz
+  adding: taxon_summary_resource.txt (deflated 89%)
+  adding: parent_taxon_summary_resource.txt (deflated 89%)
+  adding: parent_basal_values_resource.txt (deflated 89%)
+  adding: lifeStage_statMeth_resource.txt (deflated 93%)
+  adding: basal_values_resource.txt (deflated 90%)
+  adding: taxon_summary.tar.gz (deflated 1%)
+  adding: parent_taxon_summary.tar.gz (deflated 0%)
+  adding: parent_basal_values.tar.gz (deflated 0%)
+  adding: basal_values.tar.gz (deflated 0%)
++ zip basal_values_resource.txt.zip basal_values_resource.txt
+updating: basal_values_resource.txt (deflated 90%)
++ zip parent_basal_values_resource.txt.zip parent_basal_values_resource.txt
+updating: parent_basal_values_resource.txt (deflated 89%)
++ zip taxon_summary_resource.txt.zip taxon_summary_resource.txt
+updating: taxon_summary_resource.txt (deflated 89%)
++ zip parent_taxon_summary_resource.txt.zip parent_taxon_summary_resource.txt
+updating: parent_taxon_summary_resource.txt (deflated 89%)
++ zip Numerical_value.zip lifeStage_statMeth_resource.txt
+updating: lifeStage_statMeth_resource.txt (deflated 93%)
++ sshpass -f /home/eagbayani/.pwd_file scp basal_values.tar.gz eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp parent_basal_values.tar.gz eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp basal_values_resource.txt.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp parent_basal_values_resource.txt.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp taxon_summary.tar.gz eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp parent_taxon_summary.tar.gz eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp taxon_summary_resource.txt.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp parent_taxon_summary_resource.txt.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp Numerical_value.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
+Finished: SUCCESS

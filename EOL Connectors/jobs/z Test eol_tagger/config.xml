@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>### Then run inside /eol_tagger/:
+cd /u/scripts/vangelis_tagger/eol_tagger/
+./environments_tagger ../test_text_data/ &amp;&gt; ../eol_tags/eol_tags.tsv
+
+### Then run outside /eol_tagger/:
+cd /u/scripts/vangelis_tagger/
+./eol_scripts/exclude-parents-E.pl eol_tags/eol_tags.tsv eol_scripts/envo_child_parent.tsv &gt; eol_tags/eol_tags_noParentTerms.tsv
+
+
+cd /u/scripts/vangelis_tagger/</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,36 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Dumping Traitbank/Vertebrates
+[Vertebrates] $ /bin/sh -xe /tmp/jenkins7582606994200987322.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ local command
++ command=global
++ '[' 2 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv global 2.6.4
++ rbenv global 2.6.4
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod ID=2774383
+reusing previously created /u/scripts/.plotter_workspace/dump-2774383/inferred.csv
+reusing previously created /u/scripts/.plotter_workspace/dump-2774383/traits.csv
+122 metadata predicate URIs
+0 http://purl.obolibrary.org/obo/VT_0001259
+25 http://rs.tdwg.org/dwc/terms/recordedBy
+50 http://eol.org/schema/terms/HasToxin
+75 http://eol.org/schema/terms/Uses
+100 http://eol.org/schema/terms/dayLength
+** scary URI: ''
+# Graphdb proxy URL is https://eol.org/
+storing inferred.csv into zip file
+storing terms.csv into zip file
+storing pages.csv into zip file
+storing traits.csv into zip file
+storing metadata.csv into zip file
+/u/scripts/.plotter_workspace/traits_2774383_202007.zip
+
+real	3m16.431s
+user	0m22.162s
+sys	0m1.050s
+Finished: SUCCESS

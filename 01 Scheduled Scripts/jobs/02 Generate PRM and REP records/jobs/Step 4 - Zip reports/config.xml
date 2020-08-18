@@ -1,0 +1,68 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>3</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /u/scripts/eol_php_code/applications/content_server/resources/
+
+zip &quot;PRM_REP_reports_$(date +&quot;%Y-%m-%d&quot;).zip&quot; taxon_summary_resource.txt parent_taxon_summary_resource.txt parent_basal_values_resource.txt lifeStage_statMeth_resource.txt basal_values_resource.txt taxon_summary.tar.gz parent_taxon_summary.tar.gz parent_basal_values.tar.gz basal_values.tar.gz
+
+#Habitat and distribution representative records
+#taxon summary new records:            basalvalues.tar.gz                  basal_values.tar.gz
+#parent taxon summary new records:     parentbasalvalues.tar.gz            parent_basal_values.tar.gz
+#taxon summary flagged records:        basalvaluesresource.txt.zip         basal_values_resource.txt
+#parent taxon summary flagged records: parentbasalvaluesresource.txt.zip   parent_basal_values_resource.txt
+
+#Ecological association representative records
+#taxon summary new records:            taxonsummary.tar.gz                 taxon_summary.tar.gz
+#parent taxon summary new records:     parenttaxonsummary.tar.gz           parent_taxon_summary.tar.gz
+#taxon summary flagged records:        taxonsummaryresource.txt.zip        taxon_summary_resource.txt
+#parent taxon summary flagged records: parenttaxonsummaryresource.txt.zip  parent_taxon_summary_resource.txt
+
+zip &quot;basal_values_resource.txt.zip&quot; basal_values_resource.txt
+zip &quot;parent_basal_values_resource.txt.zip&quot; parent_basal_values_resource.txt
+zip &quot;taxon_summary_resource.txt.zip&quot; taxon_summary_resource.txt
+zip &quot;parent_taxon_summary_resource.txt.zip&quot; parent_taxon_summary_resource.txt
+
+zip &quot;Numerical_value.zip&quot; lifeStage_statMeth_resource.txt
+
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp basal_values.tar.gz eagbayani@eol-archive:/extra/other_files/SDR/.
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp parent_basal_values.tar.gz eagbayani@eol-archive:/extra/other_files/SDR/.
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp basal_values_resource.txt.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp parent_basal_values_resource.txt.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp taxon_summary.tar.gz eagbayani@eol-archive:/extra/other_files/SDR/.
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp parent_taxon_summary.tar.gz eagbayani@eol-archive:/extra/other_files/SDR/.
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp taxon_summary_resource.txt.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp parent_taxon_summary_resource.txt.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp Numerical_value.zip eagbayani@eol-archive:/extra/other_files/SDR/.
+
+
+#sshpass -p &quot;enter your pw&quot; scp eli.txt eagbayani@eol-archive:/extra/other_files/SDR/.
+#-&gt;not safe
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

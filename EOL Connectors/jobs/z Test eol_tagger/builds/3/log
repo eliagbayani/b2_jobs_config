@@ -1,0 +1,10 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/EOL Connectors/Test eol_tagger
+[Test eol_tagger] $ /bin/sh -xe /tmp/jenkins4738018750750215116.sh
++ cd /u/scripts/vangelis_tagger/eol_tagger/
++ ./environments_tagger ../test_text_data/
++ cd /u/scripts/vangelis_tagger/
++ ./eol_scripts/exclude-parents-E.pl eol_tags/eol_tags.tsv eol_scripts/envo_child_parent.tsv
++ cd /u/scripts/vangelis_tagger/
+Finished: SUCCESS

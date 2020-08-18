@@ -1,0 +1,60 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/03 Branch Painting/05 rake paint_paint
+[05 rake paint_paint] $ /bin/sh -xe /tmp/jenkins2937859604530787216.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ cd /u/scripts/plotter/lib/
++ rake paint:paint CONF=beta ID=640
+(in /u/scripts/plotter)
+0
+MATCH (:Resource {resource_id: 640})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+       OPTIONAL MATCH (t)-[:object_term]->(o:Term)
+       WITH t, toInteger(m.measurement) as start_id, o
+       MATCH (:Page {page_id: start_id})<-[:parent*1..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait, d.canonical, t.measurement, o.name
+Using cached file /u/scripts/.plotter_workspace/beta/resources/beta.640.727/paint/assert.csv
+MATCH (:Resource {resource_id: 640})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/stops_at'})
+       WITH t, toInteger(m.measurement) as stop_id
+       MATCH (stop:Page {page_id: stop_id})
+       WITH stop, t
+       MATCH (stop)<-[:parent*0..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait
+Using cached file /u/scripts/.plotter_workspace/beta/resources/beta.640.727/paint/retract.csv
+Found 1 proper start-point descendants
+Removed 1 stop-point descendants
+Net: 0 inferences
+Writing /u/scripts/.plotter_workspace/beta/staging/beta.640.727/inferences/inferences.csv
+Writing /u/scripts/.plotter_workspace/beta/staging/beta.640.727/inferences/inferences.csv.chunks/0_10000.csv
+# Copying /u/scripts/.plotter_workspace/beta/staging/beta.640.727/inferences to varela:public_html/eol/staging/beta.640.727-inferences
+Read 666 resource records
+633 resource ids, 629 resource names
+Resource 640 on beta is understood as marine ecology literature
+# Graphdb proxy URL is https://beta.eol.org/
+Writing /u/scripts/.plotter_workspace/beta/staging/beta.640.727/inferences/inferences.csv.chunks/manifest.json
+ssh: Could not resolve hostname varela: Name or service not known
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.2]
+Ready to publish
+** HTTP response: 500 Internal Server Error
+LOAD CSV WITH HEADERS FROM 'http://varela.csail.mit.edu/~jar/eol/staging/beta.640.727-inferences/inferences.csv'
+               AS row
+               WITH row, toInteger(row.page_id) AS page_id
+               MATCH (page:Page {page_id: page_id})
+               MATCH (trait:Trait {eol_pk: row.trait})
+               MERGE (page)-[i:inferred_trait]->(trait)
+               RETURN COUNT(i) 
+               LIMIT 1
+500 Internal Server Error
+If you are the administrator of this website, then please read this web application's log file and/or the web server's log file to find out what went wrong.
+Merged 0 relations from http://varela.csail.mit.edu/~jar/eol/staging/beta.640.727-inferences/inferences.csv
+Status: [pid 355754 exit 255] stdout: []
+Resource 640 on beta is understood as marine ecology literature
+# Staging URL is http://varela.csail.mit.edu/~jar/eol/staging/beta.640.727-inferences/
+Finished: SUCCESS

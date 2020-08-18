@@ -1,0 +1,14 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Dumping Traitbank/test
+[test] $ /bin/sh -xe /tmp/jenkins6597130128178465664.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ local command
++ command=global
++ '[' 2 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv global 2.6.4
++ rbenv global 2.6.4
+Finished: SUCCESS

@@ -1,0 +1,47 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Generate PRM and REP records/Step 3 - Actual reports
+[Step 3 - Actual reports] $ /bin/sh -xe /tmp/jenkins65044373174413858.sh
++ cd /u/scripts/eol_php_code/update_resources/connectors/
++ php SDR_all.php _ '{"task":"print_parent_taxon_summary"}'
+
+
+parsing DH...
+Array
+(
+    [archive_path] => /u/scripts/data_files/DH_v1_1/
+    [temp_dir] => not used
+    [tables] => Array
+        (
+            [taxa] => taxon.tab
+        )
+
+)
+Array
+(
+    [archive_path] => /u/scripts/data_files/DH_v1_1/
+    [temp_dir] => not used
+    [tables] => Array
+        (
+            [taxa] => taxon.tab
+        )
+
+)
+
+
+
+5,000===============Method: taxon summary - page_id: 46588025 | predicate: [http://purl.obolibrary.org/obo/RO_0002454]
+10,000===============Method: parents taxon summary - page_id: 2024 | predicate: [http://purl.obolibrary.org/obo/RO_0002454]
+15,000===============Method: taxon summary - page_id: 52235016 | predicate: [http://purl.obolibrary.org/obo/RO_0002454]
+20,000===============Method: taxon summary - page_id: 3764633 | predicate: [http://purl.obolibrary.org/obo/RO_0002454]
+25,000===============Method: taxon summary - page_id: 7671336 | predicate: [http://purl.obolibrary.org/obo/RO_0002454]
+30,000===============Method: taxon summary - page_id: 1005489 | predicate: [http://purl.obolibrary.org/obo/RO_0002454]
+35,000===============Method: parents taxon summary - page_id: 4157 | predicate: [http://purl.obolibrary.org/obo/RO_0002453]
+40,000===============Method: parents taxon summary - page_id: 9075993 | predicate: [http://purl.obolibrary.org/obo/RO_0002453]
+45,000===============Method: taxon summary - page_id: 975361 | predicate: [http://purl.obolibrary.org/obo/RO_0002470,http://purl.obolibrary.org/obo/RO_0002439,http://purl.obolibrary.org/obo/RO_0002444]
+50,000===============Method: parents taxon summary - page_id: 4170 | predicate: [http://purl.obolibrary.org/obo/RO_0002470,http://purl.obolibrary.org/obo/RO_0002439,http://purl.obolibrary.org/obo/RO_0002444]
+55,000===============Method: taxon summary - page_id: 204750 | predicate: [http://purl.obolibrary.org/obo/RO_0002470,http://purl.obolibrary.org/obo/RO_0002439,http://purl.obolibrary.org/obo/RO_0002444]
+60,000===============Method: taxon summary - page_id: 46563621 | predicate: [http://purl.obolibrary.org/obo/RO_0002470,http://purl.obolibrary.org/obo/RO_0002439,http://purl.obolibrary.org/obo/RO_0002444]
+65,000===============Method: taxon summary - page_id: 1040868 | predicate: [http://purl.obolibrary.org/obo/RO_0002470,http://purl.obolibrary.org/obo/RO_0002439,http://purl.obolibrary.org/obo/RO_0002444]
+70,000===============Method: taxon summary - page_id: 45510692 | predicate: [http://purl.obolibrary.org/obo/RO_0002470,http://purl.obolibrary.org/obo/RO_0002439,http://purl.obolibrary.org/obo/RO_0002444]
+75,000===============Method: taxon summary - page_id: 46559828 | predicate: [http://purl.obolibrary.org/obo/RO_0002470,http://purl.obolibrary.org/obo/RO_0002439,http://purl.obolibrary.org/obo/RO_0002444]

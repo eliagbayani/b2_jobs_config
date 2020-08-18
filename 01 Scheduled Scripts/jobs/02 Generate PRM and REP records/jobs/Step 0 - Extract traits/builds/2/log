@@ -1,0 +1,25 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Generate PRM and REP records/Step 0 - Extract traits
+[Step 0 - Extract traits] $ /bin/sh -xe /tmp/jenkins7832101257482992140.sh
++ cd /u/scripts/eol_php_code/update_resources/connectors/
++ php SDR_all.php _ '{"task":"download_extract_zip_file", "traits_zip_file":"traits_all_202006.zip"}'
+
+
+Archive:  /u/scripts/.plotter_workspace/traits_all_202006.zip
+  inflating: /u/scripts/data_files/summary_data_resources/trait_bank_20200626/inferred.csv  
+  inflating: /u/scripts/data_files/summary_data_resources/trait_bank_20200626/terms.csv  
+  inflating: /u/scripts/data_files/summary_data_resources/trait_bank_20200626/pages.csv  
+  inflating: /u/scripts/data_files/summary_data_resources/trait_bank_20200626/traits.csv  
+  inflating: /u/scripts/data_files/summary_data_resources/trait_bank_20200626/metadata.csv  
+
+
+
+
+ elapsed time = 34.875152 seconds
+ elapsed time = 0.58125253333333 minutes
+ elapsed time = 0.0096875422222222 hours
+ Done processing.
+
+--[download_extract_zip_file] end--
+Finished: SUCCESS

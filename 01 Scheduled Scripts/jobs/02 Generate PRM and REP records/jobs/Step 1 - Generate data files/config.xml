@@ -1,0 +1,42 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>3</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /u/scripts/eol_php_code/update_resources/connectors/
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_MySQL_table_from_text&quot;}&apos;
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;update_inferred_file&quot;}&apos;             #51.96 seconds
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;generate_refs_per_eol_pk_MySQL&quot;}&apos;   #a few mins.
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_MySQL_table_from_csv&quot;}&apos;       #3.22 minutes
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;generate_page_id_txt_files_MySQL&quot;}&apos; #35.18 minutes
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;pre_parent_basal_values&quot;}&apos;          #42.46 seconds
+
+#php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_up_children_cache&quot;, &quot;delay_in_seconds&quot;:0}&apos;
+#php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_up_children_cache&quot;, &quot;delay_in_seconds&quot;:180}&apos;
+
+
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

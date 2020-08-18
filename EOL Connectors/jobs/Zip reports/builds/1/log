@@ -1,0 +1,24 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/EOL Connectors/Zip reports
+[Zip reports] $ /bin/sh -xe /tmp/jenkins3509697735846016235.sh
++ cd /u/scripts/vangelis_tagger/eol_tags/
++ zip output.zip eol_tags_noParentTerms.tsv eol_tags.tsv
+  adding: eol_tags_noParentTerms.tsv (deflated 85%)
+  adding: eol_tags.tsv (deflated 91%)
++ mv output.zip /home/eagbayani/
++ ls -lt /home/eagbayani/
+total 128276
+-rw-r--r-- 1 root      root        743846 Jul 24 10:39 output.zip
+-rwxrwxr-x 1 root      root       2456717 Jul 13 12:19 traits_7662_202007.zip
+-rwxrwxr-x 1 root      root       1060196 Jul 10 04:08 Numerical_value.zip
+-rwxrwxr-x 1 root      root        849072 Jul 10 04:08 Ecological_Association_parent_taxon_summary.zip
+-rwxrwxr-x 1 root      root       3153020 Jul 10 04:08 Ecological_Association_taxon_summary.zip
+-rwxrwxr-x 1 root      root       3379746 Jul 10 04:08 Habitat_Distribution_parent_taxon_summary.zip
+-rwxrwxr-x 1 root      root      34259017 Jul 10 04:08 Habitat_Distribution_taxon_summary.zip
+-rwxrwxr-x 1 root      root      42700963 Jul 10 04:08 PRM_REP_reports_2020-07-10.zip
+-rwxrwxr-x 1 root      root      42700963 Jul  6 22:20 PRM_REP_reports_2020-07-06.zip
+-rw------- 1 root      root         11429 Jul  1 08:39 SDR_24Jun2020.sql
+-rwxrwxr-x 1 root      root            20 Jul  1 01:06 eli.txt
+-rw------- 1 eagbayani eagbayani     8984 Nov 12  2015 mysql57-community-release-el7-7.noarch.rpm
+Finished: SUCCESS

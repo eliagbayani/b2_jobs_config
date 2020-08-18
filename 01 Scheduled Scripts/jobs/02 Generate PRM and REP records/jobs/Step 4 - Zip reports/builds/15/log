@@ -1,0 +1,47 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/Generate PRM and REP records/Step 4 - Zip reports
+[Step 4 - Zip reports] $ /bin/sh -xe /tmp/jenkins325498658281568402.sh
++ cd /u/scripts/eol_php_code/applications/content_server/resources/
++ zip Numerical_value.zip lifeStage_statMeth_resource.txt
+  adding: lifeStage_statMeth_resource.txt (deflated 93%)
++ zip basal_values_resource.txt.zip basal_values_resource.txt
+  adding: basal_values_resource.txt (deflated 90%)
++ zip parent_basal_values_resource.txt.zip parent_basal_values_resource.txt
+  adding: parent_basal_values_resource.txt (deflated 89%)
++ zip taxon_summary_resource.txt.zip taxon_summary_resource.txt
+  adding: taxon_summary_resource.txt (deflated 89%)
++ zip parent_taxon_summary_resource.txt.zip parent_taxon_summary_resource.txt
+  adding: parent_taxon_summary_resource.txt (deflated 89%)
+++ date +%Y-%m-%d
++ zip Habitat_Distribution_2020-08-05.zip basal_values.tar.gz parent_basal_values.tar.gz basal_values_resource.txt.zip parent_basal_values_resource.txt.zip
+  adding: basal_values.tar.gz (deflated 0%)
+  adding: parent_basal_values.tar.gz (deflated 0%)
+  adding: basal_values_resource.txt.zip (stored 0%)
+  adding: parent_basal_values_resource.txt.zip (stored 0%)
+++ date +%Y-%m-%d
++ zip Ecological_Association_2020-08-05.zip taxon_summary.tar.gz parent_taxon_summary.tar.gz taxon_summary_resource.txt.zip parent_taxon_summary_resource.txt.zip
+  adding: taxon_summary.tar.gz (deflated 1%)
+  adding: parent_taxon_summary.tar.gz (deflated 0%)
+  adding: taxon_summary_resource.txt.zip (stored 0%)
+  adding: parent_taxon_summary_resource.txt.zip (stored 0%)
+++ date +%Y-%m-%d
++ mv Habitat_Distribution_2020-08-05.zip /home/eagbayani/
+++ date +%Y-%m-%d
++ mv Ecological_Association_2020-08-05.zip /home/eagbayani/
++ mv Numerical_value.zip /home/eagbayani/
++ cd /home/eagbayani/
+++ date +%Y-%m-%d
++ chmod 775 Habitat_Distribution_2020-08-05.zip
+++ date +%Y-%m-%d
++ chmod 775 Ecological_Association_2020-08-05.zip
++ chmod 775 Numerical_value.zip
+++ date +%Y-%m-%d
++ echo 'scp Habitat_Distribution_2020-08-05.zip eol-archive:~/temp/.'
+scp Habitat_Distribution_2020-08-05.zip eol-archive:~/temp/.
+++ date +%Y-%m-%d
++ echo 'scp Ecological_Association_2020-08-05.zip eol-archive:~/temp/.'
+scp Ecological_Association_2020-08-05.zip eol-archive:~/temp/.
++ echo 'scp Numerical_value.zip eol-archive:/extra/other_files/SDR/.'
+scp Numerical_value.zip eol-archive:/extra/other_files/SDR/.
+Finished: SUCCESS
