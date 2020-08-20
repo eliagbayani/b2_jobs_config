@@ -1,0 +1,65 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/03 Branch Painting - test using beta/04 rake paint_prepare
+[04 rake paint_prepare] $ /bin/sh -xe /tmp/jenkins2300633771269223605.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ cd /u/scripts/plotter/lib/
++ rake paint:prepare CONF=beta ID=640
+(in /u/scripts/plotter)
+0
+MATCH (:Resource {resource_id: 640})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+       OPTIONAL MATCH (t)-[:object_term]->(o:Term)
+       WITH t, toInteger(m.measurement) as start_id, o
+       MATCH (:Page {page_id: start_id})<-[:parent*1..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait, d.canonical, t.measurement, o.name
+{"columns"=>["page", "trait", "d.canonical", "t.measurement", "o.name"], "data"=>[]}
+MATCH (:Resource {resource_id: 640})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/stops_at'})
+       WITH t, toInteger(m.measurement) as stop_id
+       MATCH (stop:Page {page_id: stop_id})
+       WITH stop, t
+       MATCH (stop)<-[:parent*0..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait
+{"columns"=>["page", "trait"], "data"=>[]}
+Found 1 proper start-point descendants
+Removed 1 stop-point descendants
+Net: 0 inferences
+Writing /u/scripts/.plotter_workspace/beta/staging/beta.640.727/inferences/inferences.csv
+Writing /u/scripts/.plotter_workspace/beta/staging/beta.640.727/inferences/inferences.csv.chunks/0_10000.csv
+# Copying /u/scripts/.plotter_workspace/beta/staging/beta.640.727/inferences to eol-archive:/extra/other_files/SDR/branch_painting/beta.640.727-inferences
+Read 666 resource records
+633 resource ids, 629 resource names
+Resource 640 on beta is understood as marine ecology literature
+# Graphdb proxy URL is https://beta.eol.org/
+Writing /u/scripts/.plotter_workspace/beta/staging/beta.640.727/inferences/inferences.csv.chunks/manifest.json
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
+Ready to publish
+Status: [pid 84739 exit 0] stdout: [skipping directory .
+]
+Finished: SUCCESS

@@ -1,0 +1,76 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/resource_870
+[resource_870] $ /bin/sh -xe /tmp/jenkins8940118412081336293.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ cd /u/scripts/.plotter_workspace/prod/resources/
++ rm -i -rf 'prod.870.*'
++ ls -lt
+total 0
++ cd /u/scripts/.plotter_workspace/prod/staging/
++ rm -i -rf 'prod.870.*'
++ ls -lt
+total 0
++ cd /u/scripts/plotter/lib/
++ rake paint:show_directives CONF=prod ID=870
+(in /u/scripts/plotter)
+Directives:
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 870 on prod is understood as Lovegrove and Haines 2004
+trait,which,page_id,canonical
+# Graphdb proxy URL is https://eol.org/
+1,Start,7664,Ursidae,46559118
+3,Start,1645,Primates,42410181
++ rake paint:count CONF=prod ID=870
+(in /u/scripts/plotter)
+2411
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 870 on prod is understood as Lovegrove and Haines 2004
+# Graphdb proxy URL is https://eol.org/
++ rake paint:qc CONF=prod ID=870
+(in /u/scripts/plotter)
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 870 on prod is understood as Lovegrove and Haines 2004
+# Graphdb proxy URL is https://eol.org/
+MATCH (r:Resource {resource_id: 870})<-[:supplier]-
+                         (t:Trait)-[:metadata]->
+                         (m2:MetaData)-[:predicate]->
+                         (:Term {uri: 'https://eol.org/schema/terms/stops_at'})
+                   WITH t, toInteger(m2.measurement) AS stop_id
+                   MATCH (stop:Page {page_id: stop_id})
+                   OPTIONAL MATCH 
+                         (t)-[:metadata]->
+                         (m1:MetaData)-[:predicate]->
+                         (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+                   WITH t, stop_id, toInteger(m1.measurement) AS start_id
+                   MATCH (start:Page {page_id: start_id})
+                   OPTIONAL MATCH (stop)-[z:parent*1..]->(start)
+                   WITH stop_id, stop, t
+                   WHERE z IS NULL
+                   RETURN stop_id, stop.canonical, t.eol_pk
+                   ORDER BY stop.page_id, stop_id
+                   LIMIT 1000
+0 directives
++ rake paint:prepare CONF=prod ID=870
+(in /u/scripts/plotter)
+2411
+Please erase inferred relationships before painting (found 2411)
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 870 on prod is understood as Lovegrove and Haines 2004
+# Graphdb proxy URL is https://eol.org/
++ rake paint:publish CONF=prod ID=870
+(in /u/scripts/plotter)
+Merged [2411] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod.870.951-inferences/inferences.csv.chunks/0_10000.csv
+Merged [0] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod.870.951-inferences/inferences.csv.chunks/manifest.json
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 870 on prod is understood as Lovegrove and Haines 2004
+# Staging URL is https://editors.eol.org/other_files/SDR/branch_painting/prod.870.951-inferences/
+2 chunks
+# Graphdb proxy URL is https://eol.org/
+Finished: SUCCESS

@@ -12,16 +12,6 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <hudson.model.StringParameterDefinition>
-          <name>resource_id</name>
-          <description></description>
-          <defaultValue>640</defaultValue>
-          <trim>true</trim>
-        </hudson.model.StringParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
@@ -36,7 +26,10 @@
 rbenv global 2.6.4 &amp;&gt;/dev/null
 
 cd /u/scripts/plotter/lib/
-rake paint:count CONF=beta ID=$resource_id</command>
+rake paint:count CONF=beta ID=640
+rake paint:show_directives CONF=beta ID=640
+rake paint:qc CONF=beta ID=640
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
