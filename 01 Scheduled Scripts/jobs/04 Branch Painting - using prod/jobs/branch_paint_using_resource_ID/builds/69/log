@@ -1,0 +1,200 @@
+Started by user [8mha:////4NcRCrUKicMTD459nvlrDE/tPpXeYeyQqW7pGpPVMqOIAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgY+/dLi1CL9rIzE3Nz85GwAlWZwu8MAAAA=[0mJen
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/branch_paint_using_resource_ID
+[branch_paint_using_resource_ID] $ /bin/sh -xe /tmp/jenkins5001133758594126218.sh
++ source /root/.bash_profile
++ rbenv global 2.6.4
++ cd /u/scripts/.plotter_workspace/prod/resources/
++ rm -i -rf 'prod.904.*'
++ ls -lt
+total 0
+drwxrwxr-x+ 3 root root 19 Aug 20 16:06 prod.903.984
+drwxrwxr-x+ 3 root root 19 Aug 20 16:05 prod.902.983
+drwxrwxr-x+ 3 root root 19 Aug 20 16:03 prod.901.982
+drwxrwxr-x+ 3 root root 19 Aug 20 16:02 prod.899.980
+drwxrwxr-x+ 3 root root 19 Aug 20 16:01 prod.898.979
+drwxrwxr-x+ 3 root root 19 Aug 20 16:00 prod.897.978
+drwxrwxr-x+ 3 root root 19 Aug 20 15:59 prod.896.977
+drwxrwxr-x+ 3 root root 19 Aug 20 15:57 prod.895.976
+drwxrwxr-x+ 3 root root 19 Aug 20 15:55 prod.894.975
+drwxrwxr-x+ 3 root root 19 Aug 20 15:51 prod.893.974
+drwxrwxr-x+ 3 root root 19 Aug 20 15:46 prod.892.973
+drwxrwxr-x+ 3 root root 19 Aug 20 15:43 prod.891.972
+drwxrwxr-x+ 3 root root 19 Aug 20 15:42 prod.890.971
+drwxrwxr-x+ 3 root root 19 Aug 20 15:40 prod.889.970
+drwxrwxr-x+ 3 root root 19 Aug 20 15:37 prod.888.969
+drwxrwxr-x+ 3 root root 19 Aug 20 15:36 prod.887.968
+drwxrwxr-x+ 3 root root 19 Aug 20 15:21 prod.886.967
+drwxrwxr-x+ 3 root root 19 Aug 20 15:12 prod.885.966
+drwxrwxr-x+ 3 root root 19 Aug 20 15:10 prod.884.965
+drwxrwxr-x+ 3 root root 19 Aug 20 15:09 prod.883.964
+drwxrwxr-x+ 3 root root 19 Aug 20 14:39 prod.882.963
+drwxrwxr-x+ 3 root root 19 Aug 20 14:38 prod.881.962
+drwxrwxr-x+ 3 root root 19 Aug 20 14:37 prod.880.961
+drwxrwxr-x+ 3 root root 19 Aug 20 14:36 prod.879.960
+drwxrwxr-x+ 3 root root 19 Aug 20 14:34 prod.878.959
+drwxrwxr-x+ 3 root root 19 Aug 20 14:33 prod.877.958
+drwxrwxr-x+ 3 root root 19 Aug 20 14:32 prod.876.957
+drwxrwxr-x+ 3 root root 19 Aug 20 14:15 prod.875.956
+drwxrwxr-x+ 3 root root 19 Aug 20 14:13 prod.874.955
+drwxrwxr-x+ 3 root root 19 Aug 20 14:06 prod.873.954
+drwxrwxr-x+ 3 root root 19 Aug 20 11:42 prod.872.953
+drwxrwxr-x+ 3 root root 19 Aug 20 11:41 prod.871.952
++ cd /u/scripts/.plotter_workspace/prod/staging/
++ rm -i -rf 'prod.904.*'
++ ls -lt
+total 0
+drwxrwxr-x+ 3 root root 24 Aug 20 16:06 prod.903.984
+drwxrwxr-x+ 3 root root 24 Aug 20 16:05 prod.902.983
+drwxrwxr-x+ 3 root root 24 Aug 20 16:03 prod.901.982
+drwxrwxr-x+ 3 root root 24 Aug 20 16:02 prod.899.980
+drwxrwxr-x+ 3 root root 24 Aug 20 16:01 prod.898.979
+drwxrwxr-x+ 3 root root 24 Aug 20 16:00 prod.897.978
+drwxrwxr-x+ 3 root root 24 Aug 20 15:59 prod.896.977
+drwxrwxr-x+ 3 root root 24 Aug 20 15:57 prod.895.976
+drwxrwxr-x+ 3 root root 24 Aug 20 15:55 prod.894.975
+drwxrwxr-x+ 3 root root 24 Aug 20 15:51 prod.893.974
+drwxrwxr-x+ 3 root root 24 Aug 20 15:46 prod.892.973
+drwxrwxr-x+ 3 root root 24 Aug 20 15:43 prod.891.972
+drwxrwxr-x+ 3 root root 24 Aug 20 15:42 prod.890.971
+drwxrwxr-x+ 3 root root 24 Aug 20 15:40 prod.889.970
+drwxrwxr-x+ 3 root root 24 Aug 20 15:38 prod.888.969
+drwxrwxr-x+ 3 root root 24 Aug 20 15:36 prod.887.968
+drwxrwxr-x+ 3 root root 24 Aug 20 15:21 prod.886.967
+drwxrwxr-x+ 3 root root 24 Aug 20 15:12 prod.885.966
+drwxrwxr-x+ 3 root root 24 Aug 20 15:10 prod.884.965
+drwxrwxr-x+ 3 root root 24 Aug 20 15:09 prod.883.964
+drwxrwxr-x+ 3 root root 24 Aug 20 14:39 prod.882.963
+drwxrwxr-x+ 3 root root 24 Aug 20 14:38 prod.881.962
+drwxrwxr-x+ 3 root root 24 Aug 20 14:37 prod.880.961
+drwxrwxr-x+ 3 root root 24 Aug 20 14:36 prod.879.960
+drwxrwxr-x+ 3 root root 24 Aug 20 14:34 prod.878.959
+drwxrwxr-x+ 3 root root 24 Aug 20 14:33 prod.877.958
+drwxrwxr-x+ 3 root root 24 Aug 20 14:32 prod.876.957
+drwxrwxr-x+ 3 root root 24 Aug 20 14:15 prod.875.956
+drwxrwxr-x+ 3 root root 24 Aug 20 14:13 prod.874.955
+drwxrwxr-x+ 3 root root 24 Aug 20 14:06 prod.873.954
+drwxrwxr-x+ 3 root root 24 Aug 20 11:42 prod.872.953
+drwxrwxr-x+ 3 root root 24 Aug 20 11:41 prod.871.952
++ cd /u/scripts/plotter/lib/
++ rake paint:show_directives CONF=prod ID=904
+(in /u/scripts/plotter)
+Directives:
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 904 on prod is understood as Baumiller and Messing 2007
+trait,which,page_id,canonical
+# Graphdb proxy URL is https://eol.org/
+1,Start,1963,Comatulida,1499
+10,Start,4706182,Isocrinida,1499
+4,Start,1963,Comatulida,1499
+7,Start,4706182,Isocrinida,1499
++ rake paint:count CONF=prod ID=904
+(in /u/scripts/plotter)
+0
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 904 on prod is understood as Baumiller and Messing 2007
+# Graphdb proxy URL is https://eol.org/
++ rake paint:qc CONF=prod ID=904
+(in /u/scripts/plotter)
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 904 on prod is understood as Baumiller and Messing 2007
+# Graphdb proxy URL is https://eol.org/
+MATCH (r:Resource {resource_id: 904})<-[:supplier]-
+                         (t:Trait)-[:metadata]->
+                         (m2:MetaData)-[:predicate]->
+                         (:Term {uri: 'https://eol.org/schema/terms/stops_at'})
+                   WITH t, toInteger(m2.measurement) AS stop_id
+                   MATCH (stop:Page {page_id: stop_id})
+                   OPTIONAL MATCH 
+                         (t)-[:metadata]->
+                         (m1:MetaData)-[:predicate]->
+                         (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+                   WITH t, stop_id, toInteger(m1.measurement) AS start_id
+                   MATCH (start:Page {page_id: start_id})
+                   OPTIONAL MATCH (stop)-[z:parent*1..]->(start)
+                   WITH stop_id, stop, t
+                   WHERE z IS NULL
+                   RETURN stop_id, stop.canonical, t.eol_pk
+                   ORDER BY stop.page_id, stop_id
+                   LIMIT 1000
+0 directives
++ rake paint:prepare CONF=prod ID=904
+(in /u/scripts/plotter)
+0
+MATCH (:Resource {resource_id: 904})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+       OPTIONAL MATCH (t)-[:object_term]->(o:Term)
+       WITH t, toInteger(m.measurement) as start_id, o
+       MATCH (:Page {page_id: start_id})<-[:parent*1..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait, d.canonical, t.measurement, o.name
+writing 2194 csv records to /u/scripts/.plotter_workspace/prod/resources/prod.904.985/paint/assert.csv.chunks/0_10000.csv.new
+assert.csv: 1 chunks, 2194 records
+MATCH (:Resource {resource_id: 904})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/stops_at'})
+       WITH t, toInteger(m.measurement) as stop_id
+       MATCH (stop:Page {page_id: stop_id})
+       WITH stop, t
+       MATCH (stop)<-[:parent*0..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait
+{"columns"=>["page", "trait"], "data"=>[]}
+Found 2195 proper start-point descendants
+Removed 1 stop-point descendants
+Net: 2194 inferences
+Writing /u/scripts/.plotter_workspace/prod/staging/prod.904.985/inferences/inferences.csv
+Writing /u/scripts/.plotter_workspace/prod/staging/prod.904.985/inferences/inferences.csv.chunks/0_10000.csv
+# Copying /u/scripts/.plotter_workspace/prod/staging/prod.904.985/inferences to eol-archive:/extra/other_files/SDR/branch_painting/prod.904.985-inferences
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 904 on prod is understood as Baumiller and Messing 2007
+# Graphdb proxy URL is https://eol.org/
+Writing /u/scripts/.plotter_workspace/prod/staging/prod.904.985/inferences/inferences.csv.chunks/manifest.json
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
+Ready to publish
+Status: [pid 112814 exit 0] stdout: [sending incremental file list
+created directory /extra/other_files/SDR/branch_painting/prod.904.985-inferences
+./
+inferences.csv
+inferences.csv.chunks/
+inferences.csv.chunks/0_10000.csv
+inferences.csv.chunks/manifest.json
+
+sent 41.40K bytes  received 173 bytes  27.72K bytes/sec
+total size is 241.41K  speedup is 5.81
+]
++ rake paint:publish CONF=prod ID=904
+(in /u/scripts/plotter)
+Merged [2194] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod.904.985-inferences/inferences.csv.chunks/0_10000.csv
+Read 905 resource records
+863 resource ids, 862 resource names
+Resource 904 on prod is understood as Baumiller and Messing 2007
+# Staging URL is https://editors.eol.org/other_files/SDR/branch_painting/prod.904.985-inferences/
+1 chunks
+# Graphdb proxy URL is https://eol.org/
+Finished: SUCCESS
