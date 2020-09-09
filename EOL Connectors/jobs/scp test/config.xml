@@ -16,8 +16,23 @@
       <command>#cd /home/eagbayani/
 #sshpass -f &quot;.pwd_file&quot; scp eli.txt eagbayani@eol-archive:/extra/other_files/SDR/eli.txt
 
+#works OK
+#cd /u/scripts/eol_php_code/applications/content_server/resources/
+#sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp 21_final.tar.gz eagbayani@eol-archive:/extra/eol_php_resources/.
+
+
+echo file_$(date &apos;+%Y%m&apos;).txt
+
+## diff. DwCA to submit for Wikipedia EN
 cd /u/scripts/eol_php_code/applications/content_server/resources/
-sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp 21_final.tar.gz eagbayani@eol-archive:/extra/eol_php_resources/.
+#sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp 617_final.tar.gz eagbayani@eol-archive:/extra/eol_php_resources/.
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp wikipedia_en_traits.tar.gz eagbayani@eol-archive:/extra/eol_php_resources/.
+#ends here...
+
+## move this file for all connectors:
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp EOL_FreshData_connectors.txt eagbayani@eol-archive:/extra/eol_php_resources/eol_backend2_connectors.txt
+
+
 </command>
     </hudson.tasks.Shell>
   </builders>

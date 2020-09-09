@@ -30,7 +30,16 @@
 source ~/.bash_profile &amp;&gt;/dev/null
 rbenv global 2.6.4
 cd /u/scripts/plotter/
-time bundle exec rake traits:dump CONF=prod</command>
+time bundle exec rake traits:dump CONF=prod
+
+# copy results to eol-archive:
+
+cd /u/scripts/.plotter_workspace/
+chmod 775 traits_all_$(date &apos;+%Y%m&apos;).zip
+rsync -zavh --rsh=&quot;sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani&quot; traits_all_$(date &apos;+%Y%m&apos;).zip eol-archive:/extra/other_files/SDR/
+rsync -zavh --rsh=&quot;sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani&quot; traits_all_$(date &apos;+%Y%m&apos;).zip eol-archive:/extra/other_files/SDR/traits_all.zip
+
+</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

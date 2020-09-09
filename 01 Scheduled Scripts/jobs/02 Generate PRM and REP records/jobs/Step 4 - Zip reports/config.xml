@@ -57,6 +57,7 @@ sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp parent_taxon_summary_resour
 
 sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp Numerical_value.zip eagbayani@eol-archive:/extra/other_files/SDR/.
 
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp PRM_REP_reports_$(date +&quot;%Y-%m-%d&quot;).zip eagbayani@eol-archive:/extra/other_files/SDR/.
 
 #sshpass -p &quot;enter your pw&quot; scp eli.txt eagbayani@eol-archive:/extra/other_files/SDR/.
 #-&gt;not safe

@@ -12,6 +12,18 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>YearMonth</name>
+          <description>e.g.
+Enter 202006 for Jun 2020
+Enter 202008 for Aug 2020</description>
+          <defaultValue>202008</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
@@ -23,12 +35,12 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd /u/scripts/eol_php_code/update_resources/connectors/
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_MySQL_table_from_text&quot;}&apos;
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;update_inferred_file&quot;}&apos;             #51.96 seconds
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;generate_refs_per_eol_pk_MySQL&quot;}&apos;   #a few mins.
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_MySQL_table_from_csv&quot;}&apos;       #3.22 minutes
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;generate_page_id_txt_files_MySQL&quot;}&apos; #35.18 minutes
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;pre_parent_basal_values&quot;}&apos;          #42.46 seconds
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_MySQL_table_from_text&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;update_inferred_file&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;             #51.96 seconds
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;generate_refs_per_eol_pk_MySQL&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;   #a few mins.
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_MySQL_table_from_csv&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;       #3.22 minutes
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;generate_page_id_txt_files_MySQL&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos; #35.18 minutes
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;pre_parent_basal_values&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;          #42.46 seconds
 
 #php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_up_children_cache&quot;, &quot;delay_in_seconds&quot;:0}&apos;
 #php SDR_all.php _ &apos;{&quot;task&quot;:&quot;build_up_children_cache&quot;, &quot;delay_in_seconds&quot;:180}&apos;

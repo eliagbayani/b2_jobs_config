@@ -24,11 +24,11 @@
     <hudson.tasks.Shell>
       <command>cd /u/scripts/eol_php_code/update_resources/connectors/
 
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_lifeStage_statMeth&quot;}&apos;         #1.32 hours
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_basal_values&quot;}&apos;               #1.65 hours
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_parent_basal_values&quot;}&apos;        #2.89 hours
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_taxon_summary&quot;}&apos;              #22.92 minutes
-php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_parent_taxon_summary&quot;}&apos;       #12.58 hours
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_lifeStage_statMeth&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;         #1.32 hours
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_basal_values&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;               #1.65 hours
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_parent_basal_values&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;        #2.89 hours
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_taxon_summary&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;              #22.92 minutes
+php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_parent_taxon_summary&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;       #12.58 hours
 </command>
     </hudson.tasks.Shell>
   </builders>

@@ -1,0 +1,587 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/EOL Connectors/Environmental tagger for EOL resources/Wikipedia EN (English)
+[Wikipedia EN (English)] $ /bin/sh -xe /tmp/jenkins7046095500942409774.sh
++ cd /u/scripts/eol_php_code/
++ php update_resources/connectors/environments_2_eol.php _ '{"task": "generate_eol_tags", "resource":"wikipedia English", "resource_id":"617", "subjects":"Description"}'
+
+Array
+(
+    [task] => generate_eol_tags
+    [resource] => wikipedia English
+    [resource_id] => 617_ENV
+    [subjects] => Description
+)
+Array
+(
+    [wikipedia English] => https://editors.eol.org/eol_php_code/applications/content_server/resources/80.tar.gz
+)
+
+File truncated: [/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv]
+
+File truncated: [/u/scripts/vangelis_tagger/eol_tags/eol_tags_noParentTerms.tsv]
+Please wait, downloading resource document... :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+/u/scripts/eol_php_code_tmp/dir_14177/ :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_14177/ :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_14177/80.tar.gz :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_14177/80.tar.gz] :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_14177/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_14177/
+)
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_14177//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://eol.org/schema/media/document
+)
+
+process media tab...
+
+50,000
+100,000
+150,000
+200,000
+250,000
+300,000
+350,000
+400,000
+450,000
+500,000
+550,000
+600,000
+650,000
+700,000
+750,000
+Last round...
+
+Should be NOT empty - OK 
+Run run_environment_tagger()...
+Should be empty - OK
+Array
+(
+    [subjects] => Array
+        (
+            [http://rs.tdwg.org/ontology/voc/SPMInfoItems#Description] => 
+        )
+
+)
+
+Run gen_noParentTerms()...
+
+save_media_metadata_for_these_objects()...
+json temp path: /u/scripts/vangelis_tagger/temp_json/
+
+50,000
+100,000
+150,000
+200,000
+250,000
+300,000
+350,000
+400,000
+450,000
+500,000
+550,000
+600,000
+650,000
+700,000
+750,000
+Creating this directory: [/u/scripts/eol_php_code/applications/content_server/resources//617_ENV_working/]
+
+Converting archive to EOL DwCA...
+Please wait, downloading resource document... :: [lib/connectors/DwCA_Utility.php [115]]<br>
+/u/scripts/eol_php_code_tmp/dir_39249/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Sending get request to https://editors.eol.org/eol_php_code/applications/content_server/resources/80.tar.gz : only attempt :: [lib/Functions.php [173]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_39249/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_39249/80.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_39249/80.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_39249//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+
+processing...DwCA_Utility...: [http://rs.tdwg.org/dwc/terms/taxon]: taxon...
+
+Environments2EOLfinal resource_id: [617_ENV]
+
+Processing...Environments2EOLfinal...617_ENV
+
+50,000
+100,000
+150,000
+200,000
+250,000
+300,000
+350,000
+400,000
+450,000
+500,000
+550,000
+600,000
+650,000
+700,000
+750,000
+800,000
+850,000
+900,000
+950,000
+1,000,000
+1,050,000
+1,100,000Array
+(
+    [legacy filter] => Array
+        (
+            [excluded uris occurrences] => 26845
+        )
+
+)
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_39249/
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_ENV/measurement_or_fact_specific.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [830642]
+ :: [lib/Functions.php [457]]<br>
+
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_ENV/occurrence_specific.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [830642]
+ :: [lib/Functions.php [457]]<br>
+
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_ENV/taxon.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [410005]
+ :: [lib/Functions.php [457]]<br>
+Sending get request to file:///u/scripts/eol_php_code/applications/content_server/resources/617_ENV/meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=1 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=2 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=3 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=4 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=5 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=6 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=7 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=8 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=9 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=10 : only attempt :: [lib/Functions.php [173]]<br>
+Array
+(
+    [http://purl.obolibrary.org/obo/ENVO_00000501] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002129] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003040] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002180] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002124] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003908] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003863] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002213] => 
+)
+
+Undefined URIs: 8
+
+----------Checking unique IDs [617_ENV]...----------
+Sending get request to file:///u/scripts/eol_php_code/applications/content_server/resources/617_ENV//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://rs.tdwg.org/dwc/terms/occurrence
+    [2] => http://rs.tdwg.org/dwc/terms/measurementorfact
+)
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://rs.tdwg.org/dwc/terms/occurrence
+    [2] => http://rs.tdwg.org/dwc/terms/measurementorfact
+)
+
+ taxon  -- OK
+
+ occurrence  -- OK
+
+ measurementorfact  -- OK
+
+----------end Checking unique IDs----------
+Completed update_resources/connectors/environments_2_eol.php :: [ []]<br>
++ php update_resources/connectors/environments_2_eol.php _ '{"task": "apply_formats_filters", "resource_id":"617"}'
+
+
+Creating this directory: [/u/scripts/eol_php_code/applications/content_server/resources//617_ENVO_working/]
+
+Converting archive to EOL DwCA...
+Please wait, downloading resource document... :: [lib/connectors/DwCA_Utility.php [115]]<br>
+/u/scripts/eol_php_code_tmp/dir_02588/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_02588/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_02588/617_ENV.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_02588/617_ENV.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_02588//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+
+processing...DwCA_Utility...: [http://rs.tdwg.org/dwc/terms/taxon]: taxon...
+
+
+ Saving remote file: https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Terms_remapped/DATA_1841_terms_remapped.tsv :: [lib/connectors/TraitGeneric.php [133]]<br>
+
+
+ Temporary file: /u/scripts/eol_php_code_tmp/tmp_87811.file :: [lib/connectors/TraitGeneric.php [133]]<br>
+Sending get request to https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Terms_remapped/DATA_1841_terms_remapped.tsv : only attempt :: [lib/Functions.php [173]]<br>
+
+remapped_terms lib: 141
+
+
+ Saving remote file: https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Environments/terrestrial_taxa.tsv :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
+
+
+ Temporary file: /u/scripts/eol_php_code_tmp/tmp_45789.file :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
+
+[https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Environments/terrestrial_taxa.tsv: 6620] [6619]
+
+
+ Saving remote file: https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Environments/dangling terrestrial taxa.txt :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
+
+
+ Temporary file: /u/scripts/eol_php_code_tmp/tmp_57424.file :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
+
+[https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Environments/dangling terrestrial taxa.txt: 1435] [7287]
+
+process_measurementorfact...(get occurID_mValue)
+
+100,000
+200,000
+300,000
+400,000
+500,000
+600,000
+700,000
+800,000
+process_occurrence...(get taxonID_occurIDs)
+
+100,000
+200,000
+300,000
+400,000
+500,000
+600,000
+700,000
+800,000
+process_taxon...(get taxonName_occurID_mValue)
+
+100,000
+200,000
+300,000
+400,000
+process_measurementorfact...(apply deletions)
+
+100,000
+200,000
+300,000
+400,000
+500,000
+600,000
+700,000
+800,000
+process_occurrence...(apply deletions)
+
+100,000
+200,000
+300,000
+400,000
+500,000
+600,000
+700,000
+800,000
+combination deleted MoF: No. of taxa with 1 or more MoF records removed: 2507
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_02588/
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_ENVO/measurement_or_fact_specific.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [827716]
+ :: [lib/Functions.php [457]]<br>
+
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_ENVO/occurrence_specific.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [827716]
+ :: [lib/Functions.php [457]]<br>
+
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_ENVO/taxon.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [410005]
+ :: [lib/Functions.php [457]]<br>
+Sending get request to file:///u/scripts/eol_php_code/applications/content_server/resources/617_ENVO/meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [http://purl.obolibrary.org/obo/ENVO_01001240] => 
+    [http://purl.obolibrary.org/obo/ENVO_00000501] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002129] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003040] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002180] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002124] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003908] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003863] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002213] => 
+)
+
+Undefined URIs: 9
+
+----------Checking unique IDs [617_ENVO]...----------
+Sending get request to file:///u/scripts/eol_php_code/applications/content_server/resources/617_ENVO//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://rs.tdwg.org/dwc/terms/measurementorfact
+    [2] => http://rs.tdwg.org/dwc/terms/occurrence
+)
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://rs.tdwg.org/dwc/terms/measurementorfact
+    [2] => http://rs.tdwg.org/dwc/terms/occurrence
+)
+
+ taxon  -- OK
+
+ measurementorfact  -- OK
+
+ occurrence  -- OK
+
+----------end Checking unique IDs----------
+
+----end----
+elapsed time = 10.19 minutes 
+elapsed time = 0.17 hours 
+
+Done processing.
+Completed update_resources/connectors/environments_2_eol.php :: [ []]<br>
++ php update_resources/connectors/environments_2_eol.php _ '{"task": "apply_formats_filters_latest", "resource_id":"617"}'
+
+
+Creating this directory: [/u/scripts/eol_php_code/applications/content_server/resources//617_final_working/]
+
+Converting archive to EOL DwCA...
+Please wait, downloading resource document... :: [lib/connectors/DwCA_Utility.php [115]]<br>
+/u/scripts/eol_php_code_tmp/dir_24265/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_24265/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_24265/617_ENVO.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_24265/617_ENVO.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_24265//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+
+
+ Saving remote file: https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Terms_remapped/DATA_1841_terms_remapped.tsv :: [lib/connectors/TraitGeneric.php [133]]<br>
+
+
+ Temporary file: /u/scripts/eol_php_code_tmp/tmp_12315.file :: [lib/connectors/TraitGeneric.php [133]]<br>
+
+remapped_terms lib: 141
+
+remapped_terms local: 141
+
+process process_taxon()...
+
+100,000
+200,000
+300,000
+400,000Array
+(
+)
+
+process process_measurementorfact_info()...
+
+100,000
+200,000
+300,000
+400,000
+500,000
+600,000
+700,000
+800,000
+100,000
+200,000
+300,000
+400,000
+500,000
+600,000
+700,000
+800,000
+100,000
+200,000
+300,000
+400,000
+500,000
+600,000
+700,000
+800,000
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_24265/
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_final/measurement_or_fact.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [818305]
+ :: [lib/Functions.php [457]]<br>
+
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_final/occurrence.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [818305]
+ :: [lib/Functions.php [457]]<br>
+
+ counting: [/u/scripts/eol_php_code/applications/content_server/resources/617_final/taxon.tab] :: [lib/Functions.php [457]]<br>
+
+ total: [410005]
+ :: [lib/Functions.php [457]]<br>
+Sending get request to file:///u/scripts/eol_php_code/applications/content_server/resources/617_final/meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [http://purl.obolibrary.org/obo/ENVO_01001240] => 
+    [http://purl.obolibrary.org/obo/ENVO_00000501] => 
+    [http://purl.obolibrary.org/obo/ENVO_00000264] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002129] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003040] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002180] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002124] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003908] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003863] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002213] => 
+)
+
+Undefined URIs: 10
+
+----------Checking unique IDs [617_final]...----------
+Sending get request to file:///u/scripts/eol_php_code/applications/content_server/resources/617_final//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://rs.tdwg.org/dwc/terms/occurrence
+    [2] => http://rs.tdwg.org/dwc/terms/measurementorfact
+)
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://rs.tdwg.org/dwc/terms/occurrence
+    [2] => http://rs.tdwg.org/dwc/terms/measurementorfact
+)
+
+ taxon  -- OK
+
+ occurrence  -- OK
+
+ measurementorfact  -- OK
+
+----------end Checking unique IDs----------
+
+----end----
+elapsed time = 9.98 minutes 
+elapsed time = 0.17 hours 
+
+Done processing.
+Completed update_resources/connectors/environments_2_eol.php :: [ []]<br>
++ php update_resources/connectors/remove_taxa_without_MoF.php _ '{"resource_id": "617_final"}'
+
+Array
+(
+    [resource_id] => 617_final
+)
+
+Creating this directory: [/u/scripts/eol_php_code/applications/content_server/resources//wikipedia_en_traits_working/]
+
+Converting archive to EOL DwCA...
+
+processing...DwCA_Utility...: [http://rs.tdwg.org/dwc/terms/occurrence]: occurrence...
+
+processing...DwCA_Utility...: [http://rs.tdwg.org/dwc/terms/measurementorfact]: measurementorfact...
+
+ResourceUtility...read occurrences...
+
+100,000
+200,000
+300,000
+400,000
+500,000
+600,000
+700,000
+800,000
+ResourceUtility...write taxa...
+
+100,000
+200,000
+300,000
+400,000
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_93175/Array
+(
+    [http://purl.obolibrary.org/obo/ENVO_01001240] => 
+    [http://purl.obolibrary.org/obo/ENVO_00000501] => 
+    [http://purl.obolibrary.org/obo/ENVO_00000264] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002129] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003040] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002180] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002124] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003908] => 
+    [http://purl.obolibrary.org/obo/ENVO_00003863] => 
+    [http://purl.obolibrary.org/obo/ENVO_00002213] => 
+)
+
+Undefined URIs: 10
+
+----------Checking unique IDs [wikipedia_en_traits]...----------
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/occurrence
+    [1] => http://rs.tdwg.org/dwc/terms/measurementorfact
+    [2] => http://rs.tdwg.org/dwc/terms/taxon
+)
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/occurrence
+    [1] => http://rs.tdwg.org/dwc/terms/measurementorfact
+    [2] => http://rs.tdwg.org/dwc/terms/taxon
+)
+
+ occurrence  -- OK
+
+ measurementorfact  -- OK
+
+ taxon  -- OK
+
+----------end Checking unique IDs----------
+
+
+elapsed time = 9.91818475 minutes 
+elapsed time = 0.16530307916667 hours 
+
+Done processing.
++ cd /u/scripts/eol_php_code/applications/content_server/resources/
++ sshpass -f /home/eagbayani/.pwd_file scp wikipedia_en_traits.tar.gz eagbayani@eol-archive:/extra/eol_php_resources/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp EOL_FreshData_connectors.txt eagbayani@eol-archive:/extra/eol_php_resources/eol_backend2_connectors.txt
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
+Finished: SUCCESS

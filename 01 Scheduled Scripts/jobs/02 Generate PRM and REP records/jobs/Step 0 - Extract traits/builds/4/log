@@ -1,0 +1,15 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/02 Generate PRM and REP records/Step 0 - Extract traits
+[Step 0 - Extract traits] $ /bin/sh -xe /tmp/jenkins4821753935102479216.sh
++ cd /u/scripts/eol_php_code/update_resources/connectors/
++ php SDR_all.php _ '{"task":"download_extract_zip_file", "traits_zip_file":"traits_all_$YearMonth.zip", "folder_date":$YearMonth}'
+
+
+
+
+ elapsed time = 0.000299 seconds
+ elapsed time = 4.9833333333333E-6 minutes
+ elapsed time = 8.3055555555555E-8 hours
+ Done processing.
+Finished: SUCCESS
