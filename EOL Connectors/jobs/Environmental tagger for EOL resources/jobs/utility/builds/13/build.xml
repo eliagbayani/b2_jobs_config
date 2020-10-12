@@ -12,15 +12,15 @@
       </causeBag>
     </hudson.model.CauseAction>
   </actions>
-  <queueId>295</queueId>
-  <timestamp>1599542236465</timestamp>
-  <startTime>1599542236465</startTime>
+  <queueId>325</queueId>
+  <timestamp>1602146530358</timestamp>
+  <startTime>1602146530366</startTime>
   <result>SUCCESS</result>
-  <duration>3466451</duration>
+  <duration>5845</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>/var/lib/jenkins/workspace/EOL Connectors/Environmental tagger for EOL resources/Wikipedia EN (English)</workspace>
+  <workspace>/var/lib/jenkins/workspace/EOL Connectors/Environmental tagger for EOL resources/utility</workspace>
   <hudsonVersion>2.235.1</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>
   <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>

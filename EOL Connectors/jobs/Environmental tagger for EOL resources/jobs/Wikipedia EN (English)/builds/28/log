@@ -1,0 +1,57 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/EOL Connectors/Environmental tagger for EOL resources/Wikipedia EN (English)
+[Wikipedia EN (English)] $ /bin/sh -xe /tmp/jenkins7565554792611291689.sh
++ cd /u/scripts/eol_php_code/
++ php update_resources/connectors/environments_2_eol.php _ '{"task": "generate_eol_tags", "resource":"wikipedia English", "resource_id":"617", "subjects":"Description"}'
+
+Array
+(
+    [task] => generate_eol_tags
+    [resource] => wikipedia English
+    [resource_id] => 617_ENV
+    [subjects] => Description
+)
+Sending get request to https://opendata.eol.org/api/3/action/resource_search?query=name:wikipedia%20English : only attempt :: [lib/Functions.php [173]]<br>
+Array
+(
+    [wikipedia English] => https://editors.eol.org/eol_php_code/applications/content_server/resources/80.tar.gz
+)
+
+File truncated: [/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv]
+
+File truncated: [/u/scripts/vangelis_tagger/eol_tags/eol_tags_noParentTerms.tsv]
+Please wait, downloading resource document... :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+/u/scripts/eol_php_code_tmp/dir_43294/ :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_43294/ :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_43294/80.tar.gz :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_43294/80.tar.gz] :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_43294/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_43294/
+)
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_43294//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://eol.org/schema/media/document
+)
+
+process media tab...
+
+Run run_environment_tagger()...every 1000 records.
+
+50,000
+100,000
+150,000
+200,000
+250,000
+300,000
+350,000
+400,000
+450,000
+500,000
+550,000
+600,000
+650,000

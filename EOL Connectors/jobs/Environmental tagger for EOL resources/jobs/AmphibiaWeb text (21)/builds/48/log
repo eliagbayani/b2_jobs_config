@@ -1,37 +1,57 @@
 Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
 Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/EOL Connectors/Environmental tagger for EOL resources
-[Environmental tagger for EOL resources] $ /bin/sh -xe /tmp/jenkins3191244710289476851.sh
+Building in workspace /var/lib/jenkins/workspace/EOL Connectors/Environmental tagger for EOL resources/AmphibiaWeb text (21)
+[AmphibiaWeb text (21)] $ /bin/sh -xe /tmp/jenkins1432628761218995538.sh
 + cd /u/scripts/eol_php_code/
-+ php update_resources/connectors/environments_2_eol.php _ '{"task": "generate_eol_tags", "resource":"AmphibiaWeb text", "resource_id":"21_ENV", "subjects":"Distribution"}'
++ php update_resources/connectors/environments_2_eol.php _ '{"task": "generate_eol_tags", "resource":"AmphibiaWeb text", "resource_id":"21", "subjects":"Distribution"}'
 
+Array
+(
+    [task] => generate_eol_tags
+    [resource] => AmphibiaWeb text
+    [resource_id] => 21_ENV
+    [subjects] => Distribution
+)
+Sending get request to https://opendata.eol.org/api/3/action/resource_search?query=name:AmphibiaWeb%20text : only attempt :: [lib/Functions.php [173]]<br>
+Array
+(
+    [AmphibiaWeb text] => https://editors.eol.org/eol_php_code/applications/content_server/resources/21.tar.gz
+)
 
 File truncated: [/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv]
 
 File truncated: [/u/scripts/vangelis_tagger/eol_tags/eol_tags_noParentTerms.tsv]
-Please wait, downloading resource document... :: [lib/connectors/Environments2EOLAPI.php [31]]<br>
-/u/scripts/eol_php_code_tmp/dir_39279/ :: [lib/connectors/Environments2EOLAPI.php [31]]<br>
-temp_dir: /u/scripts/eol_php_code_tmp/dir_39279/ :: [lib/connectors/Environments2EOLAPI.php [31]]<br>
-Extracting... /u/scripts/eol_php_code_tmp/dir_39279/21.tar.gz :: [lib/connectors/Environments2EOLAPI.php [31]]<br>
-archive path: [/u/scripts/eol_php_code_tmp/dir_39279/21.tar.gz] :: [lib/connectors/Environments2EOLAPI.php [31]]<br>
+Please wait, downloading resource document... :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+/u/scripts/eol_php_code_tmp/dir_30438/ :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_30438/ :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_30438/21.tar.gz :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_30438/21.tar.gz] :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
 Array
 (
-    [archive_path] => /u/scripts/eol_php_code_tmp/dir_39279/
-    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_39279/
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_30438/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_30438/
 )
-Sending get request to file:///u/scripts/eol_php_code_tmp/dir_39279//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_30438//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [0] => http://rs.gbif.org/terms/1.0/vernacularname
+    [1] => http://eol.org/schema/reference/reference
+    [2] => http://eol.org/schema/agent/agent
+    [3] => http://eol.org/schema/media/document
+    [4] => http://rs.tdwg.org/dwc/terms/taxon
+)
 
 process media tab...
+
+Run run_environment_tagger()...every 1000 records.
 
 1,000
 2,000
 3,000
-Run run_environment_tagger()...
 4,000
 5,000
 6,000
 7,000
-Run run_environment_tagger()...
 8,000
 Last round...
 
@@ -45,11 +65,17 @@ Array
             [http://rs.tdwg.org/ontology/voc/SPMInfoItems#Distribution] => 
         )
 
-    [titles] => Array
-        (
-            [Distribution and Habitat] => 
-        )
+)
 
+Cleaning eol_tags.tsv...
+
+Copied OK (eol_tags.tsv)
+Notice: Undefined index: removed in /u/scripts/eol_php_code/lib/connectors/Environments2EOLAPI.php on line 118
+
+ eol_tags.tsv.old (46330 /u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv.old
+)
+
+ eol_tags.tsv (46330 /u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
 )
 
 Run gen_noParentTerms()...
@@ -72,21 +98,26 @@ Creating this directory: [/u/scripts/eol_php_code/applications/content_server/re
 
 Converting archive to EOL DwCA...
 Please wait, downloading resource document... :: [lib/connectors/DwCA_Utility.php [115]]<br>
-/u/scripts/eol_php_code_tmp/dir_76305/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
-temp_dir: /u/scripts/eol_php_code_tmp/dir_76305/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
-Extracting... /u/scripts/eol_php_code_tmp/dir_76305/21.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
-archive path: [/u/scripts/eol_php_code_tmp/dir_76305/21.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
-Sending get request to file:///u/scripts/eol_php_code_tmp/dir_76305//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+/u/scripts/eol_php_code_tmp/dir_15265/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Sending get request to https://editors.eol.org/eol_php_code/applications/content_server/resources/21.tar.gz : only attempt :: [lib/Functions.php [173]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_15265/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_15265/21.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_15265/21.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_15265//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
 
-processing...: [http://rs.gbif.org/terms/1.0/vernacularname]: vernacular...
+processing...DwCA_Utility...: [http://rs.gbif.org/terms/1.0/vernacularname]: vernacular...
 
-processing...: [http://eol.org/schema/reference/reference]: reference...
+processing...DwCA_Utility...: [http://eol.org/schema/reference/reference]: reference...
 
-processing...: [http://eol.org/schema/agent/agent]: agent...
+processing...DwCA_Utility...: [http://eol.org/schema/agent/agent]: agent...
 
-processing...: [http://eol.org/schema/media/document]: document...
+processing...DwCA_Utility...: [http://eol.org/schema/media/document]: document...
 
-processing...: [http://rs.tdwg.org/dwc/terms/taxon]: taxon...
+processing...DwCA_Utility...: [http://rs.tdwg.org/dwc/terms/taxon]: taxon...
+
+Environments2EOLfinal resource_id: [21_ENV]
+
+Processing...Environments2EOLfinal...21_ENV
 
 1,000
 2,000
@@ -107,7 +138,7 @@ processing...: [http://rs.tdwg.org/dwc/terms/taxon]: taxon...
 
 )
 
- temporary directory removed: /u/scripts/eol_php_code_tmp/dir_76305/
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_15265/
  counting: [/u/scripts/eol_php_code/applications/content_server/resources/21_ENV/agent.tab] :: [lib/Functions.php [457]]<br>
 
  total: [743]
@@ -143,6 +174,16 @@ processing...: [http://rs.tdwg.org/dwc/terms/taxon]: taxon...
  total: [2090]
  :: [lib/Functions.php [457]]<br>
 Sending get request to file:///u/scripts/eol_php_code/applications/content_server/resources/21_ENV/meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=1 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=2 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=3 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=4 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=5 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=6 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=7 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=8 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=9 : only attempt :: [lib/Functions.php [173]]<br>
+Sending get request to http://beta-repo.eol.org/terms?per_page=1000&page=10 : only attempt :: [lib/Functions.php [173]]<br>
 
 Undefined URIs: 0
 
@@ -182,34 +223,35 @@ Array
 
 ----------end Checking unique IDs----------
 Completed update_resources/connectors/environments_2_eol.php :: [ []]<br>
-+ php update_resources/connectors/environments_2_eol.php _ '{"task": "apply_formats_filters", "resource_id":"21_ENVO"}'
++ php update_resources/connectors/environments_2_eol.php _ '{"task": "apply_formats_filters", "resource_id":"21"}'
 
 
 Creating this directory: [/u/scripts/eol_php_code/applications/content_server/resources//21_ENVO_working/]
 
 Converting archive to EOL DwCA...
 Please wait, downloading resource document... :: [lib/connectors/DwCA_Utility.php [115]]<br>
-/u/scripts/eol_php_code_tmp/dir_90565/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
-temp_dir: /u/scripts/eol_php_code_tmp/dir_90565/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
-Extracting... /u/scripts/eol_php_code_tmp/dir_90565/21_ENV.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
-archive path: [/u/scripts/eol_php_code_tmp/dir_90565/21_ENV.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
-Sending get request to file:///u/scripts/eol_php_code_tmp/dir_90565//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+/u/scripts/eol_php_code_tmp/dir_14968/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_14968/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_14968/21_ENV.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_14968/21_ENV.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_14968//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
 
-processing...: [http://rs.gbif.org/terms/1.0/vernacularname]: vernacular...
+processing...DwCA_Utility...: [http://rs.gbif.org/terms/1.0/vernacularname]: vernacular...
 
-processing...: [http://eol.org/schema/reference/reference]: reference...
+processing...DwCA_Utility...: [http://eol.org/schema/reference/reference]: reference...
 
-processing...: [http://eol.org/schema/agent/agent]: agent...
+processing...DwCA_Utility...: [http://eol.org/schema/agent/agent]: agent...
 
-processing...: [http://eol.org/schema/media/document]: document...
+processing...DwCA_Utility...: [http://eol.org/schema/media/document]: document...
 
-processing...: [http://rs.tdwg.org/dwc/terms/taxon]: taxon...
+processing...DwCA_Utility...: [http://rs.tdwg.org/dwc/terms/taxon]: taxon...
 
 
  Saving remote file: https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Terms_remapped/DATA_1841_terms_remapped.tsv :: [lib/connectors/TraitGeneric.php [133]]<br>
 
 
- Temporary file: /u/scripts/eol_php_code_tmp/tmp_93877.file :: [lib/connectors/TraitGeneric.php [133]]<br>
+ Temporary file: /u/scripts/eol_php_code_tmp/tmp_63108.file :: [lib/connectors/TraitGeneric.php [133]]<br>
+Sending get request to https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Terms_remapped/DATA_1841_terms_remapped.tsv : only attempt :: [lib/Functions.php [173]]<br>
 
 remapped_terms lib: 141
 
@@ -217,7 +259,7 @@ remapped_terms lib: 141
  Saving remote file: https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Environments/terrestrial_taxa.tsv :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
 
 
- Temporary file: /u/scripts/eol_php_code_tmp/tmp_30227.file :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
+ Temporary file: /u/scripts/eol_php_code_tmp/tmp_18170.file :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
 
 [https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Environments/terrestrial_taxa.tsv: 6620] [6619]
 
@@ -225,7 +267,7 @@ remapped_terms lib: 141
  Saving remote file: https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Environments/dangling terrestrial taxa.txt :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
 
 
- Temporary file: /u/scripts/eol_php_code_tmp/tmp_19045.file :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
+ Temporary file: /u/scripts/eol_php_code_tmp/tmp_21123.file :: [lib/connectors/EnvironmentsFilters.php [67]]<br>
 
 [https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Environments/dangling terrestrial taxa.txt: 1435] [7287]
 
@@ -238,8 +280,11 @@ process_taxon...(get taxonName_occurID_mValue)
 process_measurementorfact...(apply deletions)
 
 process_occurrence...(apply deletions)
+Notice: Undefined index: combination deleted MoF in /u/scripts/eol_php_code/lib/connectors/EnvironmentsFilters.php on line 39
 
- temporary directory removed: /u/scripts/eol_php_code_tmp/dir_90565/
+combination deleted MoF: No. of taxa with 1 or more MoF records removed: 0
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_14968/
  counting: [/u/scripts/eol_php_code/applications/content_server/resources/21_ENVO/agent.tab] :: [lib/Functions.php [457]]<br>
 
  total: [743]
@@ -319,38 +364,38 @@ Array
 ----------end Checking unique IDs----------
 
 ----end----
-elapsed time = 18.57 seconds 
-elapsed time = 0.31 minutes 
+elapsed time = 19.88 seconds 
+elapsed time = 0.33 minutes 
 elapsed time = 0.01 hours 
 
 Done processing.
 Completed update_resources/connectors/environments_2_eol.php :: [ []]<br>
-+ php update_resources/connectors/environments_2_eol.php _ '{"task": "apply_formats_filters_latest", "resource_id":"21_final"}'
++ php update_resources/connectors/environments_2_eol.php _ '{"task": "apply_formats_filters_latest", "resource_id":"21"}'
 
 
 Creating this directory: [/u/scripts/eol_php_code/applications/content_server/resources//21_final_working/]
 
 Converting archive to EOL DwCA...
 Please wait, downloading resource document... :: [lib/connectors/DwCA_Utility.php [115]]<br>
-/u/scripts/eol_php_code_tmp/dir_06487/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
-temp_dir: /u/scripts/eol_php_code_tmp/dir_06487/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
-Extracting... /u/scripts/eol_php_code_tmp/dir_06487/21_ENVO.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
-archive path: [/u/scripts/eol_php_code_tmp/dir_06487/21_ENVO.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
-Sending get request to file:///u/scripts/eol_php_code_tmp/dir_06487//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+/u/scripts/eol_php_code_tmp/dir_84683/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_84683/ :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_84683/21_ENVO.tar.gz :: [lib/connectors/DwCA_Utility.php [115]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_84683/21_ENVO.tar.gz] :: [lib/connectors/DwCA_Utility.php [115]]<br>
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_84683//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
 
-processing...: [http://rs.gbif.org/terms/1.0/vernacularname]: vernacular...
+processing...DwCA_Utility...: [http://rs.gbif.org/terms/1.0/vernacularname]: vernacular...
 
-processing...: [http://eol.org/schema/reference/reference]: reference...
+processing...DwCA_Utility...: [http://eol.org/schema/reference/reference]: reference...
 
-processing...: [http://eol.org/schema/agent/agent]: agent...
+processing...DwCA_Utility...: [http://eol.org/schema/agent/agent]: agent...
 
-processing...: [http://eol.org/schema/media/document]: document...
+processing...DwCA_Utility...: [http://eol.org/schema/media/document]: document...
 
 
  Saving remote file: https://github.com/eliagbayani/EOL-connector-data-files/raw/master/Terms_remapped/DATA_1841_terms_remapped.tsv :: [lib/connectors/TraitGeneric.php [133]]<br>
 
 
- Temporary file: /u/scripts/eol_php_code_tmp/tmp_33433.file :: [lib/connectors/TraitGeneric.php [133]]<br>
+ Temporary file: /u/scripts/eol_php_code_tmp/tmp_10103.file :: [lib/connectors/TraitGeneric.php [133]]<br>
 
 remapped_terms lib: 141
 
@@ -363,7 +408,7 @@ Array
 
 process process_measurementorfact_info()...
 
- temporary directory removed: /u/scripts/eol_php_code_tmp/dir_06487/
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_84683/
  counting: [/u/scripts/eol_php_code/applications/content_server/resources/21_final/agent.tab] :: [lib/Functions.php [457]]<br>
 
  total: [743]
@@ -443,14 +488,36 @@ Array
 ----------end Checking unique IDs----------
 
 ----end----
-elapsed time = 47.02 seconds 
-elapsed time = 0.78 minutes 
+elapsed time = 47.69 seconds 
+elapsed time = 0.79 minutes 
 elapsed time = 0.01 hours 
 
 Done processing.
 Completed update_resources/connectors/environments_2_eol.php :: [ []]<br>
 + cd /u/scripts/eol_php_code/applications/content_server/resources/
 + sshpass -f /home/eagbayani/.pwd_file scp 21_final.tar.gz eagbayani@eol-archive:/extra/eol_php_resources/.
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
++ sshpass -f /home/eagbayani/.pwd_file scp EOL_FreshData_connectors.txt eagbayani@eol-archive:/extra/eol_php_resources/eol_backend2_connectors.txt
 
 "WARNING"
 
