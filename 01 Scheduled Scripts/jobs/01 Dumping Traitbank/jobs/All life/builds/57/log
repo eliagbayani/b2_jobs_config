@@ -1,0 +1,212 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/01 Dumping Traitbank/All life
+[All life] $ /bin/sh -xe /tmp/jenkins3346839657876190599.sh
++ rm -rf '/u/scripts/.plotter_workspace/dump-*'
++ rm -rf /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ local command
++ command=global
++ '[' 2 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv global 2.6.5
++ rbenv global 2.6.5
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod CHUNK=100000
+Temporary files will be in /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all
+11143 terms
+6640 term parents
+Read timeout is 100
+** Net::ReadTimeout with #<TCPSocket:(closed)>
+** Will retry after 20 seconds, up to 2 times
+Read timeout is 100
+** Net::ReadTimeout with #<TCPSocket:(closed)>
+** Will retry after 20 seconds, up to 1 times
+Read timeout is 100
+** Failed to generate /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/pages.csv
+** Exception: Net::ReadTimeout with #<TCPSocket:(closed)>
+Net::ReadTimeout with #<TCPSocket:(closed)>
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/protocol.rb:217:in `rbuf_fill'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/protocol.rb:191:in `readuntil'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/protocol.rb:201:in `readline'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http/response.rb:40:in `read_status_line'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http/response.rb:29:in `read_new'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:1509:in `block in transport_request'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:1506:in `catch'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:1506:in `transport_request'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:1479:in `request'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:152:in `block in request_via_request_method'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:920:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:146:in `request_via_request_method'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:131:in `request_with_wrapped_block'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:122:in `perform_request'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:66:in `block in call'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/adapter.rb:53:in `connection'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:64:in `call'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday_middleware-1.0.0/lib/faraday_middleware/response/follow_redirects.rb:79:in `perform_with_redirection'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday_middleware-1.0.0/lib/faraday_middleware/response/follow_redirects.rb:67:in `call'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/rack_builder.rb:154:in `build_response'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/connection.rb:495:in `run_request'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/connection.rb:280:in `post'
+/u/scripts/plotter/lib/graph.rb:118:in `block in query_via_transaction_api'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/connection.rb:90:in `initialize'
+/u/scripts/plotter/lib/graph.rb:109:in `new'
+/u/scripts/plotter/lib/graph.rb:109:in `query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:17:in `block in via_neo4j_directly'
+/u/scripts/plotter/lib/graph.rb:63:in `run_query'
+/u/scripts/plotter/lib/paginator.rb:123:in `get_query_chunks'
+/u/scripts/plotter/lib/paginator.rb:72:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:384:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:202:in `emit_pages'
+/u/scripts/plotter/lib/traits_dumper.rb:89:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:28:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:474:in `exec'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:30:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:24:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:49:in `block in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:37:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+25 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/inferred.csv.chunks/2400000_100000.csv
+Read timeout is 100
+** Failed to generate /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/inferred.csv
+** Exception: Net::ReadTimeout with #<TCPSocket:(closed)>
+Net::ReadTimeout with #<TCPSocket:(closed)>
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/protocol.rb:217:in `rbuf_fill'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/protocol.rb:191:in `readuntil'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/protocol.rb:201:in `readline'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http/response.rb:40:in `read_status_line'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http/response.rb:29:in `read_new'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:1509:in `block in transport_request'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:1506:in `catch'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:1506:in `transport_request'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:1479:in `request'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:152:in `block in request_via_request_method'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/net/http.rb:920:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:146:in `request_via_request_method'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:131:in `request_with_wrapped_block'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:122:in `perform_request'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:66:in `block in call'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/adapter.rb:53:in `connection'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-net_http-1.0.1/lib/faraday/adapter/net_http.rb:64:in `call'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday_middleware-1.0.0/lib/faraday_middleware/response/follow_redirects.rb:79:in `perform_with_redirection'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday_middleware-1.0.0/lib/faraday_middleware/response/follow_redirects.rb:67:in `call'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/rack_builder.rb:154:in `build_response'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/connection.rb:495:in `run_request'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/connection.rb:280:in `post'
+/u/scripts/plotter/lib/graph.rb:118:in `block in query_via_transaction_api'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/faraday-1.4.3/lib/faraday/connection.rb:90:in `initialize'
+/u/scripts/plotter/lib/graph.rb:109:in `new'
+/u/scripts/plotter/lib/graph.rb:109:in `query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:17:in `block in via_neo4j_directly'
+/u/scripts/plotter/lib/graph.rb:63:in `run_query'
+/u/scripts/plotter/lib/paginator.rb:123:in `get_query_chunks'
+/u/scripts/plotter/lib/paginator.rb:72:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:384:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:356:in `emit_inferred'
+/u/scripts/plotter/lib/traits_dumper.rb:90:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:28:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:474:in `exec'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:30:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:24:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:49:in `block in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:37:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+Read timeout is 100
+** Net::ReadTimeout with #<TCPSocket:(closed)>
+** Will retry after 20 seconds, up to 2 times
+Read timeout is 100
+** Net::ReadTimeout with #<TCPSocket:(closed)>
+** Will retry after 20 seconds, up to 1 times
+Read timeout is 100
+rake aborted!
+Faraday::TimeoutError: Net::ReadTimeout with #<TCPSocket:(closed)>
+/u/scripts/plotter/lib/graph.rb:118:in `block in query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:109:in `new'
+/u/scripts/plotter/lib/graph.rb:109:in `query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:17:in `block in via_neo4j_directly'
+/u/scripts/plotter/lib/graph.rb:63:in `run_query'
+/u/scripts/plotter/lib/traits_dumper.rb:392:in `run_query'
+/u/scripts/plotter/lib/traits_dumper.rb:279:in `list_trait_predicates'
+/u/scripts/plotter/lib/traits_dumper.rb:221:in `emit_traits'
+/u/scripts/plotter/lib/traits_dumper.rb:91:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+
+Caused by:
+Net::ReadTimeout: Net::ReadTimeout with #<TCPSocket:(closed)>
+/u/scripts/plotter/lib/graph.rb:118:in `block in query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:109:in `new'
+/u/scripts/plotter/lib/graph.rb:109:in `query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:17:in `block in via_neo4j_directly'
+/u/scripts/plotter/lib/graph.rb:63:in `run_query'
+/u/scripts/plotter/lib/traits_dumper.rb:392:in `run_query'
+/u/scripts/plotter/lib/traits_dumper.rb:279:in `list_trait_predicates'
+/u/scripts/plotter/lib/traits_dumper.rb:221:in `emit_traits'
+/u/scripts/plotter/lib/traits_dumper.rb:91:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+Tasks: TOP => traits:dump
+(See full trace by running task with --trace)
+Thu Dec  8 21:41:01 EST 2022
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,89 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/EOL Connectors/Environmental tagger for EOL resources/Wikipedia EN (English)
+[Wikipedia EN (English)] $ /bin/sh -xe /tmp/jenkins4260062550154690692.sh
++ cd /u/scripts/eol_php_code/
++ php update_resources/connectors/environments_2_eol.php _ '{"task": "generate_eol_tags", "resource":"wikipedia English", "resource_id":"617", "subjects":"Description"}'
+
+Array
+(
+    [task] => generate_eol_tags
+    [resource] => wikipedia English
+    [resource_id] => 617_ENV
+    [subjects] => Description
+)
+Array
+(
+    [wikipedia English] => https://editors.eol.org/eol_php_code/applications/content_server/resources/80.tar.gz
+)
+
+File truncated: [/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv]
+
+File truncated: [/u/scripts/vangelis_tagger/eol_tags/eol_tags_noParentTerms.tsv]
+Please wait, downloading resource document... :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+/u/scripts/eol_php_code_tmp/dir_63651/ :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+temp_dir: /u/scripts/eol_php_code_tmp/dir_63651/ :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+Extracting... /u/scripts/eol_php_code_tmp/dir_63651/80.tar.gz :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+archive path: [/u/scripts/eol_php_code_tmp/dir_63651/80.tar.gz] :: [lib/connectors/Environments2EOLAPI.php [48]]<br>
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_63651/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_63651/
+)
+Sending get request to file:///u/scripts/eol_php_code_tmp/dir_63651//meta.xml : only attempt :: [lib/Functions.php [236]]<br>
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://eol.org/schema/media/document
+)
+
+process media tab...
+
+Run run_environment_tagger()...every 1000 records.
+sh: line 1: 249577 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249579 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249581 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249583 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249585 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249587 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249589 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249591 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249593 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249595 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249597 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249599 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249601 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249603 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249605 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249607 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249609 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249611 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249613 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249615 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249617 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249619 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249621 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249623 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249625 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+
+50,000sh: line 1: 249627 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249629 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249631 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249633 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249635 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249637 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249639 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249641 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249643 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249645 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249647 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249649 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249651 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249653 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249655 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249657 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+sh: line 1: 249659 Segmentation fault      ./environments_tagger /u/scripts/vangelis_tagger/test_text_data/ &>>/u/scripts/vangelis_tagger/eol_tags/eol_tags.tsv
+/tmp/jenkins4260062550154690692.sh: line 3: 249351 Terminated              php update_resources/connectors/environments_2_eol.php _ '{"task": "generate_eol_tags", "resource":"wikipedia English", "resource_id":"617", "subjects":"Description"}'
+Build was aborted
+Aborted by [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Finished: ABORTED

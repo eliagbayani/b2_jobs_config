@@ -1,0 +1,52 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/01 Dumping Traitbank/Smoke test (Carnivora)
+[Smoke test (Carnivora)] $ /bin/sh -xe /tmp/jenkins981794319484289555.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod ID=7662
+Temporary files will be in /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-7662
+10628 terms
+6363 term parents
+505 predicates
+505 trait predicate URIs
+Traits: Predicate 0 = http://eol.org/schema/terms/ExtinctionStatus
+Traits: Predicate 25 = http://purl.bioontology.org/ontology/CSP/2383-1863
+Traits: Predicate 50 = http://eol.org/schema/terms/TypeSpecimenRepository
+Traits: Predicate 75 = http://purl.bioontology.org/ontology/SNOMEDCT/75367002
+Traits: Predicate 100 = http://purl.obolibrary.org/obo/OBA_1000084
+Traits: Predicate 125 = http://eol.org/schema/terms/DevelopmentalMode
+Traits: Predicate 150 = http://purl.obolibrary.org/obo/PATO_0000273
+Traits: Predicate 175 = http://eol.org/schema/terms/GerminationRequirements
+Traits: Predicate 200 = http://purl.obolibrary.org/obo/OBA_1000127
+Traits: Predicate 225 = http://eol.org/schema/terms/max_growth_rate_internal_ammonimum
+Traits: Predicate 250 = http://purl.obolibrary.org/obo/OBA_1000018
+Traits: Predicate 275 = http://eol.org/schema/terms/PopulationGroupSize
+Traits: Predicate 300 = http://purl.obolibrary.org/obo/TO_0000519
+Traits: Predicate 325 = http://polytraits.lifewatchgreece.eu/terms/SPERM
+Traits: Predicate 350 = http://eol.org/schema/terms/TrophicGuild
+Traits: Predicate 375 = http://eol.org/schema/terms/CapitulumLength
+Traits: Predicate 400 = http://purl.obolibrary.org/obo/RO_0002618
+Traits: Predicate 425 = http://www.wikidata.org/entity/Q33596
+Traits: Predicate 450 = http://top-thesaurus.org/annotationInfo?viz=1&&trait=Stem_specific_density
+Traits: Predicate 475 = https://eol.org/schema/terms/mineralizedSkeletonContains
+Traits: Predicate 500 = https://eol.org/schema/terms/infection_effect
+** scary URI: ''
+Tue Jun 29 11:59:38 EDT 2021
+122 metadata predicate URIs
+Metadatas: Predicate 0 = http://purl.obolibrary.org/obo/VT_0001259
+Metadatas: Predicate 25 = http://rs.tdwg.org/dwc/terms/year
+Metadatas: Predicate 50 = http://purl.obolibrary.org/obo/STATO_0000315
+Metadatas: Predicate 75 = http://eol.org/schema/terms/VoucherType
+Metadatas: Predicate 100 = http://eol.org/schema/terms/secchiDepth
+** scary URI: ''
+storing terms.csv into zip file
+storing term_parents.csv into zip file
+storing pages.csv into zip file
+storing inferred.csv into zip file
+storing traits.csv into zip file
+storing metadata.csv into zip file
+Wrote traits to /u/scripts/.plotter_workspace/prod/trait_dumps/traits_7662_202106.zip
+Tue Jun 29 12:26:05 EDT 2021
+Finished: SUCCESS

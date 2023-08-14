@@ -27,12 +27,14 @@
 #sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp wikipedia_en_traits.tar.gz eagbayani@eol-archive:/extra/eol_php_resources/.
 
 ## move this file for all connectors:
-#sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp EOL_FreshData_connectors.txt eagbayani@eol-archive:/extra/eol_php_resources/eol_backend2_connectors.txt
+cd /u/scripts/eol_php_code/applications/content_server/resources/
+sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp EOL_FreshData_connectors.txt eagbayani@eol-archive:/extra/eol_php_resources/eol_backend2_connectors.txt
 
 # run in command line
 #sshpass -f &quot;/home/eagbayani/.pwd_file&quot; scp eol_tags_noParentTerms.tsv eagbayani@eol-archive:/extra/eol_php_resources/eol_tags_noParentTerms.tsv
 
 </command>
+      <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

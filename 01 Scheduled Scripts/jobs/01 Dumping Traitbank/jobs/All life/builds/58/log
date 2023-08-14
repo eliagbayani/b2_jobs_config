@@ -1,0 +1,137 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/01 Dumping Traitbank/All life
+[All life] $ /bin/sh -xe /tmp/jenkins115482074322772749.sh
++ rm -rf '/u/scripts/.plotter_workspace/dump-*'
++ rm -rf /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ local command
++ command=global
++ '[' 2 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv global 2.6.5
++ rbenv global 2.6.5
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod CHUNK=100000
+Temporary files will be in /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all
+11368 terms
+6651 term parents
+25 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/pages.csv.chunks/2400000_100000.csv
+Sun Jan  8 21:41:01 EST 2023
+25 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/inferred.csv.chunks/2400000_100000.csv
+50 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/inferred.csv.chunks/4900000_100000.csv
+75 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/inferred.csv.chunks/7400000_100000.csv
+100 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/inferred.csv.chunks/9900000_100000.csv
+528 predicates
+528 trait predicate URIs
+Traits: Predicate 0 = http://eol.org/schema/terms/ExtinctionStatus
+25 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/traits.csv.predicates/20.csv.chunks/2400000_100000.csv
+Traits: Predicate 25 = http://purl.bioontology.org/ontology/CSP/2383-1863
+Traits: Predicate 50 = http://eol.org/schema/terms/TypeSpecimenRepository
+Traits: Predicate 75 = http://eol.org/schema/terms/AdultYearlySurvival
+Traits: Predicate 100 = http://eol.org/schema/terms/BudSource
+Traits: Predicate 125 = http://eol.org/schema/terms/ChloroplastNumber
+Traits: Predicate 150 = http://eol.org/schema/terms/eggColor
+Traits: Predicate 175 = http://eol.org/schema/terms/FoliagePorositySummer
+Traits: Predicate 200 = http://eol.org/schema/terms/halfmax_uptake_concentration_ammonium
+25 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/traits.csv.predicates/204.csv.chunks/2400000_100000.csv
+50 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/traits.csv.predicates/204.csv.chunks/4900000_100000.csv
+Traits: Predicate 225 = http://polytraits.lifewatchgreece.eu/terms/LDEV
+Traits: Predicate 250 = http://eol.org/schema/terms/max_uptake_rate_phosphate
+Traits: Predicate 275 = http://eol.org/schema/terms/NumberOfSequencesInGenBank
+Traits: Predicate 300 = http://eol.org/schema/terms/ProsomeWidth
+Traits: Predicate 325 = http://eol.org/schema/terms/SequenceInGenBank
+Traits: Predicate 350 = http://purl.bioontology.org/ontology/MSH/D054712
+Traits: Predicate 375 = http://rs.tdwg.org/dwc/terms/verbatimDepth
+Traits: Predicate 400 = http://purl.org/obo/owlATOL_0001658
+Traits: Predicate 425 = http://purl.obolibrary.org/obo/RO_0002440
+Traits: Predicate 450 = http://eol.org/schema/terms/WingMorphology
+Traits: Predicate 475 = https://www.wikidata.org/entity/Q295469
+Traits: Predicate 500 = http://purl.obolibrary.org/obo/PO_0025340
+Traits: Predicate 525 = http://purl.obolibrary.org/obo/PATO_0001454
+** scary URI: ''
+150 metadata predicate URIs
+Metadatas: Predicate 0 = http://purl.obolibrary.org/obo/VT_0001259
+25 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/metadata.csv.predicates/9.csv.chunks/2400000_100000.csv
+50 /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/metadata.csv.predicates/9.csv.chunks/4900000_100000.csv
+Metadatas: Predicate 25 = http://rs.tdwg.org/dwc/terms/typeStatus
+Metadatas: Predicate 50 = http://rs.tdwg.org/dwc/terms/fieldNotes
+Metadatas: Predicate 75 = http://eol.org/schema/terms/ShellHeightBivalve
+Metadatas: Predicate 100 = http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
+Metadatas: Predicate 125 = https://www.wikidata.org/entity/Q22093455
+** scary URI: ''
+storing terms.csv into zip file
+storing term_parents.csv into zip file
+storing pages.csv into zip file
+storing inferred.csv into zip file
+storing traits.csv into zip file
+storing metadata.csv into zip file
+Wrote traits to /u/scripts/.plotter_workspace/prod/trait_dumps/traits_all_202301.zip
+Mon Jan  9 05:43:34 EST 2023
+
+real	482m33.557s
+user	50m59.317s
+sys	10m23.366s
++ sleep 60
++ cd /u/scripts/.plotter_workspace/prod/trait_dumps/
+++ date +%Y%m
++ chmod 775 traits_all_202301.zip
+++ date +%Y%m
++ rsync -zavh '--rsh=sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani' traits_all_202301.zip eol-archive:/extra/other_files/SDR/
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Service Desk: ocioservicedesk@si.edu 202-633-4000.
+
+sending incremental file list
+traits_all_202301.zip
+
+sent 663.72M bytes  received 35 bytes  28.24M bytes/sec
+total size is 692.38M  speedup is 1.04
+++ date +%Y%m
++ rsync -zavh '--rsh=sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani' traits_all_202301.zip eol-archive:/extra/other_files/SDR/traits_all.zip
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Service Desk: ocioservicedesk@si.edu 202-633-4000.
+
+sending incremental file list
+traits_all_202301.zip
+
+sent 639.26M bytes  received 189.50K bytes  16.19M bytes/sec
+total size is 692.38M  speedup is 1.08
+Finished: SUCCESS

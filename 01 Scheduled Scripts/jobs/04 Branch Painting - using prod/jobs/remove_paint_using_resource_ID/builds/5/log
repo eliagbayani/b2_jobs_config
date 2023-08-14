@@ -1,0 +1,13 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/remove_paint_using_resource_ID
+[remove_paint_using_resource_ID] $ /bin/sh -xe /tmp/jenkins739982585119234260.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/plotter/lib/
++ rake paint:erase ID=822 CONF=prod
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+0
+Resource 822 on prod is understood as 'Kubitzki et al'
+Finished: SUCCESS

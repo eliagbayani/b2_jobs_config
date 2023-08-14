@@ -1,0 +1,244 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/02 Generate PRM and REP records/Step 3 - Actual reports
+[Step 3 - Actual reports] $ /bin/sh -xe /tmp/jenkins8402249355293819995.sh
++ cd /u/scripts/eol_php_code/update_resources/connectors/
++ php SDR_all.php _ '{"task":"print_basal_values", "folder_date":202008}'
+
+
+Creating this directory: [/u/scripts/eol_php_code/applications/content_server/resources//BV_consolid8_working/]
+
+Get page_ids for...[http://eol.org/schema/terms/Present]
+
+
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_94645/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_94645/
+    [tables] => Array
+        (
+            [taxa] => taxon.tab
+        )
+
+)
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_94645/
+5,000===============Method: basal values - page_id: 1014479 | predicate: [http://eol.org/schema/terms/Present]
+10,000===============Method: basal values - page_id: 1028292 | predicate: [http://eol.org/schema/terms/Present]
+15,000===============Method: basal values - page_id: 1038591 | predicate: [http://eol.org/schema/terms/Present]
+20,000===============Method: basal values - page_id: 1050733 | predicate: [http://eol.org/schema/terms/Present]
+25,000===============Method: basal values - page_id: 10699373 | predicate: [http://eol.org/schema/terms/Present]
+30,000===============Method: basal values - page_id: 1086278 | predicate: [http://eol.org/schema/terms/Present]
+35,000===============Method: basal values - page_id: 1093518 | predicate: [http://eol.org/schema/terms/Present]
+40,000===============Method: basal values - page_id: 1100674 | predicate: [http://eol.org/schema/terms/Present]
+45,000===============Method: basal values - page_id: 1108420 | predicate: [http://eol.org/schema/terms/Present]
+50,000===============Method: basal values - page_id: 1115413 | predicate: [http://eol.org/schema/terms/Present]
+55,000===============Method: basal values - page_id: 1122414 | predicate: [http://eol.org/schema/terms/Present]
+60,000===============Method: basal values - page_id: 1129390 | predicate: [http://eol.org/schema/terms/Present]
+65,000===============Method: basal values - page_id: 1135852 | predicate: [http://eol.org/schema/terms/Present]
+70,000===============Method: basal values - page_id: 1142698 | predicate: [http://eol.org/schema/terms/Present]
+75,000===============Method: basal values - page_id: 1149129 | predicate: [http://eol.org/schema/terms/Present]
+80,000===============Method: basal values - page_id: 1156042 | predicate: [http://eol.org/schema/terms/Present]
+85,000===============Method: basal values - page_id: 1172666 | predicate: [http://eol.org/schema/terms/Present]
+90,000===============Method: basal values - page_id: 1185674 | predicate: [http://eol.org/schema/terms/Present]
+95,000===============Method: basal values - page_id: 1200343 | predicate: [http://eol.org/schema/terms/Present]
+100,000===============Method: basal values - page_id: 1217283 | predicate: [http://eol.org/schema/terms/Present]
+105,000===============Method: basal values - page_id: 133037 | predicate: [http://eol.org/schema/terms/Present]
+110,000===============Method: basal values - page_id: 143207 | predicate: [http://eol.org/schema/terms/Present]
+115,000===============Method: basal values - page_id: 16177509 | predicate: [http://eol.org/schema/terms/Present]
+120,000===============Method: basal values - page_id: 17719323 | predicate: [http://eol.org/schema/terms/Present]
+125,000===============Method: basal values - page_id: 18709724 | predicate: [http://eol.org/schema/terms/Present]
+130,000===============Method: basal values - page_id: 19645750 | predicate: [http://eol.org/schema/terms/Present]
+135,000===============Method: basal values - page_id: 207630 | predicate: [http://eol.org/schema/terms/Present]
+140,000===============Method: basal values - page_id: 21821249 | predicate: [http://eol.org/schema/terms/Present]
+145,000===============Method: basal values - page_id: 223188 | predicate: [http://eol.org/schema/terms/Present]
+150,000===============Method: basal values - page_id: 238456 | predicate: [http://eol.org/schema/terms/Present]
+155,000===============Method: basal values - page_id: 249207 | predicate: [http://eol.org/schema/terms/Present]
+160,000===============Method: basal values - page_id: 2666880 | predicate: [http://eol.org/schema/terms/Present]
+165,000===============Method: basal values - page_id: 27477899 | predicate: [http://eol.org/schema/terms/Present]
+170,000===============Method: basal values - page_id: 2762590 | predicate: [http://eol.org/schema/terms/Present]
+175,000===============Method: basal values - page_id: 2872717 | predicate: [http://eol.org/schema/terms/Present]
+180,000===============Method: basal values - page_id: 2891269 | predicate: [http://eol.org/schema/terms/Present]
+185,000===============Method: basal values - page_id: 2905586 | predicate: [http://eol.org/schema/terms/Present]
+190,000===============Method: basal values - page_id: 297646 | predicate: [http://eol.org/schema/terms/Present]
+195,000===============Method: basal values - page_id: 303952 | predicate: [http://eol.org/schema/terms/Present]
+200,000===============Method: basal values - page_id: 309218 | predicate: [http://eol.org/schema/terms/Present]
+205,000===============Method: basal values - page_id: 31264828 | predicate: [http://eol.org/schema/terms/Present]
+210,000===============Method: basal values - page_id: 323962 | predicate: [http://eol.org/schema/terms/Present]
+215,000===============Method: basal values - page_id: 330637 | predicate: [http://eol.org/schema/terms/Present]
+220,000===============Method: basal values - page_id: 3388991 | predicate: [http://eol.org/schema/terms/Present]
+225,000===============Method: basal values - page_id: 3471440 | predicate: [http://eol.org/schema/terms/Present]
+230,000===============Method: basal values - page_id: 360130 | predicate: [http://eol.org/schema/terms/Present]
+235,000===============Method: basal values - page_id: 3741924 | predicate: [http://eol.org/schema/terms/Present]
+240,000===============Method: basal values - page_id: 379733 | predicate: [http://eol.org/schema/terms/Present]
+245,000===============Method: basal values - page_id: 395881 | predicate: [http://eol.org/schema/terms/Present]
+250,000===============Method: basal values - page_id: 406824 | predicate: [http://eol.org/schema/terms/Present]
+255,000===============Method: basal values - page_id: 418083 | predicate: [http://eol.org/schema/terms/Present]
+260,000===============Method: basal values - page_id: 4220356 | predicate: [http://eol.org/schema/terms/Present]
+265,000===============Method: basal values - page_id: 432129 | predicate: [http://eol.org/schema/terms/Present]
+270,000===============Method: basal values - page_id: 44451587 | predicate: [http://eol.org/schema/terms/Present]
+275,000===============Method: basal values - page_id: 45317422 | predicate: [http://eol.org/schema/terms/Present]
+280,000===============Method: basal values - page_id: 45370961 | predicate: [http://eol.org/schema/terms/Present]
+285,000===============Method: basal values - page_id: 45510793 | predicate: [http://eol.org/schema/terms/Present]
+290,000===============Method: basal values - page_id: 45517484 | predicate: [http://eol.org/schema/terms/Present]
+295,000===============Method: basal values - page_id: 46394309 | predicate: [http://eol.org/schema/terms/Present]
+300,000===============Method: basal values - page_id: 46455254 | predicate: [http://eol.org/schema/terms/Present]
+305,000===============Method: basal values - page_id: 46463132 | predicate: [http://eol.org/schema/terms/Present]
+310,000===============Method: basal values - page_id: 46470977 | predicate: [http://eol.org/schema/terms/Present]
+315,000===============Method: basal values - page_id: 46479990 | predicate: [http://eol.org/schema/terms/Present]
+320,000===============Method: basal values - page_id: 46490635 | predicate: [http://eol.org/schema/terms/Present]
+325,000===============Method: basal values - page_id: 46505894 | predicate: [http://eol.org/schema/terms/Present]
+330,000===============Method: basal values - page_id: 46517841 | predicate: [http://eol.org/schema/terms/Present]
+335,000===============Method: basal values - page_id: 46525434 | predicate: [http://eol.org/schema/terms/Present]
+340,000===============Method: basal values - page_id: 46534374 | predicate: [http://eol.org/schema/terms/Present]
+345,000===============Method: basal values - page_id: 46547414 | predicate: [http://eol.org/schema/terms/Present]
+350,000===============Method: basal values - page_id: 46555502 | predicate: [http://eol.org/schema/terms/Present]
+355,000===============Method: basal values - page_id: 46564455 | predicate: [http://eol.org/schema/terms/Present]
+360,000===============Method: basal values - page_id: 46570965 | predicate: [http://eol.org/schema/terms/Present]
+365,000===============Method: basal values - page_id: 46577429 | predicate: [http://eol.org/schema/terms/Present]
+370,000===============Method: basal values - page_id: 46584312 | predicate: [http://eol.org/schema/terms/Present]
+375,000===============Method: basal values - page_id: 46724075 | predicate: [http://eol.org/schema/terms/Present]
+380,000===============Method: basal values - page_id: 46856282 | predicate: [http://eol.org/schema/terms/Present]
+385,000===============Method: basal values - page_id: 46973402 | predicate: [http://eol.org/schema/terms/Present]
+390,000===============Method: basal values - page_id: 47102209 | predicate: [http://eol.org/schema/terms/Present]
+395,000===============Method: basal values - page_id: 47125700 | predicate: [http://eol.org/schema/terms/Present]
+400,000===============Method: basal values - page_id: 47146900 | predicate: [http://eol.org/schema/terms/Present]
+405,000===============Method: basal values - page_id: 47163256 | predicate: [http://eol.org/schema/terms/Present]
+410,000===============Method: basal values - page_id: 4795433 | predicate: [http://eol.org/schema/terms/Present]
+415,000===============Method: basal values - page_id: 4858202 | predicate: [http://eol.org/schema/terms/Present]
+420,000===============Method: basal values - page_id: 492114 | predicate: [http://eol.org/schema/terms/Present]
+425,000===============Method: basal values - page_id: 5036530 | predicate: [http://eol.org/schema/terms/Present]
+430,000===============Method: basal values - page_id: 5116453 | predicate: [http://eol.org/schema/terms/Present]
+435,000===============Method: basal values - page_id: 5158193 | predicate: [http://eol.org/schema/terms/Present]
+440,000===============Method: basal values - page_id: 5237753 | predicate: [http://eol.org/schema/terms/Present]
+445,000===============Method: basal values - page_id: 536074 | predicate: [http://eol.org/schema/terms/Present]
+450,000===============Method: basal values - page_id: 5403262 | predicate: [http://eol.org/schema/terms/Present]
+455,000===============Method: basal values - page_id: 5437834 | predicate: [http://eol.org/schema/terms/Present]
+460,000===============Method: basal values - page_id: 5473894 | predicate: [http://eol.org/schema/terms/Present]
+465,000===============Method: basal values - page_id: 5512838 | predicate: [http://eol.org/schema/terms/Present]
+470,000===============Method: basal values - page_id: 5605012 | predicate: [http://eol.org/schema/terms/Present]
+475,000===============Method: basal values - page_id: 5644908 | predicate: [http://eol.org/schema/terms/Present]
+480,000===============Method: basal values - page_id: 5707906 | predicate: [http://eol.org/schema/terms/Present]
+485,000===============Method: basal values - page_id: 578357 | predicate: [http://eol.org/schema/terms/Present]
+490,000===============Method: basal values - page_id: 5820301 | predicate: [http://eol.org/schema/terms/Present]
+495,000===============Method: basal values - page_id: 585692 | predicate: [http://eol.org/schema/terms/Present]
+500,000===============Method: basal values - page_id: 594940 | predicate: [http://eol.org/schema/terms/Present]
+505,000===============Method: basal values - page_id: 6078531 | predicate: [http://eol.org/schema/terms/Present]
+510,000===============Method: basal values - page_id: 6125495 | predicate: [http://eol.org/schema/terms/Present]
+515,000===============Method: basal values - page_id: 6190748 | predicate: [http://eol.org/schema/terms/Present]
+520,000===============Method: basal values - page_id: 6228476 | predicate: [http://eol.org/schema/terms/Present]
+525,000===============Method: basal values - page_id: 6267370 | predicate: [http://eol.org/schema/terms/Present]
+530,000===============Method: basal values - page_id: 6358851 | predicate: [http://eol.org/schema/terms/Present]
+535,000===============Method: basal values - page_id: 642896 | predicate: [http://eol.org/schema/terms/Present]
+540,000===============Method: basal values - page_id: 6479441 | predicate: [http://eol.org/schema/terms/Present]
+545,000===============Method: basal values - page_id: 6592477 | predicate: [http://eol.org/schema/terms/Present]
+550,000===============Method: basal values - page_id: 6682385 | predicate: [http://eol.org/schema/terms/Present]
+555,000===============Method: basal values - page_id: 6763326 | predicate: [http://eol.org/schema/terms/Present]
+560,000===============Method: basal values - page_id: 689791 | predicate: [http://eol.org/schema/terms/Present]
+565,000===============Method: basal values - page_id: 712849 | predicate: [http://eol.org/schema/terms/Present]
+570,000===============Method: basal values - page_id: 727480 | predicate: [http://eol.org/schema/terms/Present]
+575,000===============Method: basal values - page_id: 742195 | predicate: [http://eol.org/schema/terms/Present]
+580,000===============Method: basal values - page_id: 759664 | predicate: [http://eol.org/schema/terms/Present]
+585,000===============Method: basal values - page_id: 788089 | predicate: [http://eol.org/schema/terms/Present]
+590,000===============Method: basal values - page_id: 806614 | predicate: [http://eol.org/schema/terms/Present]
+595,000===============Method: basal values - page_id: 833755 | predicate: [http://eol.org/schema/terms/Present]
+600,000===============Method: basal values - page_id: 860823 | predicate: [http://eol.org/schema/terms/Present]
+605,000===============Method: basal values - page_id: 890625 | predicate: [http://eol.org/schema/terms/Present]
+610,000===============Method: basal values - page_id: 915924 | predicate: [http://eol.org/schema/terms/Present]
+615,000===============Method: basal values - page_id: 929485 | predicate: [http://eol.org/schema/terms/Present]
+620,000===============Method: basal values - page_id: 965473 | predicate: [http://eol.org/schema/terms/Present]
+625,000===============Method: basal values - page_id: 989707 | predicate: [http://eol.org/schema/terms/Present]
+Get page_ids for...[http://eol.org/schema/terms/Habitat]
+
+Get page_ids for...[http://purl.obolibrary.org/obo/FLOPO_0900032]
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_18700/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_18700/
+    [tables] => Array
+        (
+            [taxa] => taxon.tab
+        )
+
+)
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_18700/
+630,000===============Method: basal values - page_id: 1082009 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+635,000===============Method: basal values - page_id: 1098021 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+640,000===============Method: basal values - page_id: 1111422 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+645,000===============Method: basal values - page_id: 1124658 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+650,000===============Method: basal values - page_id: 1144294 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+655,000===============Method: basal values - page_id: 1152440 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+660,000===============Method: basal values - page_id: 23020417 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+665,000===============Method: basal values - page_id: 2884682 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+670,000===============Method: basal values - page_id: 31082634 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+675,000===============Method: basal values - page_id: 468458 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+680,000===============Method: basal values - page_id: 47134929 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+685,000===============Method: basal values - page_id: 483856 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+690,000===============Method: basal values - page_id: 5121515 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+695,000===============Method: basal values - page_id: 5326812 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+700,000===============Method: basal values - page_id: 5403811 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+705,000===============Method: basal values - page_id: 5451438 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+710,000===============Method: basal values - page_id: 5517734 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+715,000===============Method: basal values - page_id: 5637730 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+720,000===============Method: basal values - page_id: 5728280 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+725,000===============Method: basal values - page_id: 5809839 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+730,000===============Method: basal values - page_id: 5836797 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+735,000===============Method: basal values - page_id: 595029 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+740,000===============Method: basal values - page_id: 6231492 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+745,000===============Method: basal values - page_id: 638515 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+750,000===============Method: basal values - page_id: 660914 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+755,000===============Method: basal values - page_id: 8673728 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+----------Checking unique IDs [basal_values]...----------
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://rs.tdwg.org/dwc/terms/occurrence
+    [2] => http://rs.tdwg.org/dwc/terms/measurementorfact
+)
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/taxon
+    [1] => http://rs.tdwg.org/dwc/terms/occurrence
+    [2] => http://rs.tdwg.org/dwc/terms/measurementorfact
+)
+
+ taxon  -- OK
+
+ occurrence  -- OK
+
+ measurementorfact  -- OK
+
+----------end Checking unique IDs----------
+
+----------Checking unique IDs [BV_consolid8]...----------
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/measurementorfact
+    [1] => http://rs.tdwg.org/dwc/terms/taxon
+    [2] => http://rs.tdwg.org/dwc/terms/occurrence
+)
+Array
+(
+    [0] => http://rs.tdwg.org/dwc/terms/measurementorfact
+    [1] => http://rs.tdwg.org/dwc/terms/taxon
+    [2] => http://rs.tdwg.org/dwc/terms/occurrence
+)
+
+ measurementorfact  -- OK
+
+ taxon  -- OK
+
+ occurrence  -- OK
+
+----------end Checking unique IDs----------
+
+-end print resource files (Basal values)-
+
+
+
+ elapsed time = 2539.202306 seconds
+ elapsed time = 42.320038433333 minutes
+ elapsed time = 0.70533397388889 hours
+ Done processing.
+Finished: SUCCESS

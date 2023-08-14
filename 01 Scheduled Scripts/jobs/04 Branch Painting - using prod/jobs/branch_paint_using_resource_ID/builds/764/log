@@ -1,0 +1,90 @@
+Started by user [8mha:////4AHKSYytz7GDPtCQzYYBuWHdGZf5KECiHYHD1Ou8OaFtAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZe/dLi1CL97OLkjNKcKgCDo6MRwgAAAA==[0mKatja Schulz
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/branch_paint_using_resource_ID
+[branch_paint_using_resource_ID] $ /bin/sh -xe /tmp/jenkins7427104421373016509.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/.plotter_workspace/prod/resources/
++ rm -i -rf 'prod.1173.*'
++ cd /u/scripts/.plotter_workspace/prod/staging/
++ rm -i -rf 'prod.1173.*'
++ cd /u/scripts/plotter/lib/
++ rake paint:count CONF=prod ID=1173
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+0 inferred trait assertions
+Resource 1173 on prod is understood as 'Arthropod Trophic Ecology Data'
++ rake paint:prepare CONF=prod ID=1173 CHUNK=2500
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+MATCH (:Resource {resource_id: 1173})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+       OPTIONAL MATCH (t)-[:object_term]->(o:Term)
+       WITH t, toInteger(m.measurement) as start_id, o
+       MATCH (:Page {page_id: start_id})<-[:parent*1..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait, d.canonical, t.measurement, o.name
+25 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/60000_2500.csv
+50 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/122500_2500.csv
+75 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/185000_2500.csv
+100 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/247500_2500.csv
+125 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/310000_2500.csv
+150 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/372500_2500.csv
+175 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/435000_2500.csv
+200 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/497500_2500.csv
+225 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/560000_2500.csv
+250 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/622500_2500.csv
+275 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/685000_2500.csv
+Resource 1173 on prod is understood as 'Arthropod Trophic Ecology Data'
+MATCH (:Resource {resource_id: 1173})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/stops_at'})
+       WITH t, toInteger(m.measurement) as stop_id
+       MATCH (stop:Page {page_id: stop_id})
+       WITH stop, t
+       MATCH (stop)<-[:parent*0..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait
+Neo4j error... Graph::Neo4jError
+** Failed to generate /u/scripts/.plotter_workspace/prod/resources/1173/inferences/retract.csv
+** Exception: Graph::Neo4jError
+Neo4j error(s) - Neo.ClientError.Statement.TypeError integer, 765752797767799777769826, is too large
+/u/scripts/plotter/lib/graph.rb:65:in `run_query'
+/u/scripts/plotter/lib/paginator.rb:123:in `get_query_chunks'
+/u/scripts/plotter/lib/paginator.rb:72:in `supervise_query'
+/u/scripts/plotter/lib/painter.rb:387:in `run_chunked_query'
+/u/scripts/plotter/lib/painter.rb:339:in `paint_or_infer'
+/u/scripts/plotter/lib/painter.rb:213:in `infer'
+/u/scripts/plotter/lib/painter.rb:82:in `prepare'
+/u/scripts/plotter/rakelib/paint.rake:38:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<main>'
+rake aborted!
+Exception in query
+/u/scripts/plotter/lib/painter.rb:391:in `run_chunked_query'
+/u/scripts/plotter/lib/painter.rb:339:in `paint_or_infer'
+/u/scripts/plotter/lib/painter.rb:213:in `infer'
+/u/scripts/plotter/lib/painter.rb:82:in `prepare'
+/u/scripts/plotter/rakelib/paint.rake:38:in `block (2 levels) in <top (required)>'
+Tasks: TOP => paint:prepare
+(See full trace by running task with --trace)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

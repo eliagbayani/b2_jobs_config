@@ -7,7 +7,7 @@
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
-        <numToKeep>10</numToKeep>
+        <numToKeep>15</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
@@ -20,26 +20,44 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>H H(4-5) 19 1-12 *</spec>
+      <spec>#H H(4-5) 15 1-12 *
+H H(21-22) 8 1-12 *
+# -&gt; commented for now, until the all-dump is fixed</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>#source ~/.bash_profile &gt;/dev/null 2&gt;&amp;1
+      <command>rm -rf /u/scripts/.plotter_workspace/dump-*
+rm -rf /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-*
+## this is an integral part, to initialize periodic harvest
+
+#source ~/.bash_profile &gt;/dev/null 2&gt;&amp;1
 source ~/.bash_profile &amp;&gt;/dev/null
-rbenv global 2.6.4
+rbenv global 2.6.5
 cd /u/scripts/plotter/
-time bundle exec rake traits:dump CONF=prod
+
+## orig
+#time bundle exec rake traits:dump CONF=prod
+
+## jrice suggests: CHUNK
+time bundle exec rake traits:dump CONF=prod CHUNK=100000
 
 # copy results to eol-archive:
+sleep 60
 
-cd /u/scripts/.plotter_workspace/
+## commented temporarily: will check above results before proceeding here:
+cd /u/scripts/.plotter_workspace/prod/trait_dumps/
+
+## e.g. traits_all_202106.zip
 chmod 775 traits_all_$(date &apos;+%Y%m&apos;).zip
 rsync -zavh --rsh=&quot;sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani&quot; traits_all_$(date &apos;+%Y%m&apos;).zip eol-archive:/extra/other_files/SDR/
 rsync -zavh --rsh=&quot;sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani&quot; traits_all_$(date &apos;+%Y%m&apos;).zip eol-archive:/extra/other_files/SDR/traits_all.zip
 
+# this will update &apos;Last updated&apos; in: https://opendata.eol.org/dataset/all-trait-data-large/resource/6e24f0df-56ee-470f-b81e-e5a367a65bfb
+curl https://editors.eol.org/eol_php_code/update_resources/connectors/ckan_api_access.php -d ckan_resource_id=6e24f0df-56ee-470f-b81e-e5a367a65bfb
 </command>
+      <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

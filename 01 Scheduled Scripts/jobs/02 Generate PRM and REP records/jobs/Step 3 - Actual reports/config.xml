@@ -12,6 +12,18 @@
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
     </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>YearMonth</name>
+          <description>e.g.
+Enter 202006 for Jun 2020
+Enter 202008 for Aug 2020</description>
+          <defaultValue>202008</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
@@ -30,6 +42,7 @@ php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_parent_basal_values&quot;,
 php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_taxon_summary&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;              #22.92 minutes
 php SDR_all.php _ &apos;{&quot;task&quot;:&quot;print_parent_taxon_summary&quot;, &quot;folder_date&quot;:&apos;$YearMonth&apos;}&apos;       #12.58 hours
 </command>
+      <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

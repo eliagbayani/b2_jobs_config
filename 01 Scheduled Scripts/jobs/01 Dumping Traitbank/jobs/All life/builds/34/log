@@ -1,0 +1,352 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/01 Dumping Traitbank/All life
+[All life] $ /bin/sh -xe /tmp/jenkins2941222284984467249.sh
++ rm -rf '/u/scripts/.plotter_workspace/dump-*'
++ rm -rf /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ local command
++ command=global
++ '[' 2 -gt 0 ']'
++ shift
++ case "$command" in
++ command rbenv global 2.6.5
++ rbenv global 2.6.5
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod
+Temporary files will be in /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all
+10630 terms
+6364 term parents
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 2 times
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 1 times
+Neo4j error... Graph::Neo4jError
+** Failed to generate /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/pages.csv
+** Exception: Graph::Neo4jError
+Neo4j error(s) - Neo.DatabaseError.Statement.ExecutionFailed The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. The transaction has not completed within the specified timeout (dbms.transaction.timeout). You may want to retry with a longer timeout. 
+/u/scripts/plotter/lib/graph.rb:65:in `run_query'
+/u/scripts/plotter/lib/paginator.rb:135:in `get_query_chunks'
+/u/scripts/plotter/lib/paginator.rb:79:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:401:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:207:in `emit_pages'
+/u/scripts/plotter/lib/traits_dumper.rb:89:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:28:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:474:in `exec'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:30:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:24:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:49:in `block in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:37:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 2 times
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 1 times
+Neo4j error... Graph::Neo4jError
+** Failed to generate /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/inferred.csv
+** Exception: Graph::Neo4jError
+Neo4j error(s) - Neo.DatabaseError.Statement.ExecutionFailed The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. The transaction has not completed within the specified timeout (dbms.transaction.timeout). You may want to retry with a longer timeout. 
+/u/scripts/plotter/lib/graph.rb:65:in `run_query'
+/u/scripts/plotter/lib/paginator.rb:135:in `get_query_chunks'
+/u/scripts/plotter/lib/paginator.rb:79:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:401:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:373:in `emit_inferred'
+/u/scripts/plotter/lib/traits_dumper.rb:90:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:28:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:474:in `exec'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:30:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:24:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:49:in `block in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:37:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+505 predicates
+505 trait predicate URIs
+Traits: Predicate 0 = http://eol.org/schema/terms/ExtinctionStatus
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 2 times
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 1 times
+Neo4j error... Graph::Neo4jError
+** Failed to generate /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/traits.csv.predicates/20.csv
+** Exception: Graph::Neo4jError
+Neo4j error(s) - Neo.DatabaseError.Statement.ExecutionFailed The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. The transaction has not completed within the specified timeout (dbms.transaction.timeout). You may want to retry with a longer timeout. 
+/u/scripts/plotter/lib/graph.rb:65:in `run_query'
+/u/scripts/plotter/lib/paginator.rb:135:in `get_query_chunks'
+/u/scripts/plotter/lib/paginator.rb:79:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:401:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:259:in `block in emit_traits'
+/u/scripts/plotter/lib/traits_dumper.rb:236:in `each'
+/u/scripts/plotter/lib/traits_dumper.rb:236:in `emit_traits'
+/u/scripts/plotter/lib/traits_dumper.rb:91:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:28:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:474:in `exec'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:30:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:24:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:49:in `block in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:37:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+Traits: Predicate 25 = http://purl.bioontology.org/ontology/CSP/2383-1863
+Traits: Predicate 50 = http://eol.org/schema/terms/TypeSpecimenRepository
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 2 times
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 1 times
+Neo4j error... Graph::Neo4jError
+** Failed to generate /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/traits.csv.predicates/50.csv
+** Exception: Graph::Neo4jError
+Neo4j error(s) - Neo.DatabaseError.Statement.ExecutionFailed The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. The transaction has not completed within the specified timeout (dbms.transaction.timeout). You may want to retry with a longer timeout. 
+/u/scripts/plotter/lib/graph.rb:65:in `run_query'
+/u/scripts/plotter/lib/paginator.rb:135:in `get_query_chunks'
+/u/scripts/plotter/lib/paginator.rb:79:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:401:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:259:in `block in emit_traits'
+/u/scripts/plotter/lib/traits_dumper.rb:236:in `each'
+/u/scripts/plotter/lib/traits_dumper.rb:236:in `emit_traits'
+/u/scripts/plotter/lib/traits_dumper.rb:91:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:28:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:474:in `exec'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:30:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:24:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:49:in `block in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:37:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+Traits: Predicate 75 = http://purl.bioontology.org/ontology/SNOMEDCT/75367002
+Traits: Predicate 100 = http://purl.obolibrary.org/obo/OBA_1000084
+Traits: Predicate 125 = http://eol.org/schema/terms/DevelopmentalMode
+Traits: Predicate 150 = http://purl.obolibrary.org/obo/PATO_0000273
+Traits: Predicate 175 = http://eol.org/schema/terms/GerminationRequirements
+Traits: Predicate 200 = http://purl.obolibrary.org/obo/OBA_1000127
+Traits: Predicate 225 = http://eol.org/schema/terms/max_growth_rate_internal_ammonimum
+Traits: Predicate 250 = http://purl.obolibrary.org/obo/OBA_1000018
+Traits: Predicate 275 = http://eol.org/schema/terms/PopulationGroupSize
+Traits: Predicate 300 = http://purl.obolibrary.org/obo/TO_0000519
+Traits: Predicate 325 = http://polytraits.lifewatchgreece.eu/terms/SPERM
+Traits: Predicate 350 = http://eol.org/schema/terms/TrophicGuild
+Traits: Predicate 375 = http://eol.org/schema/terms/CapitulumLength
+Traits: Predicate 400 = http://purl.obolibrary.org/obo/RO_0002618
+Traits: Predicate 425 = http://www.wikidata.org/entity/Q33596
+Traits: Predicate 450 = http://top-thesaurus.org/annotationInfo?viz=1&&trait=Stem_specific_density
+Traits: Predicate 475 = https://eol.org/schema/terms/mineralizedSkeletonContains
+Traits: Predicate 500 = https://eol.org/schema/terms/infection_effect
+** scary URI: ''
+** Deferred due to exception(s): traits.csv
+122 metadata predicate URIs
+Metadatas: Predicate 0 = http://purl.obolibrary.org/obo/VT_0001259
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 2 times
+Neo4j error... Graph::Neo4jError
+** Graph::Neo4jError
+** Will retry after 20 seconds, up to 1 times
+Neo4j error... Graph::Neo4jError
+** Failed to generate /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-all/metadata.csv.predicates/9.csv
+** Exception: Graph::Neo4jError
+Neo4j error(s) - Neo.DatabaseError.Statement.ExecutionFailed The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. The transaction has not completed within the specified timeout (dbms.transaction.timeout). You may want to retry with a longer timeout. 
+/u/scripts/plotter/lib/graph.rb:65:in `run_query'
+/u/scripts/plotter/lib/paginator.rb:135:in `get_query_chunks'
+/u/scripts/plotter/lib/paginator.rb:79:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:401:in `supervise_query'
+/u/scripts/plotter/lib/traits_dumper.rb:335:in `block in emit_metadatas'
+/u/scripts/plotter/lib/traits_dumper.rb:321:in `each'
+/u/scripts/plotter/lib/traits_dumper.rb:321:in `emit_metadatas'
+/u/scripts/plotter/lib/traits_dumper.rb:92:in `dump_traits'
+/u/scripts/plotter/rakelib/traits.rake:31:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli/exec.rb:28:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:474:in `exec'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:30:in `dispatch'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/cli.rb:24:in `start'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:49:in `block in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/lib/bundler/friendly_errors.rb:128:in `with_friendly_errors'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.2.21/exe/bundle:37:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+Metadatas: Predicate 25 = http://rs.tdwg.org/dwc/terms/year
+Metadatas: Predicate 50 = http://purl.obolibrary.org/obo/STATO_0000315
+Metadatas: Predicate 75 = http://eol.org/schema/terms/VoucherType
+Metadatas: Predicate 100 = http://eol.org/schema/terms/secchiDepth
+** scary URI: ''
+** Deferred due to exception(s): metadata.csv
+Thu Aug 12 21:30:32 EDT 2021
+Thu Aug 12 23:08:09 EDT 2021
+
+real	97m38.347s
+user	57m35.790s
+sys	3m37.318s
++ sleep 60
++ cd /u/scripts/.plotter_workspace/prod/trait_dumps/
+++ date +%Y%m
++ chmod 775 traits_all_202108.zip
+++ date +%Y%m
++ rsync -zavh '--rsh=sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani' traits_all_202108.zip eol-archive:/extra/other_files/SDR/
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
+sending incremental file list
+
+sent 61 bytes  received 12 bytes  146.00 bytes/sec
+total size is 573.12M  speedup is 7,850,921.44
+Finished: SUCCESS

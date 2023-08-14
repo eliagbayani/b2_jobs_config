@@ -1,0 +1,37 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/02 Generate PRM and REP records/z test
+[z test] $ /bin/sh -xe /tmp/jenkins2232202103657897515.sh
++ cd /u/scripts/eol_php_code/update_resources/connectors/
++ php SDR_all.php _ '{"task":"print_parent_basal_values"}'
+
+
+Get page_ids for parent (BV)...
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_37815/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_37815/
+    [tables] => Array
+        (
+            [taxa] => taxon.tab
+        )
+
+)
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_37815/
+5,000===============Method: parents basal values - page_id: 10513355 | predicate: [http://eol.org/schema/terms/Present]
+10,000===============Method: parents basal values - page_id: 1456 | predicate: [http://eol.org/schema/terms/Present]
+15,000===============Method: parents basal values - page_id: 2053 | predicate: [http://eol.org/schema/terms/Habitat]
+20,000===============Method: parents basal values - page_id: 3201764 | predicate: [http://eol.org/schema/terms/Habitat]
+25,000===============Method: parents basal values - page_id: 2863485 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+30,000===============Method: parents basal values - page_id: 10649420 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+35,000===============Method: parents basal values - page_id: 46555364 | predicate: [http://purl.obolibrary.org/obo/FLOPO_0900032]
+-- end parents basal values --
+
+
+
+ elapsed time = 59.433244 seconds
+ elapsed time = 0.99055406666667 minutes
+ elapsed time = 0.016509234444444 hours
+ Done processing.
+Finished: SUCCESS

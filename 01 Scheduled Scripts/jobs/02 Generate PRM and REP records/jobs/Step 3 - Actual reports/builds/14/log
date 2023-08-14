@@ -1,0 +1,42 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/02 Generate PRM and REP records/Step 3 - Actual reports
+[Step 3 - Actual reports] $ /bin/sh -xe /tmp/jenkins1043049486973799182.sh
++ cd /u/scripts/eol_php_code/update_resources/connectors/
++ php SDR_all.php _ '{"task":"print_taxon_summary", "folder_date":202008}'
+
+
+Predicates: 48
+
+parsing DH...
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_60700/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_60700/
+    [tables] => Array
+        (
+            [taxa] => taxon.tab
+        )
+
+)
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_60700/
+Creating this directory: [/u/scripts/eol_php_code/applications/content_server/resources//taxon_summary_working/]
+
+Get page_ids for...[http://purl.obolibrary.org/obo/RO_0002454][traits_TS]
+
+
+Array
+(
+    [archive_path] => /u/scripts/eol_php_code_tmp/dir_45374/
+    [temp_dir] => /u/scripts/eol_php_code_tmp/dir_45374/
+    [tables] => Array
+        (
+            [taxa] => taxon.tab
+        )
+
+)
+
+ temporary directory removed: /u/scripts/eol_php_code_tmp/dir_45374/PHP Fatal error:  Call to a member function write_object_to_file() on null in /u/scripts/eol_php_code/lib/connectors/SummaryDataResourcesAllAPI.php on line 1553
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

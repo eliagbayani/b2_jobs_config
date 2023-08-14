@@ -7,7 +7,7 @@
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
         <daysToKeep>-1</daysToKeep>
-        <numToKeep>6</numToKeep>
+        <numToKeep>15</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
@@ -35,7 +35,7 @@ https://eol.org/resources/870</description>
   <builders>
     <hudson.tasks.Shell>
       <command>source ~/.bash_profile &amp;&gt;/dev/null
-rbenv global 2.6.4 &amp;&gt;/dev/null
+rbenv global 2.6.5 &amp;&gt;/dev/null
 
 # delete old folders
 #e.g.
@@ -44,20 +44,30 @@ rbenv global 2.6.4 &amp;&gt;/dev/null
 
 cd /u/scripts/.plotter_workspace/prod/resources/
 rm -rf prod.$resource_ID.*
-ls -lt
+##ls -lt
 cd /u/scripts/.plotter_workspace/prod/staging/
 rm -rf prod.$resource_ID.*
-ls -lt
+##ls -lt
+
+## from Jonathan
+## rake paint:publish CONF=prod ID=822 CHUNK=5000
+## later on, CHUNK above won&apos;t make a difference after all.
 
 cd /u/scripts/plotter/lib/
-rake paint:show_directives CONF=prod ID=$resource_ID
+
+##rake paint:show_directives CONF=prod ID=$resource_ID
+# Jonathan says u don&apos;t need to show_directives anymore.
+
 rake paint:count CONF=prod ID=$resource_ID
-rake paint:qc CONF=prod ID=$resource_ID
+# times out: rake paint:qc CONF=prod ID=$resource_ID
 
 # infer + stage = prepare
-rake paint:prepare CONF=prod ID=$resource_ID
+##rake paint:prepare CONF=prod ID=$resource_ID
+# orig above but added with CHUNK below to fix error, too big default 10000
+rake paint:prepare CONF=prod ID=$resource_ID CHUNK=2500
 
 rake paint:publish CONF=prod ID=$resource_ID
+
 
 # prepare + publish = paint
 #rake paint:paint CONF=prod ID=$resource_ID
@@ -68,6 +78,7 @@ rake paint:publish CONF=prod ID=$resource_ID
 #rake --tasks
 
 </command>
+      <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

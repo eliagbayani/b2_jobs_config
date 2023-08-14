@@ -24,9 +24,10 @@
     <hudson.tasks.Shell>
       <command>#source ~/.bash_profile &gt;/dev/null 2&gt;&amp;1
 source ~/.bash_profile &amp;&gt;/dev/null
-rbenv global 2.6.4 &amp;&gt;/dev/null
+rbenv global 2.6.5 &amp;&gt;/dev/null
 cd /u/scripts/plotter/
 bundle exec rake traits:dump CONF=prod ID=7662</command>
+      <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

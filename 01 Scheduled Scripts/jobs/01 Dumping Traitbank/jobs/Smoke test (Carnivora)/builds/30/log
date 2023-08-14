@@ -1,0 +1,25 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/01 Dumping Traitbank/Smoke test (Carnivora)
+[Smoke test (Carnivora)] $ /bin/sh -xe /tmp/jenkins5894005223859000301.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod ID=7662
+Temporary files will be in /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-7662
+1 terms
+1 term parents
+reusing previously created /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-7662/pages.csv
+reusing previously created /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-7662/inferred.csv
+reusing previously created /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-7662/traits.csv
+reusing previously created /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-7662/metadata.csv
+storing terms.csv into zip file
+storing term_parents.csv into zip file
+storing pages.csv into zip file
+storing inferred.csv into zip file
+storing traits.csv into zip file
+storing metadata.csv into zip file
+Wrote traits to /u/scripts/.plotter_workspace/prod/trait_dumps/traits_7662_202107.zip
+Fri Jul 30 08:14:55 EDT 2021
+Fri Jul 30 08:14:56 EDT 2021
+Finished: SUCCESS

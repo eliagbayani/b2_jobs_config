@@ -1,0 +1,54 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/01 Dumping Traitbank/Smoke test (Carnivora)
+[Smoke test (Carnivora)] $ /bin/sh -xe /tmp/jenkins7342133988810553771.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/plotter/
++ bundle exec rake traits:dump CONF=prod ID=7662
+Temporary files will be in /u/scripts/.plotter_workspace/prod/trait_dumps/tmp/dump-7662
+11126 terms
+6639 term parents
+525 predicates
+525 trait predicate URIs
+Traits: Predicate 0 = http://eol.org/schema/terms/ExtinctionStatus
+Traits: Predicate 25 = http://purl.bioontology.org/ontology/CSP/2383-1863
+Traits: Predicate 50 = http://eol.org/schema/terms/TypeSpecimenRepository
+Traits: Predicate 75 = http://purl.obolibrary.org/obo/TO_0000624
+Traits: Predicate 100 = http://eol.org/schema/terms/CNRatio
+Traits: Predicate 125 = http://purl.obolibrary.org/obo/OBA_1000097
+Traits: Predicate 150 = http://polytraits.lifewatchgreece.eu/terms/EGG
+Traits: Predicate 175 = http://eol.org/schema/terms/FoliageTexture
+Traits: Predicate 200 = http://eol.org/schema/terms/halfmax_uptake_concentration_phosphate
+Traits: Predicate 225 = http://purl.obolibrary.org/obo/TO_0000540
+Traits: Predicate 250 = http://eol.org/schema/terms/MiddleToeLength
+Traits: Predicate 275 = http://eol.org/schema/terms/NutrientCompositionOfMilk
+Traits: Predicate 300 = http://eol.org/schema/terms/ProteinPotential
+Traits: Predicate 325 = http://www.owl-ontologies.com/unnamed.owl#Dimorphism
+Traits: Predicate 350 = http://polytraits.lifewatchgreece.eu/terms/TEMP
+Traits: Predicate 375 = http://eol.org/schema/terms/DissolvedOxygen
+Traits: Predicate 400 = http://eol.org/schema/terms/MantleLength
+Traits: Predicate 425 = http://purl.obolibrary.org/obo/RO_0002471
+Traits: Predicate 450 = http://eol.org/schema/terms/polyp_diameter
+Traits: Predicate 475 = https://eol.org/schema/terms/burrowDiameter
+Traits: Predicate 500 = http://www.marinespecies.org/traits/SupportingStructuresEnclosures
+Traits: Predicate 525 = 
+** scary URI: ''
+Mon Sep 12 02:07:25 EDT 2022
+150 metadata predicate URIs
+Metadatas: Predicate 0 = http://purl.obolibrary.org/obo/VT_0001259
+Metadatas: Predicate 25 = http://rs.tdwg.org/dwc/terms/typeStatus
+Metadatas: Predicate 50 = http://rs.tdwg.org/dwc/terms/fieldNotes
+Metadatas: Predicate 75 = http://eol.org/schema/terms/ShellHeightBivalve
+Metadatas: Predicate 100 = http://rs.tdwg.org/dwc/terms/maximumDepthInMeters
+Metadatas: Predicate 125 = https://www.wikidata.org/entity/Q22093455
+** scary URI: ''
+storing terms.csv into zip file
+storing term_parents.csv into zip file
+storing pages.csv into zip file
+storing inferred.csv into zip file
+storing traits.csv into zip file
+storing metadata.csv into zip file
+Wrote traits to /u/scripts/.plotter_workspace/prod/trait_dumps/traits_7662_202209.zip
+Mon Sep 12 02:32:48 EDT 2022
+Finished: SUCCESS

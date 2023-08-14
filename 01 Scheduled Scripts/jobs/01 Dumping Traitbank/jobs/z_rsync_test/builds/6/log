@@ -1,0 +1,64 @@
+Started by user [8mha:////4KFShIluNpntRkGwEztqjcAKT7fE8GUEH9Fsuk7XEYjJAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ+/dLi1CL91MT0pMTKxLxMADEm21TEAAAA[0mEli
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/01 Dumping Traitbank/z_rsync_test
+[z_rsync_test] $ /bin/sh -xe /tmp/jenkins6963439237012167299.sh
++ cd /u/scripts/.plotter_workspace/prod/trait_dumps/
+++ date +%Y%m
++ chmod 775 traits_all_202106.zip
+++ date +%Y%m
++ rsync -zavh '--rsh=sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani' traits_all_202106.zip eol-archive:/extra/other_files/SDR/
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
+sending incremental file list
+traits_all_202106.zip
+
+sent 548.08M bytes  received 35 bytes  26.74M bytes/sec
+total size is 573.12M  speedup is 1.05
+++ date +%Y%m
++ rsync -zavh '--rsh=sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani' traits_all_202106.zip eol-archive:/extra/other_files/SDR/traits_all.zip
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Help Desk: OCIOHelp@si.edu 202-633-4000.
+
+sending incremental file list
+traits_all_202106.zip
+
+sent 548.08M bytes  received 166.08K bytes  13.54M bytes/sec
+total size is 573.12M  speedup is 1.05
+Finished: SUCCESS

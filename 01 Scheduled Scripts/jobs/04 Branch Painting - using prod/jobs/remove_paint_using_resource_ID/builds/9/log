@@ -1,0 +1,43 @@
+Started by user [8mha:////4NcRCrUKicMTD459nvlrDE/tPpXeYeyQqW7pGpPVMqOIAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgY+/dLi1CL9rIzE3Nz85GwAlWZwu8MAAAA=[0mJen
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/remove_paint_using_resource_ID
+[remove_paint_using_resource_ID] $ /bin/sh -xe /tmp/jenkins5256482941057560443.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/plotter/lib/
++ rake paint:erase ID=888 CONF=prod
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+Read timeout is 100
+** Net::ReadTimeout with #<TCPSocket:(closed)>
+** Will retry after 20 seconds, up to 2 times
+Read timeout is 100
+** Net::ReadTimeout with #<TCPSocket:(closed)>
+** Will retry after 20 seconds, up to 1 times
+Read timeout is 100
+rake aborted!
+Faraday::TimeoutError: Net::ReadTimeout with #<TCPSocket:(closed)>
+/u/scripts/plotter/lib/graph.rb:118:in `block in query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:109:in `new'
+/u/scripts/plotter/lib/graph.rb:109:in `query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:17:in `block in via_neo4j_directly'
+/u/scripts/plotter/lib/graph.rb:63:in `run_query'
+/u/scripts/plotter/lib/painter.rb:62:in `run_query'
+/u/scripts/plotter/lib/painter.rb:92:in `erase'
+/u/scripts/plotter/rakelib/paint.rake:48:in `block (2 levels) in <top (required)>'
+
+Caused by:
+Net::ReadTimeout: Net::ReadTimeout with #<TCPSocket:(closed)>
+/u/scripts/plotter/lib/graph.rb:118:in `block in query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:109:in `new'
+/u/scripts/plotter/lib/graph.rb:109:in `query_via_transaction_api'
+/u/scripts/plotter/lib/graph.rb:17:in `block in via_neo4j_directly'
+/u/scripts/plotter/lib/graph.rb:63:in `run_query'
+/u/scripts/plotter/lib/painter.rb:62:in `run_query'
+/u/scripts/plotter/lib/painter.rb:92:in `erase'
+/u/scripts/plotter/rakelib/paint.rake:48:in `block (2 levels) in <top (required)>'
+Tasks: TOP => paint:erase
+(See full trace by running task with --trace)
+Resource 888 on prod is understood as 'Cubo 2000'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

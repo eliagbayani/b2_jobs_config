@@ -1,0 +1,1323 @@
+Started by user [8mha:////4AHKSYytz7GDPtCQzYYBuWHdGZf5KECiHYHD1Ou8OaFtAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZe/dLi1CL97OLkjNKcKgCDo6MRwgAAAA==[0mKatja Schulz
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/branch_paint_using_resource_ID
+[branch_paint_using_resource_ID] $ /bin/sh -xe /tmp/jenkins4944785925150658728.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/.plotter_workspace/prod/resources/
++ rm -i -rf 'prod.1173.*'
++ cd /u/scripts/.plotter_workspace/prod/staging/
++ rm -i -rf 'prod.1173.*'
++ cd /u/scripts/plotter/lib/
++ rake paint:count CONF=prod ID=1173
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+0 inferred trait assertions
+Resource 1173 on prod is understood as 'Arthropod Trophic Ecology Data'
++ rake paint:prepare CONF=prod ID=1173 CHUNK=2500
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+MATCH (:Resource {resource_id: 1173})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+       OPTIONAL MATCH (t)-[:object_term]->(o:Term)
+       WITH t, toInteger(m.measurement) as start_id, o
+       MATCH (:Page {page_id: start_id})<-[:parent*1..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait, d.canonical, t.measurement, o.name
+25 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/60000_2500.csv
+50 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/122500_2500.csv
+75 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/185000_2500.csv
+100 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/247500_2500.csv
+125 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/310000_2500.csv
+150 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/372500_2500.csv
+175 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/435000_2500.csv
+200 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/497500_2500.csv
+225 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/560000_2500.csv
+250 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/622500_2500.csv
+275 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/685000_2500.csv
+300 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/747500_2500.csv
+325 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/810000_2500.csv
+350 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/872500_2500.csv
+375 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/935000_2500.csv
+400 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/997500_2500.csv
+425 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/1060000_2500.csv
+450 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv.chunks/1122500_2500.csv
+Resource 1173 on prod is understood as 'Arthropod Trophic Ecology Data'
+MATCH (:Resource {resource_id: 1173})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/stops_at'})
+       WITH t, toInteger(m.measurement) as stop_id
+       MATCH (stop:Page {page_id: stop_id})
+       WITH stop, t
+       MATCH (stop)<-[:parent*0..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait
+25 /u/scripts/.plotter_workspace/prod/resources/1173/inferences/retract.csv.chunks/60000_2500.csv
+assert_path = /u/scripts/.plotter_workspace/prod/resources/1173/inferences/assert.csv
+Found 1135653 proper start-point descendants
+Removed 117229 stop-point descendants
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/0_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/2500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/5000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/7500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/10000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/12500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/15000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/17500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/20000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/22500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/25000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/27500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/30000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/32500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/35000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/37500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/40000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/42500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/45000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/47500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/50000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/52500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/55000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/57500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/60000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/62500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/65000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/67500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/70000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/72500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/75000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/77500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/80000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/82500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/85000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/87500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/90000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/92500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/95000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/97500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/100000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/102500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/105000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/107500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/110000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/112500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/115000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/117500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/120000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/122500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/125000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/127500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/130000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/132500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/135000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/137500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/140000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/142500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/145000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/147500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/150000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/152500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/155000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/157500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/160000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/162500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/165000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/167500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/170000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/172500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/175000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/177500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/180000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/182500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/185000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/187500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/190000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/192500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/195000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/197500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/200000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/202500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/205000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/207500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/210000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/212500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/215000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/217500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/220000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/222500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/225000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/227500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/230000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/232500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/235000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/237500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/240000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/242500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/245000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/247500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/250000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/252500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/255000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/257500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/260000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/262500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/265000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/267500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/270000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/272500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/275000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/277500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/280000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/282500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/285000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/287500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/290000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/292500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/295000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/297500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/300000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/302500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/305000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/307500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/310000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/312500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/315000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/317500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/320000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/322500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/325000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/327500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/330000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/332500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/335000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/337500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/340000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/342500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/345000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/347500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/350000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/352500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/355000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/357500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/360000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/362500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/365000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/367500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/370000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/372500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/375000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/377500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/380000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/382500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/385000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/387500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/390000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/392500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/395000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/397500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/400000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/402500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/405000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/407500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/410000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/412500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/415000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/417500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/420000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/422500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/425000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/427500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/430000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/432500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/435000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/437500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/440000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/442500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/445000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/447500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/450000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/452500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/455000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/457500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/460000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/462500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/465000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/467500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/470000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/472500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/475000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/477500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/480000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/482500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/485000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/487500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/490000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/492500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/495000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/497500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/500000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/502500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/505000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/507500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/510000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/512500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/515000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/517500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/520000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/522500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/525000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/527500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/530000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/532500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/535000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/537500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/540000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/542500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/545000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/547500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/550000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/552500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/555000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/557500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/560000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/562500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/565000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/567500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/570000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/572500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/575000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/577500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/580000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/582500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/585000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/587500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/590000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/592500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/595000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/597500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/600000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/602500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/605000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/607500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/610000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/612500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/615000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/617500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/620000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/622500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/625000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/627500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/630000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/632500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/635000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/637500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/640000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/642500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/645000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/647500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/650000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/652500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/655000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/657500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/660000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/662500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/665000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/667500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/670000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/672500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/675000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/677500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/680000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/682500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/685000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/687500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/690000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/692500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/695000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/697500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/700000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/702500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/705000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/707500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/710000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/712500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/715000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/717500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/720000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/722500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/725000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/727500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/730000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/732500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/735000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/737500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/740000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/742500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/745000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/747500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/750000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/752500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/755000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/757500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/760000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/762500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/765000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/767500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/770000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/772500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/775000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/777500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/780000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/782500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/785000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/787500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/790000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/792500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/795000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/797500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/800000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/802500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/805000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/807500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/810000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/812500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/815000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/817500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/820000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/822500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/825000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/827500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/830000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/832500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/835000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/837500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/840000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/842500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/845000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/847500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/850000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/852500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/855000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/857500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/860000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/862500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/865000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/867500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/870000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/872500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/875000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/877500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/880000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/882500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/885000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/887500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/890000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/892500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/895000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/897500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/900000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/902500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/905000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/907500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/910000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/912500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/915000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/917500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/920000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/922500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/925000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/927500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/930000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/932500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/935000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/937500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/940000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/942500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/945000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/947500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/950000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/952500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/955000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/957500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/960000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/962500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/965000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/967500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/970000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/972500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/975000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/977500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/980000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/982500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/985000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/987500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/990000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/992500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/995000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/997500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/1000000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/1002500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/1005000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/1007500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/1010000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/1012500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/1015000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/1017500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/.manifest.json
+Writing /u/scripts/.plotter_workspace/prod/resources/1173/inferences/inf/inferences.csv.chunks/.manifest.json
+# rsync -zavhR --rsh="sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani" "/u/scripts/.plotter_workspace/./prod/resources/1173/inferences/inf" "eol-archive:/extra/other_files/SDR/branch_painting/"
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Service Desk: ocioservicedesk@si.edu 202-633-4000.
+
+# Status: [pid 103984 exit 0] stdout: [sending incremental file list
+prod/resources/1173/inferences/
+prod/resources/1173/inferences/inf/inferences.csv.chunks/
+prod/resources/1173/inferences/inf/inferences.csv.chunks/.manifest.json
+prod/resources/1173/inferences/inf/inferences.csv.chunks/0_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/1000000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/100000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/10000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/1002500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/1005000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/1007500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/1010000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/1012500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/1015000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/1017500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/102500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/105000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/107500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/110000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/112500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/115000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/117500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/120000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/122500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/125000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/12500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/127500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/130000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/132500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/135000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/137500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/140000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/142500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/145000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/147500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/150000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/15000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/152500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/155000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/157500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/160000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/162500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/165000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/167500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/170000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/172500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/175000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/17500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/177500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/180000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/182500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/185000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/187500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/190000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/192500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/195000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/197500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/200000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/20000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/202500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/205000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/207500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/210000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/212500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/215000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/217500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/220000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/222500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/225000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/22500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/227500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/230000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/232500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/235000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/237500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/240000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/242500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/245000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/247500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/250000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/25000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/2500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/252500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/255000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/257500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/260000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/262500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/265000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/267500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/270000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/272500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/275000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/27500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/277500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/280000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/282500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/285000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/287500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/290000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/292500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/295000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/297500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/300000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/30000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/302500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/305000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/307500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/310000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/312500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/315000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/317500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/320000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/322500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/325000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/32500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/327500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/330000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/332500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/335000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/337500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/340000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/342500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/345000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/347500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/350000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/35000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/352500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/355000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/357500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/360000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/362500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/365000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/367500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/370000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/372500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/375000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/37500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/377500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/380000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/382500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/385000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/387500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/390000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/392500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/395000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/397500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/400000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/40000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/402500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/405000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/407500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/410000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/412500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/415000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/417500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/420000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/422500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/425000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/42500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/427500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/430000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/432500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/435000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/437500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/440000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/442500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/445000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/447500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/450000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/45000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/452500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/455000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/457500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/460000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/462500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/465000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/467500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/470000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/472500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/475000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/47500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/477500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/480000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/482500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/485000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/487500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/490000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/492500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/495000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/497500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/500000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/50000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/5000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/502500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/505000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/507500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/510000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/512500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/515000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/517500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/520000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/522500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/525000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/52500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/527500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/530000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/532500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/535000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/537500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/540000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/542500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/545000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/547500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/550000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/55000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/552500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/555000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/557500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/560000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/562500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/565000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/567500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/570000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/572500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/575000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/57500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/577500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/580000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/582500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/585000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/587500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/590000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/592500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/595000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/597500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/600000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/60000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/602500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/605000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/607500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/610000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/612500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/615000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/617500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/620000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/622500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/625000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/62500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/627500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/630000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/632500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/635000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/637500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/640000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/642500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/645000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/647500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/650000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/65000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/652500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/655000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/657500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/660000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/662500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/665000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/667500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/670000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/672500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/675000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/67500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/677500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/680000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/682500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/685000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/687500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/690000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/692500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/695000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/697500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/700000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/70000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/702500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/705000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/707500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/710000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/712500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/715000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/717500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/720000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/722500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/725000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/72500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/727500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/730000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/732500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/735000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/737500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/740000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/742500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/745000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/747500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/750000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/75000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/7500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/752500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/755000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/757500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/760000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/762500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/765000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/767500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/770000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/772500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/775000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/77500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/777500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/780000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/782500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/785000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/787500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/790000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/792500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/795000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/797500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/800000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/80000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/802500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/805000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/807500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/810000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/812500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/815000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/817500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/820000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/822500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/825000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/82500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/827500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/830000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/832500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/835000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/837500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/840000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/842500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/845000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/847500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/850000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/85000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/852500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/855000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/857500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/860000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/862500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/865000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/867500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/870000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/872500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/875000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/87500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/877500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/880000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/882500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/885000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/887500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/890000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/892500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/895000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/897500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/900000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/90000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/902500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/905000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/907500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/910000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/912500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/915000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/917500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/920000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/922500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/925000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/92500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/927500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/930000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/932500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/935000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/937500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/940000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/942500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/945000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/947500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/950000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/95000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/952500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/955000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/957500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/960000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/962500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/965000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/967500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/970000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/972500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/975000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/97500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/977500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/980000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/982500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/985000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/987500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/990000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/992500_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/995000_2500.csv
+prod/resources/1173/inferences/inf/inferences.csv.chunks/997500_2500.csv
+
+sent 9.86M bytes  received 347.25K bytes  4.08M bytes/sec
+total size is 65.95M  speedup is 6.46
+]
+Ready to publish
++ rake paint:publish CONF=prod ID=1173
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+408 chunks
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/0_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/2500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/5000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/7500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/10000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/12500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/15000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/17500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/20000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/22500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/25000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/27500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/30000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/32500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/35000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/37500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/40000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/42500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/45000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/47500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/50000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/52500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/55000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/57500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/60000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/62500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/65000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/67500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/70000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/72500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/75000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/77500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/80000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/82500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/85000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/87500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/90000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/92500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/95000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/97500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/100000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/102500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/105000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/107500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/110000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/112500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/115000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/117500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/120000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/122500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/125000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/127500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/130000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/132500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/135000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/137500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/140000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/142500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/145000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/147500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/150000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/152500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/155000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/157500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/160000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/162500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/165000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/167500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/170000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/172500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/175000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/177500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/180000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/182500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/185000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/187500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/190000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/192500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/195000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/197500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/200000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/202500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/205000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/207500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/210000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/212500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/215000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/217500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/220000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/222500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/225000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/227500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/230000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/232500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/235000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/237500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/240000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/242500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/245000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/247500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/250000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/252500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/255000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/257500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/260000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/262500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/265000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/267500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/270000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/272500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/275000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/277500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/280000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/282500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/285000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/287500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/290000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/292500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/295000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/297500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/300000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/302500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/305000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/307500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/310000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/312500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/315000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/317500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/320000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/322500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/325000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/327500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/330000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/332500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/335000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/337500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/340000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/342500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/345000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/347500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/350000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/352500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/355000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/357500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/360000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/362500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/365000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/367500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/370000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/372500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/375000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/377500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/380000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/382500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/385000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/387500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/390000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/392500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/395000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/397500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/400000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/402500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/405000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/407500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/410000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/412500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/415000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/417500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/420000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/422500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/425000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/427500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/430000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/432500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/435000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/437500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/440000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/442500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/445000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/447500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/450000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/452500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/455000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/457500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/460000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/462500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/465000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/467500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/470000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/472500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/475000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/477500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/480000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/482500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/485000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/487500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/490000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/492500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/495000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/497500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/500000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/502500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/505000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/507500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/510000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/512500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/515000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/517500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/520000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/522500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/525000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/527500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/530000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/532500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/535000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/537500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/540000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/542500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/545000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/547500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/550000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/552500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/555000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/557500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/560000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/562500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/565000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/567500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/570000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/572500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/575000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/577500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/580000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/582500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/585000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/587500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/590000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/592500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/595000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/597500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/600000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/602500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/605000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/607500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/610000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/612500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/615000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/617500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/620000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/622500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/625000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/627500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/630000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/632500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/635000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/637500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/640000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/642500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/645000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/647500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/650000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/652500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/655000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/657500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/660000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/662500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/665000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/667500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/670000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/672500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/675000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/677500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/680000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/682500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/685000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/687500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/690000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/692500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/695000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/697500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/700000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/702500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/705000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/707500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/710000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/712500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/715000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/717500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/720000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/722500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/725000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/727500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/730000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/732500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/735000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/737500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/740000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/742500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/745000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/747500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/750000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/752500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/755000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/757500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/760000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/762500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/765000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/767500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/770000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/772500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/775000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/777500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/780000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/782500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/785000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/787500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/790000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/792500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/795000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/797500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/800000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/802500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/805000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/807500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/810000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/812500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/815000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/817500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/820000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/822500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/825000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/827500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/830000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/832500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/835000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/837500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/840000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/842500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/845000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/847500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/850000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/852500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/855000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/857500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/860000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/862500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/865000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/867500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/870000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/872500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/875000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/877500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/880000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/882500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/885000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/887500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/890000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/892500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/895000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/897500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/900000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/902500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/905000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/907500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/910000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/912500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/915000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/917500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/920000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/922500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/925000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/927500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/930000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/932500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/935000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/937500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/940000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/942500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/945000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/947500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/950000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/952500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/955000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/957500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/960000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/962500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/965000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/967500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/970000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/972500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/975000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/977500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/980000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/982500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/985000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/987500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/990000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/992500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/995000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/997500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/1000000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/1002500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/1005000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/1007500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/1010000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/1012500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/1015000_2500.csv
+Merged [968] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv.chunks/1017500_2500.csv
+Resource 1173 on prod is understood as 'Arthropod Trophic Ecology Data'
+# Staging URL prefix is https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/1173/inferences/inf/inferences.csv
+Finished: SUCCESS
