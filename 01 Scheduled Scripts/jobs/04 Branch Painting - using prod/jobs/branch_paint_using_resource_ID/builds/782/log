@@ -1,0 +1,142 @@
+Started by user [8mha:////4NcRCrUKicMTD459nvlrDE/tPpXeYeyQqW7pGpPVMqOIAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgY+/dLi1CL9rIzE3Nz85GwAlWZwu8MAAAA=[0mJen
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/branch_paint_using_resource_ID
+[branch_paint_using_resource_ID] $ /bin/sh -xe /tmp/jenkins5539483509731733668.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/.plotter_workspace/prod/resources/
++ rm -i -rf 'prod.914.*'
++ cd /u/scripts/.plotter_workspace/prod/staging/
++ rm -i -rf 'prod.914.*'
++ cd /u/scripts/plotter/lib/
++ rake paint:count CONF=prod ID=914
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+0 inferred trait assertions
+Resource 914 on prod is understood as 'Bitsch 2005'
++ rake paint:prepare CONF=prod ID=914 CHUNK=2500
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+MATCH (:Resource {resource_id: 914})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+       OPTIONAL MATCH (t)-[:object_term]->(o:Term)
+       WITH t, toInteger(m.measurement) as start_id, o
+       MATCH (:Page {page_id: start_id})<-[:parent*1..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait, d.canonical, t.measurement, o.name
+25 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/60000_2500.csv
+50 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/122500_2500.csv
+75 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/185000_2500.csv
+100 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/247500_2500.csv
+125 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/310000_2500.csv
+150 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/372500_2500.csv
+175 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/435000_2500.csv
+200 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/497500_2500.csv
+225 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/560000_2500.csv
+250 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/622500_2500.csv
+275 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/685000_2500.csv
+300 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/747500_2500.csv
+325 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/810000_2500.csv
+350 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/872500_2500.csv
+375 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/935000_2500.csv
+400 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/997500_2500.csv
+425 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1060000_2500.csv
+450 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1122500_2500.csv
+475 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1185000_2500.csv
+500 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1247500_2500.csv
+525 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1310000_2500.csv
+550 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1372500_2500.csv
+575 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1435000_2500.csv
+600 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1497500_2500.csv
+625 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1560000_2500.csv
+650 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1622500_2500.csv
+675 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1685000_2500.csv
+700 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1747500_2500.csv
+725 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1810000_2500.csv
+750 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1872500_2500.csv
+775 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1935000_2500.csv
+800 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/1997500_2500.csv
+825 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2060000_2500.csv
+850 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2122500_2500.csv
+875 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2185000_2500.csv
+900 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2247500_2500.csv
+925 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2310000_2500.csv
+950 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2372500_2500.csv
+975 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2435000_2500.csv
+1000 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2497500_2500.csv
+1025 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2560000_2500.csv
+1050 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2622500_2500.csv
+1075 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2685000_2500.csv
+1100 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2747500_2500.csv
+1125 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2810000_2500.csv
+1150 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2872500_2500.csv
+1175 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2935000_2500.csv
+1200 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/2997500_2500.csv
+1225 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3060000_2500.csv
+1250 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3122500_2500.csv
+1275 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3185000_2500.csv
+1300 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3247500_2500.csv
+1325 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3310000_2500.csv
+1350 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3372500_2500.csv
+1375 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3435000_2500.csv
+1400 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3497500_2500.csv
+1425 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3560000_2500.csv
+1450 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3622500_2500.csv
+1475 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3685000_2500.csv
+1500 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3747500_2500.csv
+1525 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3810000_2500.csv
+1550 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3872500_2500.csv
+1575 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3935000_2500.csv
+1600 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/3997500_2500.csv
+1625 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/4060000_2500.csv
+1650 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/4122500_2500.csv
+1675 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/4185000_2500.csv
+1700 /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.chunks/4247500_2500.csv
+Resource 914 on prod is understood as 'Bitsch 2005'
+** Failed to generate /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv
+** Exception: No such file or directory @ rb_file_s_rename - (/u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.new, /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv)
+No such file or directory @ rb_file_s_rename - (/u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv.new, /u/scripts/.plotter_workspace/prod/resources/914/inferences/assert.csv)
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/fileutils.rb:529:in `rename'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/fileutils.rb:529:in `block in mv'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/fileutils.rb:1557:in `block in fu_each_src_dest'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/fileutils.rb:1573:in `fu_each_src_dest0'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/fileutils.rb:1555:in `fu_each_src_dest'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/fileutils.rb:520:in `mv'
+/u/scripts/plotter/lib/paginator.rb:179:in `assemble_chunks'
+/u/scripts/plotter/lib/paginator.rb:74:in `supervise_query'
+/u/scripts/plotter/lib/painter.rb:387:in `run_chunked_query'
+/u/scripts/plotter/lib/painter.rb:321:in `paint_or_infer'
+/u/scripts/plotter/lib/painter.rb:213:in `infer'
+/u/scripts/plotter/lib/painter.rb:82:in `prepare'
+/u/scripts/plotter/rakelib/paint.rake:38:in `block (2 levels) in <top (required)>'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `block in execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:273:in `execute'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:214:in `block in invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:194:in `invoke_with_call_chain'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/task.rb:183:in `invoke'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:160:in `invoke_task'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block (2 levels) in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `each'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:116:in `block in top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:125:in `run_with_threads'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:110:in `top_level'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:83:in `block in run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:186:in `standard_exception_handling'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/lib/rake/application.rb:80:in `run'
+/root/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `load'
+/root/.rbenv/versions/2.6.5/bin/rake:23:in `<main>'
+rake aborted!
+Exception in query
+/u/scripts/plotter/lib/painter.rb:391:in `run_chunked_query'
+/u/scripts/plotter/lib/painter.rb:321:in `paint_or_infer'
+/u/scripts/plotter/lib/painter.rb:213:in `infer'
+/u/scripts/plotter/lib/painter.rb:82:in `prepare'
+/u/scripts/plotter/rakelib/paint.rake:38:in `block (2 levels) in <top (required)>'
+Tasks: TOP => paint:prepare
+(See full trace by running task with --trace)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

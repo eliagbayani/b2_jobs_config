@@ -1,0 +1,107 @@
+Started by user [8mha:////4NcRCrUKicMTD459nvlrDE/tPpXeYeyQqW7pGpPVMqOIAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgY+/dLi1CL9rIzE3Nz85GwAlWZwu8MAAAA=[0mJen
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/branch_paint_using_resource_ID
+[branch_paint_using_resource_ID] $ /bin/sh -xe /tmp/jenkins2307518761961047157.sh
++ source /root/.bash_profile
++ rbenv global 2.6.5
++ cd /u/scripts/.plotter_workspace/prod/resources/
++ rm -i -rf 'prod.62.*'
++ cd /u/scripts/.plotter_workspace/prod/staging/
++ rm -i -rf 'prod.62.*'
++ cd /u/scripts/plotter/lib/
++ rake paint:count CONF=prod ID=62
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+0 inferred trait assertions
+Resource 62 on prod is understood as 'Lovegrove 2014'
++ rake paint:prepare CONF=prod ID=62 CHUNK=2500
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+MATCH (:Resource {resource_id: 62})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/starts_at'})
+       OPTIONAL MATCH (t)-[:object_term]->(o:Term)
+       WITH t, toInteger(m.measurement) as start_id, o
+       MATCH (:Page {page_id: start_id})<-[:parent*1..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait, d.canonical, t.measurement, o.name
+Resource 62 on prod is understood as 'Lovegrove 2014'
+MATCH (:Resource {resource_id: 62})<-[:supplier]-
+             (t:Trait)-[:metadata]->
+             (m:MetaData)-[:predicate]->
+             (:Term {uri: 'https://eol.org/schema/terms/stops_at'})
+       WITH t, toInteger(m.measurement) as stop_id
+       MATCH (stop:Page {page_id: stop_id})
+       WITH stop, t
+       MATCH (stop)<-[:parent*0..]-(d:Page)
+       RETURN d.page_id AS page, t.eol_pk AS trait
+Creating empty /u/scripts/.plotter_workspace/prod/resources/62/inferences/retract.csv
+assert_path = /u/scripts/.plotter_workspace/prod/resources/62/inferences/assert.csv
+Found 22153 proper start-point descendants
+Removed 0 stop-point descendants
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/0_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/2500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/5000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/7500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/10000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/12500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/15000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/17500_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/20000_2500.csv
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/.manifest.json
+Writing /u/scripts/.plotter_workspace/prod/resources/62/inferences/inf/inferences.csv.chunks/.manifest.json
+# rsync -zavhR --rsh="sshpass -f /home/eagbayani/.pwd_file ssh -l eagbayani" "/u/scripts/.plotter_workspace/./prod/resources/62/inferences/inf" "eol-archive:/extra/other_files/SDR/branch_painting/"
+
+"WARNING"
+
+You are accessing a Smithsonian Institution computer system which is 
+operated as a U.S. Government information system., Unauthorized 
+access, use, or modification of this system or of data contained 
+herein, or in transit to/from this system, may constitute a violation 
+of the Computer Fraud and Abuse Act section 1030 (18 on the U.S. 
+Code)., Violators are subject to criminal and civil penalties., While 
+using Smithsonian computers and networks, you should have no 
+expectation of privacy. 
+
+System usage may be monitored, recorded and subject to audit. Use of 
+this system indicates consent to monitoring and recording., All 
+computer users must read and understand Smithsonian Directive 931, Use 
+of Computers, Telecommunications Devices and Networks, acknowledge 
+acceptance of the User Agreement, and annually complete on-line 
+computer security awareness training., Any violation of these policies 
+or a suspected computer security incident should be promptly reported 
+to the Smithsonian: OCIO Service Desk: ocioservicedesk@si.edu 202-633-4000.
+
+# Status: [pid 104177 exit 0] stdout: [sending incremental file list
+prod/resources/62/inferences/
+prod/resources/62/inferences/inf/inferences.csv.chunks/.manifest.json
+prod/resources/62/inferences/inf/inferences.csv.chunks/0_2500.csv
+prod/resources/62/inferences/inf/inferences.csv.chunks/10000_2500.csv
+prod/resources/62/inferences/inf/inferences.csv.chunks/12500_2500.csv
+prod/resources/62/inferences/inf/inferences.csv.chunks/15000_2500.csv
+prod/resources/62/inferences/inf/inferences.csv.chunks/17500_2500.csv
+prod/resources/62/inferences/inf/inferences.csv.chunks/20000_2500.csv
+prod/resources/62/inferences/inf/inferences.csv.chunks/2500_2500.csv
+prod/resources/62/inferences/inf/inferences.csv.chunks/5000_2500.csv
+prod/resources/62/inferences/inf/inferences.csv.chunks/7500_2500.csv
+
+sent 220.25K bytes  received 10.88K bytes  42.02K bytes/sec
+total size is 1.24M  speedup is 5.36
+]
+Ready to publish
++ rake paint:publish CONF=prod ID=62
+(in /u/scripts/plotter)
+# Get https://eol.org/resources.json?per_page=100000
+9 chunks
+Merged [2499] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/0_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/2500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/5000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/7500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/10000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/12500_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/15000_2500.csv
+Merged [2500] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/17500_2500.csv
+Merged [2153] relations from https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv.chunks/20000_2500.csv
+Resource 62 on prod is understood as 'Lovegrove 2014'
+# Staging URL prefix is https://editors.eol.org/other_files/SDR/branch_painting/prod/resources/62/inferences/inf/inferences.csv
+Finished: SUCCESS

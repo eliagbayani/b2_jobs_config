@@ -1,0 +1,44 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>resource_ID</name>
+          <description>e.g.
+Enter 870 for resource &quot;Lovegrove and Haines 2004&quot; in eol.org
+https://eol.org/resources/870</description>
+          <value>1119</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>resource_ID</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jhammock</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>1149</queueId>
+  <timestamp>1697203948215</timestamp>
+  <startTime>1697203948216</startTime>
+  <result>SUCCESS</result>
+  <duration>98727</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/01 Scheduled Scripts/04 Branch Painting - using prod/branch_paint_using_resource_ID</workspace>
+  <hudsonVersion>2.346.2</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>
